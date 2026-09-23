@@ -1,0 +1,13 @@
+* text=auto
+
+# Must stay LF: these run on the Linux host. CRLF makes bash fail with
+# "\r: command not found" and nginx choke on the vhost.
+*.sh            text eol=lf
+deploy/*.com    text eol=lf
+
+# Binary - never touch line endings
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.woff binary
+*.woff2 binary
