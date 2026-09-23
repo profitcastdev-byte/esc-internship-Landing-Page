@@ -77,23 +77,25 @@
           <li><a href="#about" onclick="closeEscMobileNav()">About</a></li>
           <li><a href="#contact" onclick="closeEscMobileNav()">Contact</a></li>
         </ul>
-        <div class="esc-mobile-nav-cta">
-          <div class="esc-mobile-contact-group">
-            <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722" onclick="closeEscMobileNav()">
-              <i class="bi bi-telephone-fill"></i>
-            </a>
-            <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us" onclick="closeEscMobileNav()">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-            <span class="esc-btn-phone-display">
-              +91-98844 57722
-            </span>
-          </div>
-        </div>
       </div>
 
     </div>
   </nav>
+
+  <!-- =========================================================================
+       Mobile Contact Bar (Unique Section Class: esc-mobile-contact-bar)
+       Sits directly under the header. The desktop navbar already carries these
+       same controls inline, so this is d-lg-none and never renders >=992px.
+       ========================================================================= -->
+  <div class="esc-mobile-contact-bar d-lg-none">
+    <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
+    <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <span class="esc-btn-phone-display">+91-98844 57722</span>
+  </div>
 
   <!-- =========================================================================
        Section 1: Hero Banner (Unique Section Class: esc-hero-banner-section)
@@ -112,13 +114,6 @@
             <div class="esc-hero-slider-overlay"></div>
           </div>
           <div class="container-fluid px-3 px-lg-5 position-relative esc-hero-content-layer">
-            <!-- Mobile-only Phone Badge in Hero Banner Top-Right (Non-Clickable) -->
-            <div class="esc-hero-mobile-badge-wrap d-lg-none">
-              <span class="esc-btn-phone-display esc-hero-mobile-phone-card">
-                +91-98844 57722
-              </span>
-            </div>
-
             <div class="row align-items-center esc-hero-slide-row">
               <div class="col-xl-7 col-lg-7 col-md-10">
 
