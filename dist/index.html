@@ -68,6 +68,20 @@
         </div>
       </div>
 
+      <!-- Mobile Contact Bar: lives INSIDE the sticky navbar, so it sticks with
+           the header without hard-coding the header's height, holds its place
+           when the drawer expands below it, and sits on the navbar's own navy
+           with no seam. d-lg-none: the desktop nav carries these inline. -->
+      <div class="esc-mobile-contact-bar d-lg-none">
+        <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722">
+          <i class="bi bi-telephone-fill"></i>
+        </a>
+        <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <span class="esc-btn-phone-display">+91-98844 57722</span>
+      </div>
+
       <!-- Mobile Navigation Collapse Drawer -->
       <div class="esc-mobile-nav-collapse d-lg-none" id="escMobileNavCollapse">
         <ul class="esc-mobile-nav-links">
@@ -81,21 +95,6 @@
 
     </div>
   </nav>
-
-  <!-- =========================================================================
-       Mobile Contact Bar (Unique Section Class: esc-mobile-contact-bar)
-       Sits directly under the header. The desktop navbar already carries these
-       same controls inline, so this is d-lg-none and never renders >=992px.
-       ========================================================================= -->
-  <div class="esc-mobile-contact-bar d-lg-none">
-    <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722">
-      <i class="bi bi-telephone-fill"></i>
-    </a>
-    <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us">
-      <i class="bi bi-whatsapp"></i>
-    </a>
-    <span class="esc-btn-phone-display">+91-98844 57722</span>
-  </div>
 
   <!-- =========================================================================
        Section 1: Hero Banner (Unique Section Class: esc-hero-banner-section)

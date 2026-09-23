@@ -5742,9 +5742,9 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   Mobile Contact Bar (below the header, phones and tablets only)
-   Carries the navbar's navy so it reads as one band with the header rather
-   than a stripe floating on the hero. Hidden >=992px by d-lg-none, where the
+   Mobile Contact Bar (inside the sticky header, phones and tablets only)
+   Transparent: the navbar paints the navy behind it, so there is no seam and
+   no second colour to keep in sync. Hidden >=992px by d-lg-none, where the
    navbar shows the same controls inline.
    -------------------------------------------------------------------------- */
 .esc-mobile-contact-bar {
@@ -5753,15 +5753,13 @@ img {
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
-  background-color: #262d7c;
-  padding: 12px 16px 16px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 0 2px 0;
 }
 
 @media (max-width: 420px) {
   .esc-mobile-contact-bar {
     gap: 10px;
-    padding: 10px 12px 14px 12px;
+    padding: 8px 0 2px 0;
   }
   .esc-mobile-contact-bar .esc-btn-phone-display {
     font-size: 1rem;
