@@ -26,16 +26,16 @@
        ========================================================================= -->
   <nav class="esc-navbar-section">
     <div class="container-fluid px-3 px-lg-5">
-      <div class="row align-items-center justify-content-between">
+      <div class="row align-items-center justify-content-between flex-nowrap">
         <!-- Logo / Brand -->
-        <div class="col-auto col-lg-4 d-flex align-items-center">
+        <div class="col-auto d-flex align-items-center">
           <a href="#" class="esc-nav-brand text-decoration-none">
             <img src="assets/images/ESC-logo-europ.png" alt="Europe Study Centre" class="esc-nav-logo-img">
           </a>
         </div>
 
         <!-- Navigation Links (Desktop) -->
-        <div class="col-lg-6 d-none d-lg-block">
+        <div class="col-auto col-lg-auto d-none d-lg-block ms-auto">
           <ul class="esc-nav-links justify-content-center">
             <li><a href="#destinations">Internship Program</a></li>
             <li><a href="#inclusions">Program Details</a></li>
@@ -45,11 +45,17 @@
         </div>
 
         <!-- CTA Action (Desktop) -->
-        <div class="col-lg-2 d-none d-lg-block text-end esc-nav-cta">
-          <a href="https://wa.me/919884457722" target="_blank" class="esc-btn-whatsapp text-decoration-none">
-            <span>WhatsApp Us</span>
-            <i class="bi bi-arrow-right"></i>
+        <div class="col-auto d-none d-lg-flex align-items-center esc-nav-cta">
+          <span class="esc-nav-divider"></span>
+          <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91 98844 57722" title="Call Us">
+            <i class="bi bi-telephone-fill"></i>
           </a>
+          <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="Chat on WhatsApp" title="WhatsApp Us">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <span class="esc-btn-phone-display">
+            +91 98844 57722
+          </span>
         </div>
 
         <!-- Mobile Right: Three-Bar Hamburger Button -->
@@ -72,10 +78,17 @@
           <li><a href="#contact" onclick="closeEscMobileNav()">Contact</a></li>
         </ul>
         <div class="esc-mobile-nav-cta">
-          <a href="https://wa.me/" target="_blank" class="esc-btn-whatsapp text-decoration-none w-100 justify-content-center" onclick="closeEscMobileNav()">
-            <span>WhatsApp Us</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
+          <div class="esc-mobile-contact-group">
+            <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91 98844 57722" onclick="closeEscMobileNav()">
+              <i class="bi bi-telephone-fill"></i>
+            </a>
+            <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us" onclick="closeEscMobileNav()">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <span class="esc-btn-phone-display">
+              +91 98844 57722
+            </span>
+          </div>
         </div>
       </div>
 
@@ -99,6 +112,13 @@
             <div class="esc-hero-slider-overlay"></div>
           </div>
           <div class="container-fluid px-3 px-lg-5 position-relative esc-hero-content-layer">
+            <!-- Mobile-only Phone Badge in Hero Banner Top-Right (Non-Clickable) -->
+            <div class="esc-hero-mobile-badge-wrap d-lg-none">
+              <span class="esc-btn-phone-display esc-hero-mobile-phone-card">
+                +91 98844 57722
+              </span>
+            </div>
+
             <div class="row align-items-center esc-hero-slide-row">
               <div class="col-xl-7 col-lg-7 col-md-10">
 
@@ -1369,6 +1389,14 @@
 
     </div>
   </footer>
+
+  <!-- =========================================================================
+       Fixed Floating WhatsApp Button (Desktop & Mobile)
+       ========================================================================= -->
+  <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-floating-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="esc-floating-whatsapp-pulse"></span>
+  </a>
 
   <!-- Bootstrap 5.3 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

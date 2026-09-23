@@ -113,9 +113,9 @@ img {
    Navigation Bar (Header / Nav)
    -------------------------------------------------------------------------- */
 .esc-navbar-section {
-  background-color: #262d7c;
+  background-color: #202d7c;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 14px 0;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -127,9 +127,9 @@ img {
 }
 
 .esc-nav-logo-img {
-  height: 100px;
+  height: 62px;
   width: auto;
-  max-width: 500px;
+  max-width: 340px;
   object-fit: contain;
   display: block;
 }
@@ -162,7 +162,7 @@ img {
 .esc-nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -170,11 +170,12 @@ img {
 
 .esc-nav-links a {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.14rem;
   font-weight: 700;
   position: relative;
   padding: 6px 0;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .esc-nav-links a:hover,
@@ -211,6 +212,112 @@ img {
 .esc-nav-cta .esc-btn-primary {
   padding: 8px 22px;
   font-size: 0.88rem;
+}
+
+/* --------------------------------------------------------------------------
+   Navbar Action Elements (Call, WhatsApp, Phone Display Pill, Divider)
+   -------------------------------------------------------------------------- */
+.esc-nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.esc-nav-divider {
+  display: inline-block;
+  width: 1px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0.28);
+  margin: 0 12px 0 6px;
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.esc-btn-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  cursor: pointer;
+}
+
+.esc-btn-circle-call {
+  background-color: #fecd2a;
+  color: #202d7c;
+  box-shadow: 0 3px 10px rgba(254, 205, 42, 0.25);
+}
+
+.esc-btn-circle-call:hover {
+  background-color: #ffd200;
+  color: #162060;
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(254, 205, 42, 0.4);
+}
+
+.esc-btn-circle-wa {
+  background-color: #25d366;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.25);
+}
+
+.esc-btn-circle-wa:hover {
+  background-color: #20ba5a;
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+.esc-btn-phone-display {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fecd2a;
+  color: #202d7c;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.08rem;
+  letter-spacing: 0.2px;
+  padding: 8px 22px;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(254, 205, 42, 0.25);
+  white-space: nowrap;
+  user-select: text;
+  cursor: default;
+}
+
+/* Mobile Dropdown Contact Actions Group */
+.esc-mobile-contact-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 0 4px 0;
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .esc-nav-links {
+    gap: 18px;
+  }
+  .esc-nav-links a {
+    font-size: 1.05rem;
+  }
+  .esc-btn-phone-display {
+    font-size: 0.96rem;
+    padding: 7px 16px;
+  }
+  .esc-btn-circle {
+    width: 38px;
+    height: 38px;
+    font-size: 1.15rem;
+  }
 }
 
 /* Mobile Header & Three-Bar Hamburger Toggler */
@@ -5575,6 +5682,104 @@ img {
 
   .esc-toggler-bar {
     width: 20px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile-Only Phone Badge in Hero Banner (Top-Right Marked Position)
+   -------------------------------------------------------------------------- */
+.esc-hero-mobile-badge-wrap {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 10;
+}
+
+.esc-hero-mobile-phone-card {
+  font-size: 0.88rem;
+  padding: 6px 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(254, 205, 42, 0.35);
+  display: inline-flex;
+}
+
+@media (max-width: 420px) {
+  .esc-hero-mobile-badge-wrap {
+    top: 10px;
+    right: 12px;
+  }
+  .esc-hero-mobile-phone-card {
+    font-size: 0.8rem;
+    padding: 5px 11px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Fixed Floating WhatsApp Button (Desktop & Mobile)
+   -------------------------------------------------------------------------- */
+.esc-floating-whatsapp {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  width: 58px;
+  height: 58px;
+  background-color: #25d366;
+  color: #ffffff !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.95rem;
+  text-decoration: none !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45), 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1050;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.esc-floating-whatsapp:hover {
+  background-color: #20ba5a;
+  color: #ffffff !important;
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6), 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.esc-floating-whatsapp:active {
+  transform: scale(0.95);
+}
+
+/* Pulsing aura effect */
+.esc-floating-whatsapp-pulse {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid #25d366;
+  opacity: 0.75;
+  animation: escWaPulse 2.4s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+}
+
+@keyframes escWaPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .esc-floating-whatsapp {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.75rem;
   }
 }
 
