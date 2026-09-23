@@ -5753,13 +5753,38 @@ img {
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
-  padding: 10px 0 2px 0;
+  padding-block: 10px 2px;
+}
+
+/* Under 768px the logo, toggler and these controls cannot share a line, so the
+   bar takes its own. Bootstrap's flex-nowrap on the row would stop it wrapping,
+   hence the override; col-12 supplies the full width that forces the break. */
+@media (max-width: 767.98px) {
+  .esc-nav-row {
+    flex-wrap: wrap !important;
+  }
+}
+
+/* 768px and up (but still below lg, where the desktop nav takes over) there is
+   room for one line, so the controls sit beside the toggler instead of adding a
+   second row. order puts them left of it; col-md-auto has already dropped the
+   full width. */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .esc-mobile-contact-bar {
+    order: 1;
+    margin-left: auto;
+    margin-right: 16px;
+    padding-block: 0;
+  }
+  .esc-nav-toggle-col {
+    order: 2;
+  }
 }
 
 @media (max-width: 420px) {
   .esc-mobile-contact-bar {
     gap: 10px;
-    padding: 8px 0 2px 0;
+    padding-block: 8px 2px;
   }
   .esc-mobile-contact-bar .esc-btn-phone-display {
     font-size: 1rem;

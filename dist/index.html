@@ -26,7 +26,7 @@
        ========================================================================= -->
   <nav class="esc-navbar-section">
     <div class="container-fluid px-3 px-lg-5">
-      <div class="row align-items-center justify-content-between flex-nowrap">
+      <div class="row align-items-center justify-content-between flex-nowrap esc-nav-row">
         <!-- Logo / Brand -->
         <div class="col-auto d-flex align-items-center">
           <a href="#" class="esc-nav-brand text-decoration-none">
@@ -59,27 +59,29 @@
         </div>
 
         <!-- Mobile Right: Three-Bar Hamburger Button -->
-        <div class="col-auto d-lg-none text-end">
+        <div class="col-auto d-lg-none text-end esc-nav-toggle-col">
           <button class="esc-navbar-toggler" type="button" id="escMobileMenuToggle" aria-label="Toggle navigation menu" onclick="toggleEscMobileNav()">
             <span class="esc-toggler-bar esc-bar-1"></span>
             <span class="esc-toggler-bar esc-bar-2"></span>
             <span class="esc-toggler-bar esc-bar-3"></span>
           </button>
         </div>
-      </div>
 
-      <!-- Mobile Contact Bar: lives INSIDE the sticky navbar, so it sticks with
-           the header without hard-coding the header's height, holds its place
-           when the drawer expands below it, and sits on the navbar's own navy
-           with no seam. d-lg-none: the desktop nav carries these inline. -->
-      <div class="esc-mobile-contact-bar d-lg-none">
-        <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722">
-          <i class="bi bi-telephone-fill"></i>
-        </a>
-        <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-        <span class="esc-btn-phone-display">+91-98844 57722</span>
+        <!-- Mobile Contact Bar. Inside the header row, so below lg it is one
+             line with the logo and toggler where there is room, and its own
+             line on phones where there is not. col-12 col-md-auto does that
+             width switch; the CSS only has to allow the wrap and set order.
+             Inside the sticky <nav>, so it sticks with the header and sits on
+             the navbar's own navy with no seam. -->
+        <div class="col-12 col-md-auto d-lg-none esc-mobile-contact-bar">
+          <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+          <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <span class="esc-btn-phone-display">+91-98844 57722</span>
+        </div>
       </div>
 
       <!-- Mobile Navigation Collapse Drawer -->
