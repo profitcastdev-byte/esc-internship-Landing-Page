@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" preserveAspectRatio="xMaxYMax meet" fill="none">
+  <defs>
+    <!-- Left-to-right fade gradient mask so the skyline fades in gracefully from behind the flight loop -->
+    <linearGradient id="skylineFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="10%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+    
+    <mask id="skylineMask">
+      <rect x="0" y="0" width="1100" height="320" fill="url(#skylineFade)"/>
+    </mask>
+
+    <!-- Warm golden yellow tone that harmonizes seamlessly with the yellow card -->
+    <linearGradient id="monumentColor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ebba00" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#e2af00" stop-opacity="0.58"/>
+      <stop offset="100%" stop-color="#d69f00" stop-opacity="0.68"/>
+    </linearGradient>
+
+    <!-- Cutout mask for Colosseum arches so the background shines through -->
+    <mask id="colosseumMask">
+      <rect x="0" y="0" width="1100" height="320" fill="#ffffff" />
+      <!-- Tier 1 top windows -->
+      <rect x="476" y="195" width="7" height="13" rx="3.5" fill="#000000" />
+      <rect x="488" y="195" width="7" height="13" rx="3.5" fill="#000000" />
+      <rect x="500" y="195" width="7" height="13" rx="3.5" fill="#000000" />
+      <rect x="512" y="195" width="7" height="13" rx="3.5" fill="#000000" />
+      <rect x="524" y="195" width="7" height="13" rx="3.5" fill="#000000" />
+      <rect x="536" y="195" width="7" height="13" rx="3.5" fill="#000000" />
+      <rect x="548" y="195" width="7" height="13" rx="3.5" fill="#000000" />
+      <!-- Tier 2 middle arcade -->
+      <rect x="476" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <rect x="490" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <rect x="504" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <rect x="518" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <rect x="532" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <rect x="546" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <rect x="560" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <rect x="574" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <rect x="588" y="220" width="8" height="18" rx="4" fill="#000000" />
+      <!-- Tier 3 ground arcade -->
+      <rect x="476" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+      <rect x="492" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+      <rect x="508" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+      <rect x="524" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+      <rect x="540" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+      <rect x="556" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+      <rect x="572" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+      <rect x="588" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+      <rect x="604" y="252" width="9" height="24" rx="4.5" fill="#000000" />
+    </mask>
+  </defs>
+
+  <g mask="url(#skylineMask)">
+    <!-- Ground baseline -->
+    <rect x="0" y="312" width="1100" height="8" fill="url(#monumentColor)"/>
+
+    <!-- 1. European Gothic Spires & Turrets (Left flourish) (x: 40 - 300) -->
+    <g fill="url(#monumentColor)">
+      <path d="M 50,312 L 50,260 L 60,230 L 70,260 L 70,312 Z" />
+      <path d="M 70,312 L 70,240 L 82,205 L 94,240 L 94,312 Z" />
+      <polygon points="82,175 80,205 84,205" />
+      <path d="M 94,312 L 94,270 L 110,270 L 110,312 Z" />
+      <path d="M 108,312 L 108,220 L 120,170 L 132,220 L 132,312 Z" />
+      <polygon points="120,140 118,170 122,170" />
+      <path d="M 132,312 L 132,240 L 145,210 L 158,240 L 158,312 Z" />
+      <path d="M 158,312 L 158,225 Q 172,195 186,225 L 186,312 Z" />
+      <rect x="168" y="180" width="8" height="24" />
+      <polygon points="172,160 168,180 176,180" />
+      <path d="M 186,312 L 186,210 L 198,165 L 210,210 L 210,312 Z" />
+      <path d="M 210,312 L 210,255 L 225,230 L 240,255 L 240,312 Z" />
+      <path d="M 238,312 L 238,200 L 252,150 L 266,200 L 266,312 Z" />
+      <polygon points="252,120 250,150 254,150" />
+      <path d="M 266,312 L 266,260 L 285,260 L 285,312 Z" />
+      <path d="M 285,312 L 285,230 L 298,195 L 311,230 L 311,312 Z" />
+    </g>
+
+    <!-- 2. Eiffel Tower (Paris) (x: 320 - 450) -->
+    <g fill="url(#monumentColor)">
+      <!-- Left leg & base arch -->
+      <path d="M 326,312 L 354,208 L 368,208 L 358,312 C 348,308 338,310 326,312 Z" />
+      <!-- Right leg & base arch -->
+      <path d="M 444,312 L 416,208 L 402,208 L 412,312 C 422,308 432,310 444,312 Z" />
+      <!-- Parabolic Base Arch -->
+      <path d="M 350,312 Q 385,232 420,312 Q 385,260 350,312 Z" />
+      
+      <!-- Tier 1 Platform -->
+      <rect x="348" y="202" width="74" height="7" rx="1.5" />
+      <!-- Tier 1 to Tier 2 Tapering Body -->
+      <path d="M 358,202 L 371,130 L 399,130 L 412,202 Z" />
+      <!-- Tier 2 Platform -->
+      <rect x="368" y="125" width="34" height="6" rx="1.5" />
+      
+      <!-- Tier 2 to Summit Spire -->
+      <path d="M 374,125 L 382,45 L 388,45 L 396,125 Z" />
+      <!-- Summit Observation Deck & Cupola -->
+      <rect x="380" y="40" width="10" height="5" rx="1.5" />
+      <path d="M 381,40 Q 385,28 389,40 Z" />
+      <!-- Spire Mast -->
+      <line x1="385" y1="28" x2="385" y2="8" stroke="#d69f00" stroke-width="3" stroke-linecap="round" />
+      <circle cx="385" cy="6" r="2.5" />
+    </g>
+
+    <!-- 3. Roman Colosseum (Rome) (x: 465 - 625) with transparent cutout arches -->
+    <g fill="url(#monumentColor)" mask="url(#colosseumMask)">
+      <!-- Main outer structure with stepped ruin silhouette -->
+      <path d="M 468,312 L 468,186 
+               L 556,186 
+               L 564,208 
+               L 600,208 
+               L 608,232 
+               L 624,232 
+               L 624,312 Z" />
+    </g>
+
+    <!-- 4. Sagrada Família / Gothic Spire Clusters (Barcelona) (x: 640 - 785) -->
+    <g fill="url(#monumentColor)">
+      <!-- Spire 1 (outer left) -->
+      <path d="M 646,312 L 651,170 Q 657,125 663,95 Q 669,125 675,170 L 680,312 Z" />
+      <circle cx="663" cy="89" r="4.5" />
+      <polygon points="663,75 661,86 665,86" />
+
+      <!-- Spire 2 (center left, tallest) -->
+      <path d="M 680,312 L 685,150 Q 693,100 701,65 Q 709,100 717,150 L 722,312 Z" />
+      <circle cx="701" cy="59" r="5.5" />
+      <polygon points="701,44 699,55 703,55" />
+
+      <!-- Spire 3 (center right, tallest) -->
+      <path d="M 722,312 L 727,150 Q 735,100 743,65 Q 751,100 759,150 L 764,312 Z" />
+      <circle cx="743" cy="59" r="5.5" />
+      <polygon points="743,44 741,55 745,55" />
+
+      <!-- Spire 4 (outer right) -->
+      <path d="M 764,312 L 769,170 Q 775,125 781,95 Q 787,125 793,170 L 798,312 Z" />
+      <circle cx="781" cy="89" r="4.5" />
+      <polygon points="781,75 779,86 783,86" />
+
+      <!-- High flying galleries between spires -->
+      <rect x="672" y="160" width="16" height="9" rx="2" />
+      <rect x="714" y="148" width="16" height="9" rx="2" />
+      <rect x="756" y="160" width="16" height="9" rx="2" />
+    </g>
+
+    <!-- 5. Brandenburg Gate (Berlin) (x: 810 - 955) -->
+    <g fill="url(#monumentColor)">
+      <!-- Attic & Entablature -->
+      <rect x="815" y="228" width="138" height="16" rx="1.5" />
+      <rect x="824" y="212" width="120" height="17" rx="1.5" />
+
+      <!-- Classical Doric Columns -->
+      <rect x="824" y="244" width="9" height="68" />
+      <rect x="846" y="244" width="9" height="68" />
+      <rect x="868" y="244" width="9" height="68" />
+      <rect x="890" y="244" width="9" height="68" />
+      <rect x="912" y="244" width="9" height="68" />
+      <rect x="934" y="244" width="9" height="68" />
+      
+      <!-- Quadriga (Chariot with 4 horses & Goddess) -->
+      <!-- Chariot base -->
+      <rect x="868" y="200" width="32" height="13" rx="2" />
+      <!-- Goddess of victory -->
+      <path d="M 876,200 L 880,178 Q 883,172 886,178 L 888,200 Z" />
+      <circle cx="883" cy="170" r="4" />
+      <!-- Staff & Wreath -->
+      <line x1="888" y1="192" x2="895" y2="158" stroke="#d69f00" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="895" cy="158" r="3.5" />
+      <!-- Horses silhouettes -->
+      <path d="M 898,210 L 905,188 L 910,188 L 907,210 Z" />
+      <path d="M 904,210 L 912,189 L 917,189 L 914,210 Z" />
+      <path d="M 856,210 L 862,189 L 867,189 L 864,210 Z" />
+    </g>
+
+    <!-- 6. Traditional Dutch Windmill (Netherlands) (x: 975 - 1090) -->
+    <g fill="url(#monumentColor)">
+      <!-- Smock Mill tapered tower body -->
+      <path d="M 995,312 L 1014,202 L 1056,202 L 1075,312 Z" />
+      <!-- Windmill Cap / Hood -->
+      <path d="M 1010,202 Q 1035,174 1060,202 Z" />
+      <!-- Reefing balcony / stage -->
+      <rect x="1005" y="254" width="60" height="7" rx="2" />
+
+      <!-- Center sail rotor hub -->
+      <circle cx="1035" cy="194" r="7" fill="#b07800" />
+      
+      <!-- 4 Diagonal Sails forming an 'X' -->
+      <!-- Top-Right Sail -->
+      <line x1="1035" y1="194" x2="1095" y2="134" stroke="#d69f00" stroke-width="3.5" stroke-linecap="round" />
+      <rect x="1048" y="131" width="42" height="13" transform="rotate(-45 1048 131)" rx="1.5" />
+
+      <!-- Bottom-Left Sail -->
+      <line x1="1035" y1="194" x2="975" y2="254" stroke="#d69f00" stroke-width="3.5" stroke-linecap="round" />
+      <rect x="983" y="240" width="42" height="13" transform="rotate(-45 983 240)" rx="1.5" />
+
+      <!-- Top-Left Sail -->
+      <line x1="1035" y1="194" x2="975" y2="134" stroke="#d69f00" stroke-width="3.5" stroke-linecap="round" />
+      <rect x="999" y="122" width="42" height="13" transform="rotate(45 999 122)" rx="1.5" />
+
+      <!-- Bottom-Right Sail -->
+      <line x1="1035" y1="194" x2="1095" y2="254" stroke="#d69f00" stroke-width="3.5" stroke-linecap="round" />
+      <rect x="1063" y="186" width="42" height="13" transform="rotate(45 1063 186)" rx="1.5" />
+    </g>
+  </g>
+</svg>

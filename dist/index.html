@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESC - Europe Study Centre | 10-Day Immersion Tour</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/esc-favicon.png">
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Navigation Header (Unique Section Class: esc-navbar-section)
+       ========================================================================= -->
+  <nav class="esc-navbar-section">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="row align-items-center justify-content-between">
+        <!-- Logo / Brand -->
+        <div class="col-auto col-lg-4 d-flex align-items-center">
+          <a href="#" class="esc-nav-brand text-decoration-none">
+            <img src="assets/images/ESC-logo-europ.png" alt="Europe Study Centre" class="esc-nav-logo-img">
+          </a>
+        </div>
+
+        <!-- Navigation Links (Desktop) -->
+        <div class="col-lg-6 d-none d-lg-block">
+          <ul class="esc-nav-links justify-content-center">
+            <li><a href="#destinations">Internship Program</a></li>
+            <li><a href="#inclusions">Program Details</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- CTA Action (Desktop) -->
+        <div class="col-lg-2 d-none d-lg-block text-end esc-nav-cta">
+          <a href="https://wa.me/919884457722" target="_blank" class="esc-btn-whatsapp text-decoration-none">
+            <span>WhatsApp Us</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Right: Three-Bar Hamburger Button -->
+        <div class="col-auto d-lg-none text-end">
+          <button class="esc-navbar-toggler" type="button" id="escMobileMenuToggle" aria-label="Toggle navigation menu" onclick="toggleEscMobileNav()">
+            <span class="esc-toggler-bar esc-bar-1"></span>
+            <span class="esc-toggler-bar esc-bar-2"></span>
+            <span class="esc-toggler-bar esc-bar-3"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Collapse Drawer -->
+      <div class="esc-mobile-nav-collapse d-lg-none" id="escMobileNavCollapse">
+        <ul class="esc-mobile-nav-links">
+          
+          <li><a href="#destinations" onclick="closeEscMobileNav()">Internship Program</a></li>
+          <li><a href="#inclusions" onclick="closeEscMobileNav()">Program Details</a></li>
+          <li><a href="#about" onclick="closeEscMobileNav()">About</a></li>
+          <li><a href="#contact" onclick="closeEscMobileNav()">Contact</a></li>
+        </ul>
+        <div class="esc-mobile-nav-cta">
+          <a href="https://wa.me/" target="_blank" class="esc-btn-whatsapp text-decoration-none w-100 justify-content-center" onclick="closeEscMobileNav()">
+            <span>WhatsApp Us</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       Section 1: Hero Banner (Unique Section Class: esc-hero-banner-section)
+       ========================================================================= -->
+  <section class="esc-hero-banner-section">
+    <div id="escHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+      
+      <!-- Carousel Slides -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="esc-hero-slider-bg-wrap">
+            <img src="assets/images/top-banner2.png" alt="Free European Internship Program" class="esc-hero-slider-bg-img esc-hero-bg-desktop">
+            <img src="assets/images/bg-map.png" alt="Europe Map Background" class="esc-hero-slider-bg-img esc-hero-bg-mobile">
+            <div class="esc-hero-slider-overlay"></div>
+          </div>
+          <div class="container-fluid px-3 px-lg-5 position-relative esc-hero-content-layer">
+            <div class="row align-items-center esc-hero-slide-row">
+              <div class="col-xl-7 col-lg-7 col-md-10">
+
+                <!-- Title matching reference graphic -->
+                <h1 class="esc-hero-slider-title">
+                  <span class="esc-hero-title-free">FREE</span>
+                  <span class="esc-hero-title-navy">INTERNSHIP</span>
+                  <div class="esc-hero-title-badge-wrap">
+                    <span class="esc-hero-title-badge">IN EUROPE</span>
+                  </div>
+                  <div class="esc-hero-title-bar"></div>
+                </h1>
+
+                <!-- Paragraph -->
+                <p class="esc-hero-slider-desc">
+                  Powered by Europe Study Centre
+                </p>
+
+                <!-- Two Buttons -->
+                <div class="esc-hero-btn-row">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" class="esc-btn-pathway text-decoration-none">
+                    <span>Enroll Now</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                  </a>
+                  <a href="https://chat.whatsapp.com/C9IguMKPyT6AAwT5u6CmqG" target="_blank" rel="noopener noreferrer" class="esc-btn-whatsapp-hero text-decoration-none">
+                    <i class="bi bi-whatsapp"></i>
+                    <span>Join our WhatsApp community</span>
+                  </a>
+                  <!-- Paragraph -->
+                    <!--<p class="esc-hero-btn-desc align-items-center">-->
+                    <!--  Scan the QR Code for <br>upcoming internships-->
+                    <!--</p>-->
+                <!-- QR Code Image -->
+                    <!--<img src="assets/images/EU-QRcode.jpeg" alt="Scan QR Code" class="esc-hero-qr-img">-->
+                  <!--<a href="https://wa.me/" target="_blank" class="esc-btn-whatsapp-hero text-decoration-none">-->
+                  <!--  <span>WhatsApp ESC</span>-->
+                  <!--</a>-->
+                </div>
+
+              </div>
+
+              <!-- Right Area: Airplane Flight Path & Duration Stamp -->
+              <div class="col-xl-5 col-lg-5 d-flex justify-content-end align-items-start position-relative">
+                <div class="esc-hero-duration-badge-wrap">
+                  <!-- Flight path with airplane -->
+                  <div class="esc-hero-flight-item d-none d-xl-flex align-items-center">
+                    <svg class="esc-hero-flight-svg" viewBox="0 0 170 85" fill="none">
+                      <path d="M 10,75 C 55,10 115,15 155,42" stroke="#005dd4" stroke-width="2.2" stroke-dasharray="5 5" stroke-linecap="round"/>
+                      <g transform="translate(150, 36) rotate(40) scale(0.9)">
+                        <path d="M0 -14 L3 -5 L13 0 L3 3 L2 11 L0 9 L-2 11 L-3 3 L-13 0 L-3 -5 Z" fill="#005dd4" />
+                      </g>
+                    </svg>
+                  </div>
+
+                  <!-- Duration Stamp SVG (2 Weeks) -->
+                  <!--<div class="esc-hero-stamp-badge" title="Internship Duration: 2 Weeks">-->
+                  <!--  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" class="esc-stamp-svg">-->
+                  <!--    <g transform="rotate(-12 120 120)">-->
+                        <!-- Outer dashed stamp circle -->
+                  <!--      <circle cx="120" cy="120" r="94" fill="rgba(255,255,255,0.96)" stroke="#005dd4" stroke-width="2.4" stroke-dasharray="16 6 8 5" opacity="0.9" />-->
+                  <!--      <circle cx="120" cy="120" r="89" fill="none" stroke="#005dd4" stroke-width="1.2" stroke-dasharray="35 10 12 6" opacity="0.4" />-->
+                        
+                        <!-- Top label: Duration -->
+                  <!--      <text x="120" y="70" text-anchor="middle" fill="#001643" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="24" letter-spacing="0.4">Duration</text>-->
+                        
+                        <!-- Brush Stroke Banner with bristles -->
+                  <!--      <path d="M 10,118 -->
+                  <!--               C 6,114 16,104 26,102 -->
+                  <!--               C 42,99 200,98 214,101 -->
+                  <!--               C 220,102 230,107 232,112 -->
+                  <!--               C 234,117 224,122 228,127 -->
+                  <!--               C 230,132 222,137 216,139 -->
+                  <!--               C 196,142 45,143 30,141 -->
+                  <!--               C 20,139 25,132 18,128 -->
+                  <!--               C 14,124 8,121 10,118 Z" -->
+                  <!--            fill="#005dd4" />-->
+                              
+                        <!-- Decorative brush bristles -->
+                  <!--      <path d="M 12,109 L 24,105 M 6,123 L 20,125 M 224,107 L 234,110 M 220,135 L 232,131 M 14,133 L 26,135" -->
+                  <!--            stroke="#005dd4" stroke-width="3" stroke-linecap="round" />-->
+                              
+                        <!-- 2 Weeks Text -->
+                  <!--      <text x="120" y="129" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="0.3">2 Weeks</text>-->
+                  <!--    </g>-->
+                  <!--  </svg>-->
+                  <!--</div>-->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <!--<div class="carousel-item">-->
+        <!--  <div class="esc-hero-slider-bg-wrap">-->
+        <!--    <img src="assets/images/hero-slide-2.jpg" alt="Historic European Universities" class="esc-hero-slider-bg-img">-->
+        <!--    <div class="esc-hero-slider-overlay"></div>-->
+        <!--  </div>-->
+        <!--  <div class="container-fluid px-3 px-lg-5 position-relative esc-hero-content-layer">-->
+        <!--    <div class="row align-items-center esc-hero-slide-row">-->
+        <!--      <div class="col-xl-6 col-lg-7 col-md-10">-->
+                <!-- Left Pill -->
+        <!--        <div class="esc-hero-pill-wrap">-->
+        <!--          <span class="esc-hero-pill">100% INSTITUTIONAL FOCUS / ZERO TUITION</span>-->
+        <!--        </div>-->
+
+                <!-- Title -->
+        <!--        <h1 class="esc-hero-slider-title">-->
+        <!--          Direct bridge to <span class="esc-hero-yellow">Europe's top</span> public universities.-->
+        <!--        </h1>-->
+
+                <!-- Paragraph -->
+        <!--        <p class="esc-hero-slider-desc">-->
+        <!--          Study in Germany, Czechia, Hungary & Slovenia. Access accredited engineering labs, interactive faculty masterclasses, and genuine European research opportunities.-->
+        <!--        </p>-->
+
+                <!-- Two Buttons -->
+        <!--        <div class="esc-hero-btn-row">-->
+        <!--          <a href="#destinations" class="esc-btn-pathway text-decoration-none">-->
+        <!--            <span>Explore Universities</span>-->
+        <!--            <i class="bi bi-arrow-up-right"></i>-->
+        <!--          </a>-->
+        <!--          <a href="https://wa.me/" target="_blank" class="esc-btn-whatsapp-hero text-decoration-none">-->
+        <!--            <span>WhatsApp ESC</span>-->
+        <!--          </a>-->
+        <!--        </div>-->
+
+                <!-- Left icon with text -->
+        <!--        <div class="esc-hero-trust-badge">-->
+        <!--          <i class="bi bi-shield-check"></i>-->
+        <!--          <span>State-accredited degrees. Officially recognized globally.</span>-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!--</div>-->
+
+        <!-- Slide 3 -->
+        <!--<div class="carousel-item">-->
+        <!--  <div class="esc-hero-slider-bg-wrap">-->
+        <!--    <img src="assets/images/hero-slide-3.jpg" alt="European Capitals and Student Life" class="esc-hero-slider-bg-img">-->
+        <!--    <div class="esc-hero-slider-overlay"></div>-->
+        <!--  </div>-->
+        <!--  <div class="container-fluid px-3 px-lg-5 position-relative esc-hero-content-layer">-->
+        <!--    <div class="row align-items-center esc-hero-slide-row">-->
+        <!--      <div class="col-xl-6 col-lg-7 col-md-10">-->
+                <!-- Left Pill -->
+        <!--        <div class="esc-hero-pill-wrap">-->
+        <!--          <span class="esc-hero-pill">10-DAY ACADEMIC IMMERSION / SUMMER 2025</span>-->
+        <!--        </div>-->
+
+                <!-- Title -->
+        <!--        <h1 class="esc-hero-slider-title">-->
+        <!--          Four countries in <span class="esc-hero-yellow">one seamless</span> academic tour.-->
+        <!--        </h1>-->
+
+                <!-- Paragraph -->
+        <!--        <p class="esc-hero-slider-desc">-->
+        <!--          Traverse 29 Schengen nations under one single visa. Experience curated campus lectures, cutting-edge industry visits, and rich cultural heritage in 10 unforgettable days.-->
+        <!--        </p>-->
+
+                <!-- Two Buttons -->
+        <!--        <div class="esc-hero-btn-row">-->
+        <!--          <a href="#inclusions" class="esc-btn-pathway text-decoration-none">-->
+        <!--            <span>View 10-Day Tour</span>-->
+        <!--            <i class="bi bi-arrow-up-right"></i>-->
+        <!--          </a>-->
+        <!--          <a href="https://wa.me/" target="_blank" class="esc-btn-whatsapp-hero text-decoration-none">-->
+        <!--            <span>WhatsApp ESC</span>-->
+        <!--          </a>-->
+        <!--        </div>-->
+
+                <!-- Left icon with text -->
+        <!--        <div class="esc-hero-trust-badge">-->
+        <!--          <i class="bi bi-shield-check"></i>-->
+        <!--          <span>All-inclusive stay, transit & official university certs.</span>-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!--</div>-->
+
+      </div>
+
+      <!-- Bottom Center Controls (Inner dot with outer white border & Left/Right icons) -->
+      <!--<div class="esc-hero-bottom-controls">-->
+        <!-- Left Arrow -->
+      <!--  <button class="esc-carousel-arrow-btn" type="button" data-bs-target="#escHeroCarousel" data-bs-slide="prev" aria-label="Previous">-->
+      <!--    <i class="bi bi-chevron-left"></i>-->
+      <!--  </button>-->
+
+        <!-- Center Indicator Dots (Target / Dot inside outer ring) -->
+      <!--  <div class="esc-carousel-target-indicators">-->
+      <!--    <button type="button" data-bs-target="#escHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">-->
+      <!--      <span class="esc-target-outer-ring">-->
+      <!--        <span class="esc-target-inner-dot"></span>-->
+      <!--      </span>-->
+      <!--    </button>-->
+      <!--    <button type="button" data-bs-target="#escHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2">-->
+      <!--      <span class="esc-target-outer-ring">-->
+      <!--        <span class="esc-target-inner-dot"></span>-->
+      <!--      </span>-->
+      <!--    </button>-->
+      <!--    <button type="button" data-bs-target="#escHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3">-->
+      <!--      <span class="esc-target-outer-ring">-->
+      <!--        <span class="esc-target-inner-dot"></span>-->
+      <!--      </span>-->
+      <!--    </button>-->
+      <!--  </div>-->
+
+        <!-- Right Arrow -->
+      <!--  <button class="esc-carousel-arrow-btn" type="button" data-bs-target="#escHeroCarousel" data-bs-slide="next" aria-label="Next">-->
+      <!--    <i class="bi bi-chevron-right"></i>-->
+      <!--  </button>-->
+      <!--</div>-->
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Section 4: Four Countries. One Journey (Unique Section Class: esc-four-countries-section)
+       ========================================================================= -->
+  <section class="esc-four-countries-section" id="destinations">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-four-countries-wrapper">
+        <div class="row">
+          <div class="col-12">
+            <!-- Main Title -->
+            <h2 class="esc-countries-main-title">
+              Upcoming <span class="esc-countries-yellow-text">FREE Internships.</span>
+            </h2>
+            <!-- Paragraph -->
+            <p class="esc-countries-subtext">
+              Choose from specialised technical and management tracks at ESC's partner institutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- 11 Upcoming Free Internships Cards Grid -->
+        <div class="row g-4 mt-1">
+          <!-- Card 1: Supercomputing -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/supercomputing.jpg" alt="Internship in Supercomputing" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Supercomputing</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Novo Mesto, Slovenia</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: AI, Cybersecurity and Data Analytics -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/ai-cybersecurity.jpg" alt="Internship in AI, Cybersecurity and Data Analytics" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in AI, Cybersecurity and Data Analytics</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">International Business School, Hungary</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Electronics/Mechatronics/Robotics -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/robotics.jpg" alt="Internship in Electronics/Mechatronics/Robotics" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Electronics / Mechatronics / Robotics</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Technical University of Liberec, Czech Republic</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Hydrogen Technology, Mechanical and Automobile -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/hydrogen-tech.jpg" alt="Internship in Hydrogen Technology, Mechanical and Automobile" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Hydrogen Technology, Mechanical and Automobile</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Technical University of Kosice, Slovakia</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Mechanical and Automobile (Liberec) -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/mechanical-liberec.jpg" alt="Internship in Mechanical and Automobile" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Mechanical and Automobile</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Technical University of Liberec, Czech Republic</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Mechanical and Automobile (Ostrava) -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/mechanical-ostrava.jpg" alt="Internship in Mechanical and Automobile" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Mechanical and Automobile</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Technical University of Ostrava, Czech Republic</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Biomedical -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/biomedical.jpg" alt="Internship in Biomedical" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Biomedical</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Technical University of Kosice, Slovakia</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Civil and Architecture -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/civil-architecture.jpg" alt="Internship in Civil and Architecture" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Civil and Architecture</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Technical University of Ostrava, Czech Republic</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9: Management -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/management.jpg" alt="Internship in Management" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Management</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">International Business School, Hungary</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10: Finance, Banking and Investment -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/finance-investment.jpg" alt="Internship in Finance, Banking and Investment" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Finance, Banking and Investment</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Technical University of Kosice, Slovakia</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 11: Marketing and Finance -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+            <div class="esc-intern-card">
+              <div class="esc-intern-card-img-wrap">
+                <img src="assets/images/internships/marketing-finance.jpg" alt="Internship in Marketing and Finance" class="esc-intern-card-img" loading="lazy">
+              </div>
+              <div class="esc-intern-card-body">
+                <h3 class="esc-intern-card-title">Internship in Marketing and Finance</h3>
+                <div class="esc-intern-card-location">
+                  <i class="bi bi-geo-alt-fill esc-intern-location-icon"></i>
+                  <span class="esc-intern-location-text">Technical University of Ostrava, Czech Republic</span>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-intern-card-btn">
+                  <span>Enroll Now</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 5: Program Inclusions & Breakdown (Unique Section Class: esc-program-inclusions-section)
+       ========================================================================= -->
+  <section class="esc-program-inclusions-section" id="inclusions">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-inclusions-card-panel">
+
+        <!-- Two Cards Row -->
+        <div class="row g-4">
+
+          <!-- Card 1: Program Duration -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="esc-inc-box esc-inc-box-duration">
+              <!-- Rounded icon bg -->
+              <div class="esc-inc-icon-wrap esc-icon-blue">
+                <i class="bi bi-calendar-event"></i>
+              </div>
+              <h3 class="esc-inc-card-title">Program Duration</h3>
+              
+              <!-- Days text & para -->
+              <div class="esc-inc-duration-val">2 Weeks</div>
+            </div>
+          </div>
+
+          <!-- Card 2: Activities -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="esc-inc-box esc-inc-box-activities">
+              <!-- Rounded icon bg -->
+              <div class="esc-inc-icon-wrap esc-icon-green">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h3 class="esc-inc-card-title">Activities</h3>
+              
+              <!-- Green dots and points -->
+              <ul class="esc-inc-list">
+                <li>
+                  <span class="esc-dot-bullet esc-bullet-green"></span>
+                  <span>Practical exposure to key technical areas</span>
+                </li>
+                <li>
+                  <span class="esc-dot-bullet esc-bullet-green"></span>
+                  <span>Company visits</span>
+                </li>
+                <li>
+                  <span class="esc-dot-bullet esc-bullet-green"></span>
+                  <span>Interactions with professors and researchers</span>
+                </li>
+                <li>
+                  <span class="esc-dot-bullet esc-bullet-green"></span>
+                  <span>A few classes alongside other students</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 6: Learn Explore Grow (Unique Section Class: esc-learn-explore-grow-section)
+       ========================================================================= -->
+  <section class="esc-learn-explore-grow-section" id="roadmap">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-leg-wrapper">
+         <!--Section Header -->
+        <div class="row">
+          <div class="col-12">
+             <!--Left side text with yellow line -->
+            <!--<div class="esc-leg-header-tag">-->
+            <!--  <span class="esc-leg-tag-text">Free Internship Program in Europe</span>-->
+            <!--  <span class="esc-leg-yellow-line"></span>-->
+            <!--</div>-->
+             <!--Main Title -->
+            <h2 class="esc-leg-title">
+              Learn. Explore. <span class="esc-leg-yellow-text">Grow.</span>
+            </h2>
+             <!--Paragraph -->
+            <p class="esc-leg-subtitle">
+              2-weeks, fully guided internship experience hosted at technical and business universities across the schengen countries.
+            </p>
+          </div>
+        </div>
+
+         <!--Three Cards Row (3-Column Layout) -->
+        <div class="row g-4 mt-1">
+           <!--Card 1: International Exposure -->
+          <div class="col-lg-4 col-12">
+            <div class="esc-leg-card">
+               <!--Top Left Yellow Tag with Icon -->
+              <div class="esc-leg-tab-tag">
+                <i class="bi bi-globe esc-leg-tab-icon"></i>
+              </div>
+               <!--Top Right Number Watermark -->
+              <div class="esc-leg-card-num">01</div>
+              
+               <!--Content -->
+              <div class="esc-leg-card-content">
+                <h3 class="esc-leg-card-title">International exposure</h3>
+                <p class="esc-leg-card-text">
+                  Step onto a European campus and experience how research, industry, and academia connect outside India.
+                </p>
+                <!--<div class="esc-leg-arrow-btn">-->
+                <!--  <i class="bi bi-chevron-right"></i>-->
+                <!--</div>-->
+              </div>
+
+               <!--Bottom Right Image Tag -->
+              <div class="esc-leg-illustration-wrap">
+                <img src="assets/images/illustration-globe-flight.svg" alt="International exposure" class="esc-leg-illustration-img">
+              </div>
+            </div>
+          </div>
+
+           <!--Card 2: Build Your Skills -->
+          <div class="col-lg-4 col-12">
+            <div class="esc-leg-card">
+               <!--Top Left Yellow Tag with Icon -->
+              <div class="esc-leg-tab-tag">
+                <i class="bi bi-gear esc-leg-tab-icon"></i>
+              </div>
+               <!--Top Right Number Watermark -->
+              <div class="esc-leg-card-num">02</div>
+              
+               <!--Content -->
+              <div class="esc-leg-card-content">
+                <h3 class="esc-leg-card-title">Build your skills</h3>
+                <p class="esc-leg-card-text">
+                  Hands-on labs, live demonstrations, and technical sessions led by professors and researchers in your field.
+                </p>
+                <!--<div class="esc-leg-arrow-btn">-->
+                <!--  <i class="bi bi-chevron-right"></i>-->
+                <!--</div>-->
+              </div>
+
+               <!--Bottom Right Image Tag -->
+              <div class="esc-leg-illustration-wrap">
+                <img src="assets/images/illustration-education-books.svg" alt="Build your skills" class="esc-leg-illustration-img">
+              </div>
+            </div>
+          </div>
+
+           <!--Card 3: Explore New Opportunities -->
+          <div class="col-lg-4 col-12">
+            <div class="esc-leg-card">
+               <!--Top Left Yellow Tag with Icon -->
+              <div class="esc-leg-tab-tag">
+                <i class="bi bi-people esc-leg-tab-icon"></i>
+              </div>
+               <!--Top Right Number Watermark -->
+              <div class="esc-leg-card-num">03</div>
+              
+               <!--Content -->
+              <div class="esc-leg-card-content">
+                <h3 class="esc-leg-card-title">Explore new opportunities</h3>
+                <p class="esc-leg-card-text">
+                  Meet international students, visit companies, and open doors to future study or internship pathways.
+                </p>
+                <!--<div class="esc-leg-arrow-btn">-->
+                <!--  <i class="bi bi-chevron-right"></i>-->
+                <!--</div>-->
+              </div>
+
+               <!--Bottom Right Image Tag -->
+              <div class="esc-leg-illustration-wrap">
+                <img src="assets/images/illustration-signpost-path.svg" alt="Explore new opportunities" class="esc-leg-illustration-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 7: About Europe Study Centre (Unique Section Class: esc-about-centre-section)
+       ========================================================================= -->
+  <section class="esc-about-centre-section" id="about">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-about-card-panel">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-5 col-12 pe-lg-4">
+
+            <!-- 2. Title -->
+            <h2 class="esc-about-title">
+              EU Internships powered by<br>
+              <span class="esc-about-title-blue">Europe Study Centre</span>
+            </h2>
+
+            <!-- 3. Yellow Line -->
+            <div class="esc-about-yellow-line"></div>
+
+            <!-- 4. Paragraphs -->
+            <p class="esc-about-para">
+              Europe Study Centre(ESC) is a leading overseas education consultancy with over 15 years of experience guiding Indian students to top ranked public universities across Schengen countries including Germany, France, Italy, Spain, the Netherlands, Belgium, Slovakia, and Hungary offering access to affordable, high quality, research driven education.
+            </p>
+            <p class="esc-about-para">
+              Unlike agencies that promote high cost or commission based institutions, ESC focuses exclusively on public universities known for academic excellence and global recognition, with end-to-end support from admissions to on-ground assistance.
+            </p>
+
+            <!-- 5. Gradient Color Button with Rounded Right Arrow Icon -->
+            <div class="esc-about-btn-wrap">
+              <a href="https://www.europestudycentre.com/" class="esc-about-gradient-btn">
+                <span>Read more about us</span>
+                <span class="esc-about-btn-arrow">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </a>
+            </div>
+
+            <!-- 6. Horizontal Line -->
+            <div class="esc-about-h-line"></div>
+
+            <!-- 7. Left Yellow Rounded Icon + Vertical Line + Text Content -->
+            <div class="esc-about-feature-box">
+              <div class="esc-about-globe-badge">
+                <i class="bi bi-globe"></i>
+              </div>
+              <div class="esc-about-v-line"></div>
+              <div class="esc-about-feature-text">
+                <div class="esc-about-feature-sub">One Schengen visa opens the door to</div>
+                <div class="esc-about-feature-val">29 countries</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content: Student Image -->
+          <div class="col-lg-7 col-12 mt-4 mt-lg-0 text-center text-lg-end">
+            <div class="esc-about-img-wrap">
+              <img src="assets/images/about-student-transparent.png" alt="Europe Study Centre" class="esc-about-student-img img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 8: Schengen Visa 29 Countries (Unique Section Class: esc-schengen-visa-section)
+       ========================================================================= -->
+  <section class="esc-schengen-visa-section">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-visa-card-panel">
+        <!-- Soft decorative background corner accents -->
+        <div class="esc-visa-glow-bl"></div>
+        <div class="esc-visa-glow-br"></div>
+
+        <!-- Top Row: Left Info & Right Map Visual -->
+        <div class="row align-items-center position-relative esc-visa-top-row">
+          <!-- Left Column -->
+          <div class="col-lg-7 col-12 pe-lg-4">
+
+            <!-- 2. Title -->
+            <h2 class="esc-visa-heading">
+              One visa. <span class="esc-visa-highlight">29<br>countries.</span>
+            </h2>
+
+            <!-- 3. Paragraph -->
+            <p class="esc-visa-subtext">
+              A single Schengen visa opens a wider European classroom with 29 countries to discover between study, travel and new perspective.
+            </p>
+          </div>
+
+          <!-- Right Column: Map, Flight Trail, Airplane, 29/SCHENGEN Badge -->
+          <div class="col-lg-5 col-12 mt-4 mt-lg-0">
+            <div class="esc-visa-visual-container">
+              <!-- Background Europe Map Vector -->
+              <div class="esc-visa-map-backdrop">
+                <img src="assets/images/europe-map.svg" alt="Europe Map" class="esc-visa-map-img">
+              </div>
+
+              <!-- Dashed Curved Flight Path & Airplane SVG -->
+              <svg class="esc-visa-flight-svg" viewBox="0 0 520 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Flight dashed arc curving up and right from center-south Europe -->
+                <path d="M 245 168 C 255 105, 320 52, 435 26" stroke="#00a896" stroke-width="2.5" stroke-dasharray="6,6" stroke-linecap="round" />
+                <!-- Airplane at top right with subtle shadow -->
+                <g transform="translate(444, 22) rotate(44)" style="filter: drop-shadow(0 0 10px rgba(10, 50, 120, 0.25));">
+                  <path d="M0 -17 C1 -17 3 -15 3 -12 L3 -2.5 L16 5 L16 8 L3 6 L3 13.5 L7 16.5 L7 18.5 L0 17.5 L-7 18.5 L-7 16.5 L-3 13.5 L-3 6 L-16 8 L-16 5 L-3 -2.5 L-3 -12 C-3 -15 -1 -17 0 -17 Z" fill="#0c2b64" />
+                </g>
+              </svg>
+
+              <!-- 29 / SCHENGEN Badge -->
+              <div class="esc-visa-stat-box">
+                <div class="esc-visa-stat-line"></div>
+                <div class="esc-visa-stat-text-wrap">
+                  <div class="esc-visa-stat-num">29 <span class="esc-visa-stat-lbl">SCHENGEN COUNTRIES</span></div>
+                  <div class="esc-visa-stat-lbl"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Carousel Card: Rounded full card with automated moving flags -->
+        <div class="esc-visa-slider-pill">
+          <!-- Track Viewport -->
+          <div class="esc-visa-viewport" id="escVisaViewport">
+            <div class="esc-visa-track" id="escVisaTrack">
+              <!-- Austria -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/at.png" alt="Austria Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Austria</span>
+              </div>
+              <!-- Belgium -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/be.png" alt="Belgium Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Belgium</span>
+              </div>
+              <!-- Bulgaria -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/bg.png" alt="Bulgaria Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Bulgaria</span>
+              </div>
+              <!-- Croatia -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/hr.png" alt="Croatia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Croatia</span>
+              </div>
+              <!-- Czech Republic -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Czech Republic</span>
+              </div>
+              <!-- Denmark -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/dk.png" alt="Denmark Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Denmark</span>
+              </div>
+              <!-- Estonia -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/ee.png" alt="Estonia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Estonia</span>
+              </div>
+              <!-- Finland -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/fi.png" alt="Finland Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Finland</span>
+              </div>
+              <!-- France -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/fr.png" alt="France Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">France</span>
+              </div>
+              <!-- Germany -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Germany</span>
+              </div>
+              <!-- Greece -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/gr.png" alt="Greece Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Greece</span>
+              </div>
+              <!-- Hungary -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/hu.png" alt="Hungary Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Hungary</span>
+              </div>
+              <!-- Iceland -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/is.png" alt="Iceland Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Iceland</span>
+              </div>
+              <!-- Italy -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/it.png" alt="Italy Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Italy</span>
+              </div>
+              <!-- Latvia -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/lv.png" alt="Latvia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Latvia</span>
+              </div>
+              <!-- Liechtenstein -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/li.png" alt="Liechtenstein Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Liechtenstein</span>
+              </div>
+              <!-- Lithuania -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/lt.png" alt="Lithuania Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Lithuania</span>
+              </div>
+              <!-- Luxembourg -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/lu.png" alt="Luxembourg Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Luxembourg</span>
+              </div>
+              <!-- Malta -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/mt.png" alt="Malta Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Malta</span>
+              </div>
+              <!-- Netherlands -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/nl.png" alt="Netherlands Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Netherlands</span>
+              </div>
+              <!-- Norway -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/no.png" alt="Norway Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Norway</span>
+              </div>
+              <!-- Poland -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/pl.png" alt="Poland Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Poland</span>
+              </div>
+              <!-- Portugal -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/pt.png" alt="Portugal Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Portugal</span>
+              </div>
+              <!-- Romania -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/ro.png" alt="Romania Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Romania</span>
+              </div>
+              <!-- Slovakia -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/sk.png" alt="Slovakia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Slovakia</span>
+              </div>
+              <!-- Slovenia -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/si.png" alt="Slovenia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Slovenia</span>
+              </div>
+              <!-- Spain -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/es.png" alt="Spain Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Spain</span>
+              </div>
+              <!-- Sweden -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/se.png" alt="Sweden Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Sweden</span>
+              </div>
+              <!-- Switzerland -->
+              <div class="esc-visa-flag-item">
+                <img src="https://flagcdn.com/w40/ch.png" alt="Switzerland Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Switzerland</span>
+              </div>
+
+              <!-- Duplicate Set for Seamless Continuous Loop -->
+              <!-- Austria -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/at.png" alt="Austria Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Austria</span>
+              </div>
+              <!-- Belgium -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/be.png" alt="Belgium Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Belgium</span>
+              </div>
+              <!-- Bulgaria -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/bg.png" alt="Bulgaria Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Bulgaria</span>
+              </div>
+              <!-- Croatia -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/hr.png" alt="Croatia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Croatia</span>
+              </div>
+              <!-- Czech Republic -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Czech Republic</span>
+              </div>
+              <!-- Denmark -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/dk.png" alt="Denmark Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Denmark</span>
+              </div>
+              <!-- Estonia -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/ee.png" alt="Estonia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Estonia</span>
+              </div>
+              <!-- Finland -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/fi.png" alt="Finland Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Finland</span>
+              </div>
+              <!-- France -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/fr.png" alt="France Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">France</span>
+              </div>
+              <!-- Germany -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Germany</span>
+              </div>
+              <!-- Greece -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/gr.png" alt="Greece Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Greece</span>
+              </div>
+              <!-- Hungary -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/hu.png" alt="Hungary Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Hungary</span>
+              </div>
+              <!-- Iceland -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/is.png" alt="Iceland Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Iceland</span>
+              </div>
+              <!-- Italy -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/it.png" alt="Italy Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Italy</span>
+              </div>
+              <!-- Latvia -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/lv.png" alt="Latvia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Latvia</span>
+              </div>
+              <!-- Liechtenstein -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/li.png" alt="Liechtenstein Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Liechtenstein</span>
+              </div>
+              <!-- Lithuania -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/lt.png" alt="Lithuania Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Lithuania</span>
+              </div>
+              <!-- Luxembourg -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/lu.png" alt="Luxembourg Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Luxembourg</span>
+              </div>
+              <!-- Malta -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/mt.png" alt="Malta Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Malta</span>
+              </div>
+              <!-- Netherlands -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/nl.png" alt="Netherlands Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Netherlands</span>
+              </div>
+              <!-- Norway -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/no.png" alt="Norway Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Norway</span>
+              </div>
+              <!-- Poland -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/pl.png" alt="Poland Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Poland</span>
+              </div>
+              <!-- Portugal -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/pt.png" alt="Portugal Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Portugal</span>
+              </div>
+              <!-- Romania -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/ro.png" alt="Romania Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Romania</span>
+              </div>
+              <!-- Slovakia -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/sk.png" alt="Slovakia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Slovakia</span>
+              </div>
+              <!-- Slovenia -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/si.png" alt="Slovenia Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Slovenia</span>
+              </div>
+              <!-- Spain -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/es.png" alt="Spain Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Spain</span>
+              </div>
+              <!-- Sweden -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/se.png" alt="Sweden Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Sweden</span>
+              </div>
+              <!-- Switzerland -->
+              <div class="esc-visa-flag-item" aria-hidden="true">
+                <img src="https://flagcdn.com/w40/ch.png" alt="Switzerland Flag" class="esc-visa-flag-img">
+                <span class="esc-visa-flag-name">Switzerland</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+  <!-- =========================================================================
+       Section 11: CTA Banner (Unique Section Class: esc-cta-banner-section)
+       ========================================================================= -->
+  <section class="esc-cta-banner-section" id="contact">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-cta-banner-card position-relative">
+        
+        <!-- Subtle concentric decorative rings in background -->
+        <div class="esc-cta-bg-rings" aria-hidden="true">
+          <span class="esc-cta-ring esc-cta-ring-1"></span>
+          <span class="esc-cta-ring esc-cta-ring-2"></span>
+          <span class="esc-cta-ring esc-cta-ring-3"></span>
+        </div>
+
+        <!-- Giant watermark '29' with fading bottom -->
+        <div class="esc-cta-watermark-29" aria-hidden="true">29</div>
+
+        <!-- European Landmarks Skyline across bottom (Paris, Rome, Barcelona, Berlin, Netherlands) -->
+        <div class="esc-cta-skyline-wrap" aria-hidden="true">
+          <img src="assets/images/europe-landmarks-skyline.svg" alt="" class="esc-cta-skyline-img">
+        </div>
+
+        <!-- Flight Path Dashed Loop & 3D Airplane with Shadow -->
+        <div class="esc-cta-flight-wrap" aria-hidden="true">
+          <svg viewBox="0 0 1200 460" preserveAspectRatio="none" class="esc-cta-flight-svg">
+            <defs>
+              <filter id="escPlaneShadow" x="-50%" y="-50%" width="220%" height="220%">
+                <feDropShadow dx="8" dy="14" stdDeviation="6" flood-color="#000000" flood-opacity="0.22" />
+              </filter>
+            </defs>
+
+            <!-- White dashed looped flight trail -->
+            <path class="esc-cta-flight-path" 
+                  d="M 370,290 C 405,335 448,360 505,355 C 560,348 610,280 595,195 C 585,148 528,142 510,185 C 490,230 535,268 590,252 C 655,232 708,168 745,115" 
+                  fill="none" 
+                  stroke="#ffffff" 
+                  stroke-width="2.5" 
+                  stroke-dasharray="6,7" 
+                  stroke-linecap="round" />
+
+            <!-- White 3D commercial jet plane with realistic shadow -->
+            <g transform="translate(745, 110) rotate(42)">
+              <g filter="url(#escPlaneShadow)">
+                <path fill="#ffffff" d="
+                  M 0,-34 
+                  C 2.2,-34 4.8,-28 5.5,-20 
+                  L 7,-6 
+                  L 38,12 
+                  L 38,18 
+                  L 7.5,10 
+                  L 7.5,24 
+                  L 19,33 
+                  L 19,38 
+                  L 3.5,35 
+                  L 0,36.5 
+                  L -3.5,35 
+                  L -19,38 
+                  L -19,33 
+                  L -7.5,24 
+                  L -7.5,10 
+                  L -38,18 
+                  L -38,12 
+                  L -7,-6 
+                  L -5.5,-20 
+                  C -4.8,-28 -2.2,-34 0,-34 Z
+                "/>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Left Content Area -->
+        <div class="row position-relative esc-cta-content-row">
+          <div class="col-xl-6 col-lg-7 col-md-11">
+
+            <!-- 2. Big text -->
+            <h2 class="esc-cta-heading">
+              Make your next<br>
+              semester count<br>
+              somewhere new.
+            </h2>
+
+            <!-- 3. One button with right arrow -->
+            <div class="esc-cta-btn-wrap">
+              <a href="https://wa.me/919884457722" target="_blank" class="esc-cta-btn-dark text-decoration-none">
+                <span>Talk to ESC</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Section 12: Main Footer (Unique Section Class: esc-main-footer-section)
+       ========================================================================= -->
+  <footer class="esc-main-footer-section" id="footer">
+    <div class="container-fluid px-3 px-md-4 px-lg-5 position-relative esc-footer-container">
+      
+      <!-- Top Navigation Row: Left Line + Nav Links with Yellow Border Bottom on Active Link -->
+      <div class="esc-footer-top-nav">
+        <span class="esc-footer-top-line" aria-hidden="true"></span>
+        <ul class="esc-footer-nav-list">
+          <li><a href="#destinations">Internship Program</a></li>
+          <li><a href="#inclusions">Program Details</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="esc-footer-nav-active">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Main Content Row -->
+      <div class="row align-items-center esc-footer-main-row">
+        <!-- Skyline Line Art Background Illustration -->
+        <div class="esc-footer-skyline-wrap" aria-hidden="true">
+          <img src="assets/images/footer-europe-lineart.svg" alt="" class="esc-footer-skyline-lineart">
+        </div>
+
+        <!-- Left Side: Line with Text, Big Title, Paragraph -->
+        <div class="col-lg-6 col-md-12 mb-5 mb-lg-0 pe-lg-4" style="position: relative; z-index: 2;">
+          <!-- 1. Left line with text -->
+          <div class="esc-footer-pretitle">
+            <span class="esc-footer-preline"></span>
+            <span class="esc-footer-pretext">CONTACT US</span>
+          </div>
+
+          <!-- 2. Big title -->
+          <h2 class="esc-footer-heading">Your European dreams,<br>our guidance</h2>
+
+          <!-- 3. Paragraph -->
+          <p class="esc-footer-desc">
+            Send us a message and an advisor will walk you through eligibility, documentation and the next intake dates.
+          </p>
+        </div>
+
+        <!-- Right Side: Three Clickable Contact Cards -->
+        <div class="col-lg-6 col-md-12 ps-lg-5" style="position: relative; z-index: 2;">
+          <div class="esc-footer-cards-stack">
+            <!-- Card 1: Phone / Call or WhatsApp -->
+            <a href="tel:+919884457722" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">+91 98844 57722</span>
+                  <span class="esc-footer-card-sub">Call Us</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+
+            <!-- Card 2: Email -->
+            <a href="mailto:info@euinternship.com" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">info@euinternship.com</span>
+                  <span class="esc-footer-card-sub">Email us anytime</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+
+            <!-- Card 3: WhatsApp -->
+            <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">Message on WhatsApp</span>
+                  <span class="esc-footer-card-sub">Fastest way to reach us</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="esc-footer-bottom-bar">
+        <div>
+          © 2026 Europe Study Centre Private Limited. All Rights Reserved.
+        </div>
+        <div class="esc-footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ESC Mobile Navigation Toggle Script -->
+  <script>
+    function toggleEscMobileNav() {
+      const collapse = document.getElementById('escMobileNavCollapse');
+      const toggler = document.getElementById('escMobileMenuToggle');
+      if (collapse && toggler) {
+        collapse.classList.toggle('esc-mobile-open');
+        toggler.classList.toggle('esc-open');
+      }
+    }
+
+    function closeEscMobileNav() {
+      const collapse = document.getElementById('escMobileNavCollapse');
+      const toggler = document.getElementById('escMobileMenuToggle');
+      if (collapse) collapse.classList.remove('esc-mobile-open');
+      if (toggler) toggler.classList.remove('esc-open');
+    }
+  </script>
+  
+  <!-- Hero Title Typewriter Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const line1Elem = document.getElementById('escTypeLine1');
+      const breakElem = document.getElementById('escTypeBreak');
+      const line2Elem = document.getElementById('escTypeLine2');
+      const cursorElem = document.getElementById('escTypeCursor');
+
+      if (!line1Elem || !breakElem || !line2Elem || !cursorElem) return;
+
+      const textLine1 = "FREE INTERNSHIP";
+      const textLine2 = "IN EUROPE";
+
+      const typeSpeed = 85;
+      const deleteSpeed = 35;
+      const holdDelay = 3500;
+      const restartDelay = 500;
+
+      let state = 'TYPING_1';
+      let charIndex = 0;
+
+      function updateCursorColor(line) {
+        if (line === 1) {
+          cursorElem.style.color = '#202c78';
+        } else {
+          cursorElem.style.color = '#f1b816';
+        }
+      }
+
+      function step() {
+        if (state === 'TYPING_1') {
+          updateCursorColor(1);
+          breakElem.innerHTML = '';
+          line2Elem.textContent = '';
+          charIndex++;
+          line1Elem.textContent = textLine1.slice(0, charIndex);
+
+          if (charIndex >= textLine1.length) {
+            state = 'TYPING_2';
+            charIndex = 0;
+            breakElem.innerHTML = '<br>';
+            updateCursorColor(2);
+            setTimeout(step, typeSpeed * 1.5);
+          } else {
+            setTimeout(step, typeSpeed);
+          }
+        } else if (state === 'TYPING_2') {
+          updateCursorColor(2);
+          charIndex++;
+          line2Elem.textContent = textLine2.slice(0, charIndex);
+
+          if (charIndex >= textLine2.length) {
+            state = 'HOLD';
+            setTimeout(function () {
+              state = 'DELETING_2';
+              charIndex = textLine2.length;
+              step();
+            }, holdDelay);
+          } else {
+            setTimeout(step, typeSpeed);
+          }
+        } else if (state === 'DELETING_2') {
+          updateCursorColor(2);
+          charIndex--;
+          line2Elem.textContent = textLine2.slice(0, charIndex);
+
+          if (charIndex <= 0) {
+            state = 'DELETING_1';
+            breakElem.innerHTML = '';
+            charIndex = textLine1.length;
+            updateCursorColor(1);
+            setTimeout(step, deleteSpeed);
+          } else {
+            setTimeout(step, deleteSpeed);
+          }
+        } else if (state === 'DELETING_1') {
+          updateCursorColor(1);
+          charIndex--;
+          line1Elem.textContent = textLine1.slice(0, charIndex);
+
+          if (charIndex <= 0) {
+            state = 'TYPING_1';
+            charIndex = 0;
+            setTimeout(step, restartDelay);
+          } else {
+            setTimeout(step, deleteSpeed);
+          }
+        }
+      }
+
+      // Initial start delay for smooth entrance
+      setTimeout(step, 300);
+    });
+  </script>
+</body>
+</html>

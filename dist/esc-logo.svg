@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <polygon id="star" points="0,-5.2 1.35,-1.85 4.95,-1.6 2.18,0.72 3.06,4.2 0,2.3 -3.06,4.2 -2.18,0.72 -4.95,-1.6 -1.35,-1.85" fill="#f5be18"/>
+  </defs>
+
+  <!-- 12 European Stars in Circle -->
+  <!-- R = 35, Center = (50, 50) -->
+  <use href="#star" x="50" y="15"/>
+  <use href="#star" x="67.5" y="19.7"/>
+  <use href="#star" x="80.3" y="32.5"/>
+  <use href="#star" x="85" y="50"/>
+  <use href="#star" x="80.3" y="67.5"/>
+  <use href="#star" x="67.5" y="80.3"/>
+  <use href="#star" x="50" y="85"/>
+  <use href="#star" x="32.5" y="80.3"/>
+  <use href="#star" x="19.7" y="67.5"/>
+  <use href="#star" x="15" y="50"/>
+  <use href="#star" x="19.7" y="32.5"/>
+  <use href="#star" x="32.5" y="19.7"/>
+
+  <!-- Center Text ESC -->
+  <text x="50" y="56" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="17" letter-spacing="0.8">ESC</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="160" height="140" fill="none">
+  <!-- Directional Signpost in warm pastel yellow tones -->
+  <g transform="translate(20, 5)">
+    <!-- Ground / grass clump at base -->
+    <ellipse cx="65" cy="126" rx="35" ry="8" fill="#fef6dc"/>
+    <path d="M50 126 Q48 116 42 118 Q45 125 48 126" fill="#fde699"/>
+    <path d="M80 126 Q84 115 90 117 Q86 125 82 126" fill="#fde699"/>
+    <path d="M85 127 Q92 120 96 124 Q90 128 86 128" fill="#edd076"/>
+
+    <!-- Main Vertical Wooden Pole -->
+    <rect x="60" y="25" width="10" height="102" rx="2" fill="#edd076"/>
+    <rect x="60" y="25" width="4" height="102" rx="1" fill="#fae298"/>
+
+    <!-- Top Sign Board (Pointing Right) -->
+    <path d="M35 36 L85 36 L98 48 L85 60 L35 60 Z" fill="#fde699"/>
+    <path d="M35 36 L40 36 L40 60 L35 60 Z" fill="#edd076"/>
+    <path d="M35 58 L85 58 L98 48 L85 60 L35 60 Z" fill="#e2c15e" opacity="0.6"/>
+
+    <!-- Bottom Sign Board (Pointing Left) -->
+    <path d="M95 68 L45 68 L32 80 L45 92 L95 92 Z" fill="#fde699"/>
+    <path d="M90 68 L95 68 L95 92 L90 92 Z" fill="#edd076"/>
+    <path d="M95 90 L45 90 L32 80 L45 92 L95 92 Z" fill="#e2c15e" opacity="0.6"/>
+
+    <!-- Small Nails / Rivets -->
+    <circle cx="65" cy="48" r="1.5" fill="#c49e38"/>
+    <circle cx="65" cy="80" r="1.5" fill="#c49e38"/>
+  </g>
+</svg>

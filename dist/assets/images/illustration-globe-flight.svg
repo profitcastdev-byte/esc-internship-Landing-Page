@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="160" height="140" fill="none">
+  <!-- Globe Sphere -->
+  <circle cx="110" cy="95" r="55" fill="#fef6dc"/>
+  <!-- Continents in soft pastel yellow -->
+  <path d="M85 70 Q95 60 110 65 Q125 70 135 60 Q145 75 140 90 Q125 95 115 85 Q95 90 85 70 Z" fill="#fde699"/>
+  <path d="M95 105 Q110 100 120 110 Q125 125 110 135 Q95 130 95 115 Z" fill="#fde699"/>
+  <path d="M70 95 Q80 85 85 100 Q80 115 70 110 Z" fill="#fde699"/>
+  <path d="M125 75 Q135 70 145 80 Q140 95 130 85 Z" fill="#fde699"/>
+  
+  <!-- Dotted Curved Flight Trail -->
+  <path d="M40 125 Q70 65 115 50 Q130 45 140 35" stroke="#f7be16" stroke-width="2.5" stroke-dasharray="4 4" fill="none"/>
+  
+  <!-- Flying Airplane in Golden Yellow -->
+  <g transform="translate(130, 35) rotate(-20)">
+    <path d="M0 -4 L16 0 L0 4 L-4 12 L0 0 L-4 -12 Z" fill="#f7be16"/>
+  </g>
+</svg>

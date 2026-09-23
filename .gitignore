@@ -1,0 +1,11 @@
+# Claude Code local machine state (absolute paths, per-machine permissions)
+.claude/settings.local.json
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Deploy rollback copies, if ever pulled down locally
+*.prev/
+*.old/

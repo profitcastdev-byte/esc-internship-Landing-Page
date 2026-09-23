@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 240" width="100%" height="100%" preserveAspectRatio="none" fill="none">
+  <defs>
+    <!-- Soft glowing line color for line art matching the reference image -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9cbdf8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#709df0" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#lineGrad)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+    <!-- 1. Floating Line-Art Clouds -->
+    <!-- Cloud 1 (Left) -->
+    <path d="M 80,82 Q 75,70 88,68 Q 94,56 108,60 Q 118,52 128,62 Q 138,58 142,70 Q 150,72 148,82 Z" />
+    <!-- Cloud 2 (Mid-Left) -->
+    <path d="M 440,75 Q 435,63 448,61 Q 454,49 468,53 Q 478,45 488,55 Q 498,51 502,63 Q 510,65 508,75 Z" />
+    <!-- Cloud 3 (Mid-Right) -->
+    <path d="M 940,68 Q 935,56 948,54 Q 954,42 968,46 Q 978,38 988,48 Q 998,44 1002,56 Q 1010,58 1008,68 Z" />
+    <!-- Cloud 4 (Right) -->
+    <path d="M 1360,78 Q 1355,66 1368,64 Q 1374,52 1388,56 Q 1398,48 1408,58 Q 1418,54 1422,66 Q 1430,68 1428,78 Z" />
+
+    <!-- 2. Flying Birds -->
+    <!-- Bird 1 -->
+    <path d="M 230,88 Q 236,82 242,88 Q 248,82 254,88" />
+    <!-- Bird 2 -->
+    <path d="M 640,72 Q 646,66 652,72 Q 658,66 664,72" />
+    <!-- Bird 3 -->
+    <path d="M 1170,82 Q 1176,76 1182,82 Q 1188,76 1194,82" />
+    <!-- Bird 4 -->
+    <path d="M 1510,92 Q 1516,86 1522,92 Q 1528,86 1534,92" />
+
+    <!-- 3. Ground Baseline -->
+    <line x1="0" y1="236" x2="1600" y2="236" />
+
+    <!-- 4. European Skyline Landmarks (Continuous line art) -->
+    <!-- Far Left: Townhouses / Gable roofs (x: 0 - 150) -->
+    <path d="
+      M 0,236 L 0,205 
+      L 18,205 L 18,175 L 32,160 L 46,175 L 46,205 
+      L 62,205 L 62,185 L 74,185 L 74,205 
+      L 90,205 L 90,165 L 102,150 L 114,165 L 114,205 
+      L 132,205 L 132,190 L 148,190 L 148,236
+    " />
+    <!-- Gable windows -->
+    <rect x="26" y="180" width="12" height="15" rx="1" />
+    <rect x="96" y="172" width="12" height="16" rx="1" />
+
+    <!-- Landmark 1: Classical Church Dome & Spire (x: 155 - 265) -->
+    <path d="
+      M 148,236 L 165,236 L 165,185 
+      L 175,185 L 175,145 L 188,115 L 201,145 L 201,185 
+      L 212,185 Q 228,145 244,185 
+      L 255,185 L 255,236
+    " />
+    <line x1="188" y1="115" x2="188" y2="92" />
+    <circle cx="188" cy="90" r="2.5" />
+    <!-- Windows -->
+    <path d="M 182,160 Q 188,150 194,160 L 194,175 L 182,175 Z" />
+    <rect x="222" y="162" width="12" height="15" rx="2" />
+
+    <!-- Landmark 2: Roman Colosseum (x: 275 - 380) -->
+    <path d="
+      M 265,236 L 278,236 L 278,168 
+      L 338,168 L 344,182 L 368,182 L 374,198 L 386,198 L 386,236
+    " />
+    <!-- Colosseum Arches: Tier 1, 2, 3 -->
+    <g>
+      <!-- Tier 1 -->
+      <path d="M 284,178 Q 288,172 292,178 L 292,184 L 284,184 Z" />
+      <path d="M 296,178 Q 300,172 304,178 L 304,184 L 296,184 Z" />
+      <path d="M 308,178 Q 312,172 316,178 L 316,184 L 308,184 Z" />
+      <path d="M 320,178 Q 324,172 328,178 L 328,184 L 320,184 Z" />
+      <!-- Tier 2 -->
+      <path d="M 284,194 Q 289,188 294,194 L 294,204 L 284,204 Z" />
+      <path d="M 298,194 Q 303,188 308,194 L 308,204 L 298,204 Z" />
+      <path d="M 312,194 Q 317,188 322,194 L 322,204 L 312,204 Z" />
+      <path d="M 326,194 Q 331,188 336,194 L 336,204 L 326,204 Z" />
+      <path d="M 340,194 Q 345,188 350,194 L 350,204 L 340,204 Z" />
+      <path d="M 354,194 Q 359,188 364,194 L 364,204 L 354,204 Z" />
+      <!-- Tier 3 -->
+      <path d="M 284,214 Q 290,206 296,214 L 296,228 L 284,228 Z" />
+      <path d="M 300,214 Q 306,206 312,214 L 312,228 L 300,228 Z" />
+      <path d="M 316,214 Q 322,206 328,214 L 328,228 L 316,228 Z" />
+      <path d="M 332,214 Q 338,206 344,214 L 344,228 L 332,228 Z" />
+      <path d="M 348,214 Q 354,206 360,214 L 360,228 L 348,228 Z" />
+      <path d="M 364,214 Q 370,206 376,214 L 376,228 L 364,228 Z" />
+    </g>
+
+    <!-- Landmark 3: Old Town Spire & Clock Tower (x: 395 - 490) -->
+    <path d="
+      M 386,236 L 400,236 L 400,195 L 418,195 
+      L 418,155 L 424,145 L 434,145 L 440,155 L 440,195 
+      L 458,195 L 458,236
+    " />
+    <!-- Clock spire needle -->
+    <path d="M 429,145 L 429,88 L 427,88 L 429,70 L 431,88 L 429,88" />
+    <circle cx="429" cy="68" r="2.5" />
+    <circle cx="429" cy="168" r="6" />
+
+    <!-- Landmark 4: Cathedral Needle Spire (x: 500 - 580) -->
+    <path d="
+      M 458,236 L 475,236 L 475,210 L 492,210 L 492,180 
+      L 508,180 L 518,95 L 528,180 L 544,180 L 544,236
+    " />
+    <line x1="518" y1="95" x2="518" y2="60" />
+    <circle cx="518" cy="58" r="2" />
+    <rect x="512" y="192" width="12" height="24" rx="2" />
+
+    <!-- Landmark 5: European Arcades / Houses (x: 550 - 710) -->
+    <path d="
+      M 544,236 L 570,236 L 570,198 L 595,198 L 595,212 L 620,212 L 620,185 
+      L 635,170 L 650,185 L 650,215 L 685,215 L 685,190 L 715,190 L 715,236
+    " />
+    <rect x="578" y="206" width="10" height="15" rx="1" />
+    <rect x="692" y="202" width="12" height="16" rx="1" />
+
+    <!-- Landmark 6: EIFFEL TOWER (Paris) in the Center (x: 725 - 845) -->
+    <!-- Base arch -->
+    <path d="M 740,236 Q 785,160 830,236" />
+    <!-- Left Leg -->
+    <path d="M 725,236 L 752,148 L 766,148 L 755,236" />
+    <!-- Right Leg -->
+    <path d="M 845,236 L 818,148 L 804,148 L 815,236" />
+    <!-- First Platform -->
+    <rect x="748" y="142" width="74" height="7" rx="1.5" />
+    <!-- Intermediate Body -->
+    <path d="M 758,142 L 772,88 L 798,88 L 812,142" />
+    <!-- Second Platform -->
+    <rect x="768" y="83" width="34" height="5" rx="1" />
+    <!-- Spire Mast to Summit -->
+    <path d="M 776,83 L 783,28 L 787,28 L 794,83" />
+    <!-- Cupola & Beacon -->
+    <circle cx="785" cy="24" r="3" />
+    <line x1="785" y1="21" x2="785" y2="8" />
+
+    <!-- Landmark 7: Italian Renaissance Dome (x: 855 - 960) -->
+    <path d="
+      M 845,236 L 865,236 L 865,195 
+      L 880,195 L 880,165 
+      Q 905,120 930,165 
+      L 930,195 L 945,195 L 945,236
+    " />
+    <rect x="900" y="112" width="10" height="14" rx="1" />
+    <line x1="905" y1="112" x2="905" y2="95" />
+    <circle cx="905" cy="93" r="2.5" />
+    <!-- Dome colonnade windows -->
+    <path d="M 890,175 Q 895,168 900,175 L 900,185 L 890,185 Z" />
+    <path d="M 910,175 Q 915,168 920,175 L 920,185 L 910,185 Z" />
+
+    <!-- Landmark 8: Sagrada Família / Gothic Spires (Barcelona) (x: 965 - 1090) -->
+    <path d="
+      M 945,236 L 970,236 
+      L 976,145 Q 984,95 992,62 Q 1000,95 1008,145 
+      L 1012,125 Q 1022,80 1032,48 Q 1042,80 1052,125 
+      L 1056,145 Q 1064,95 1072,62 Q 1080,95 1088,145 
+      L 1095,236
+    " />
+    <!-- Cross finials on spires -->
+    <line x1="992" y1="62" x2="992" y2="48" />
+    <line x1="1032" y1="48" x2="1032" y2="34" />
+    <line x1="1072" y1="62" x2="1072" y2="48" />
+    <!-- Connecting galleries -->
+    <line x1="1004" y1="135" x2="1018" y2="135" />
+    <line x1="1046" y1="135" x2="1060" y2="135" />
+
+    <!-- Landmark 9: Brandenburg Gate (Berlin) (x: 1110 - 1240) -->
+    <!-- Base Attic & Entablature -->
+    <rect x="1118" y="168" width="114" height="14" rx="1.5" />
+    <rect x="1126" y="154" width="98" height="14" rx="1.5" />
+    <!-- Doric Columns -->
+    <line x1="1128" y1="182" x2="1128" y2="236" />
+    <line x1="1146" y1="182" x2="1146" y2="236" />
+    <line x1="1164" y1="182" x2="1164" y2="236" />
+    <line x1="1182" y1="182" x2="1182" y2="236" />
+    <line x1="1200" y1="182" x2="1200" y2="236" />
+    <line x1="1218" y1="182" x2="1218" y2="236" />
+    <!-- Quadriga (Chariot & Goddess of Victory) on top -->
+    <rect x="1162" y="142" width="26" height="12" rx="2" />
+    <path d="M 1172,142 L 1175,124 Q 1178,118 1181,124 L 1183,142 Z" />
+    <circle cx="1178" cy="116" r="3.5" />
+    <line x1="1183" y1="130" x2="1189" y2="105" />
+    <circle cx="1189" cy="105" r="3" />
+    <!-- Horses -->
+    <path d="M 1192,148 L 1198,132 L 1202,132 L 1200,148" />
+    <path d="M 1152,148 L 1157,132 L 1161,132 L 1159,148" />
+
+    <!-- Landmark 10: Traditional Dutch Windmill (Netherlands) (x: 1260 - 1380) -->
+    <!-- Tower Body -->
+    <path d="M 1282,236 L 1298,155 L 1332,155 L 1348,236" />
+    <!-- Windmill Cap -->
+    <path d="M 1295,155 Q 1315,132 1335,155 Z" />
+    <circle cx="1315" cy="148" r="5" />
+    <!-- 4 Diagonal Sails forming 'X' -->
+    <line x1="1315" y1="148" x2="1365" y2="98" />
+    <rect x="1326" y="96" width="34" height="10" transform="rotate(-45 1326 96)" />
+    
+    <line x1="1315" y1="148" x2="1265" y2="198" />
+    <rect x="1274" y="186" width="34" height="10" transform="rotate(-45 1274 186)" />
+
+    <line x1="1315" y1="148" x2="1265" y2="98" />
+    <rect x="1286" y="88" width="34" height="10" transform="rotate(45 1286 88)" />
+
+    <line x1="1315" y1="148" x2="1365" y2="198" />
+    <rect x="1336" y="162" width="34" height="10" transform="rotate(45 1336 162)" />
+
+    <!-- Far Right: Church Spires / Bell Tower (x: 1395 - 1600) -->
+    <path d="
+      M 1348,236 L 1380,236 L 1380,185 
+      L 1396,185 L 1408,125 L 1420,185 L 1435,185 
+      L 1435,160 L 1445,140 L 1455,160 L 1455,185 
+      L 1475,185 L 1485,90 L 1495,185 L 1515,185 
+      L 1515,200 L 1545,200 L 1545,170 L 1560,150 L 1575,170 L 1575,236 L 1600,236
+    " />
+    <line x1="1485" y1="90" x2="1485" y2="65" />
+    <circle cx="1485" cy="63" r="2.5" />
+  </g>
+</svg>

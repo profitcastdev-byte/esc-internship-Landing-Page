@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="160" height="140" fill="none">
+  <!-- Isometric Stack of Books & Graduation Cap -->
+  <g transform="translate(10, 5)">
+    <!-- Book 3 (Bottom) -->
+    <path d="M70 125 L125 105 L135 110 L80 130 Z" fill="#edd076"/>
+    <path d="M45 112 L70 125 L80 130 L55 117 Z" fill="#fae298"/>
+    <path d="M45 107 L100 87 L125 105 L70 125 Z" fill="#fff5d1"/>
+    
+    <!-- Book 2 (Middle) -->
+    <path d="M72 110 L122 92 L130 96 L80 114 Z" fill="#edd076"/>
+    <path d="M50 100 L72 110 L80 114 L58 104 Z" fill="#fae298"/>
+    <path d="M50 95 L100 77 L122 92 L72 110 Z" fill="#fff8dd"/>
+    
+    <!-- Book 1 (Top) -->
+    <path d="M75 95 L120 79 L126 83 L81 99 Z" fill="#edd076"/>
+    <path d="M55 87 L75 95 L81 99 L61 91 Z" fill="#fae298"/>
+    <path d="M55 82 L100 66 L120 79 L75 95 Z" fill="#fffaf0"/>
+
+    <!-- Graduation Cap (Mortarboard) -->
+    <!-- Cap Skull Base -->
+    <ellipse cx="85" cy="58" rx="16" ry="7" fill="#f2d372"/>
+    <!-- Diamond Board -->
+    <polygon points="85,32 120,44 85,56 50,44" fill="#fde699"/>
+    <polygon points="85,56 120,44 120,47 85,59" fill="#eac760"/>
+    <polygon points="50,44 85,56 85,59 50,47" fill="#f7db7d"/>
+    <!-- Center Button -->
+    <ellipse cx="85" cy="44" rx="2.5" ry="1.5" fill="#f7be16"/>
+    <!-- Tassel String & Fringe -->
+    <path d="M85 44 Q105 48 116 58" stroke="#f7be16" stroke-width="1.8" fill="none"/>
+    <polygon points="114,57 118,59 115,70 112,68" fill="#f7be16"/>
+  </g>
+</svg>
