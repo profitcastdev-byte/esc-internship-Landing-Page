@@ -5794,49 +5794,57 @@ img {
 
 /* --------------------------------------------------------------------------
    Start-Date Badge on an Internship Card (esc-intern-card-badge)
-   Overlays the card image, so adding it to a card never changes that card's
-   body height and never breaks the row's alignment.
+   Overlays the card image at the top right, so adding it to a card never
+   changes that card's body height and never breaks the row's alignment.
    -------------------------------------------------------------------------- */
 .esc-intern-card-badge {
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 1px;
   max-width: calc(100% - 20px);
-  background-color: #d81f27;
-  color: #ffffff;
-  font-size: 0.86rem;
+  background-color: #ffc72c;
+  color: #121212;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.22;
   letter-spacing: 0.1px;
+  text-align: right;
   padding: 7px 13px 8px 13px;
   border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(216, 31, 39, 0.45);
-  animation: escBadgeBlink 2.6s ease-in-out infinite;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  animation: escBadgeBlink 4.2s ease-in-out infinite;
+}
+
+/* "Starts on" and the dates carry the weight; the caveat stays quiet under
+   them so the date is what reads first from across the grid. */
+.esc-intern-card-badge-lead,
+.esc-intern-card-badge-date {
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .esc-intern-card-badge-note {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   font-style: italic;
-  opacity: 0.95;
+  opacity: 0.85;
 }
 
 /* A slow, soft fade rather than a hard on/off: it still reads as blinking,
    but stays legible the whole cycle and sits far under the 3-flashes-per-
-   second ceiling a hard strobe risks crossing. The pause at each end comes
-   from holding full opacity across the first and last fifth of the cycle,
-   so the date is readable and still rather than always mid-fade. */
+   second ceiling a hard strobe risks crossing. Full opacity is held across
+   the first and last fifth of the cycle, so the date sits still and readable
+   at each end rather than always being mid-fade. */
 @keyframes escBadgeBlink {
   0%, 20% {
     opacity: 1;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.32;
   }
   80%, 100% {
     opacity: 1;
@@ -5851,13 +5859,25 @@ img {
   }
 }
 
+/* Two cards per row here, so each card is wider than at xl and the badge has
+   room to stay at full size. */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .esc-intern-card-badge-lead,
+  .esc-intern-card-badge-date {
+    font-size: 1.05rem;
+  }
+}
+
 @media (max-width: 575px) {
   .esc-intern-card-badge {
     top: 8px;
-    left: 8px;
-    font-size: 0.78rem;
+    right: 8px;
     padding: 6px 11px 7px 11px;
     border-radius: 7px;
+  }
+  .esc-intern-card-badge-lead,
+  .esc-intern-card-badge-date {
+    font-size: 0.95rem;
   }
   .esc-intern-card-badge-note {
     font-size: 0.64rem;
