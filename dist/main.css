@@ -5816,7 +5816,7 @@ img {
   padding: 7px 13px 8px 13px;
   border-radius: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
-  animation: escBadgeBlink 2.6s ease-in-out infinite;
+  animation: escBadgeBlink 1s ease-in-out infinite;
 }
 
 /* "Starts on" and the dates carry the weight; the caveat sits quiet on its own
