@@ -5819,21 +5819,12 @@ img {
   animation: escBadgeBlink 1s ease-in-out infinite;
 }
 
-/* "Starts on" and the dates carry the weight; the caveat sits quiet on its own
-   line beneath them, so the date is what reads first from across the grid. */
+/* "Starts on" and the dates are the whole badge now. */
 .esc-intern-card-badge-lead,
 .esc-intern-card-badge-date {
   font-size: 1.15rem;
   font-weight: 900;
   white-space: nowrap;
-}
-
-.esc-intern-card-badge-note {
-  font-size: 0.7rem;
-  font-weight: 600;
-  font-style: italic;
-  opacity: 0.85;
-  margin-top: 1px;
 }
 
 /* A slow, soft fade rather than a hard on/off: it still reads as blinking,
@@ -5880,8 +5871,5 @@ img {
   .esc-intern-card-badge-lead,
   .esc-intern-card-badge-date {
     font-size: 1.06rem;
-  }
-  .esc-intern-card-badge-note {
-    font-size: 0.66rem;
   }
 }
