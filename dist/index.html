@@ -125,13 +125,16 @@
        Section 1: Hero Banner (Unique Section Class: esc-hero-banner-section)
        ========================================================================= -->
   <section class="esc-hero-banner-section">
-    <div id="escHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+    <div id="escHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       
       <!-- Carousel Slides -->
       <div class="carousel-inner">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active">
+        <!-- 3s: one headline and two buttons, read at a glance. Timed per
+             slide rather than on the carousel, because slide 2 carries three
+             deadlines and needs longer. -->
+        <div class="carousel-item active" data-bs-interval="3000">
           <div class="esc-hero-slider-bg-wrap">
             <img src="assets/images/top-banner2.png" alt="Free European Internship Program" class="esc-hero-slider-bg-img esc-hero-bg-desktop">
             <img src="assets/images/bg-map.png" alt="Europe Map Background" class="esc-hero-slider-bg-img esc-hero-bg-mobile">
@@ -238,7 +241,7 @@
              slide 1's ~2.4:1 box, which would crop about a quarter of its
              height and take the deadlines with it. Only the two CTAs are
              overlaid, onto the empty lower left of the layout. -->
-        <div class="carousel-item esc-hero-slide-banner">
+        <div class="carousel-item esc-hero-slide-banner" data-bs-interval="6000">
           <img src="assets/images/hero-banner-ai-hungary.jpg"
                alt="Internship in AI, Cybersecurity and Data Analytics with The University of Buckingham, Hungary. Deadlines: 1st Oct 10th, 2nd Oct 20th (limited seats), 3rd Oct 31st (visa filing)."
                class="esc-hero-banner-img">
