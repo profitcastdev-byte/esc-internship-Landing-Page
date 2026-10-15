@@ -125,16 +125,13 @@
        Section 1: Hero Banner (Unique Section Class: esc-hero-banner-section)
        ========================================================================= -->
   <section class="esc-hero-banner-section">
-    <div id="escHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="escHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
       
       <!-- Carousel Slides -->
       <div class="carousel-inner">
 
         <!-- Slide 1 -->
-        <!-- 3s: one headline and two buttons, read at a glance. Timed per
-             slide rather than on the carousel, because slide 2 carries three
-             deadlines and needs longer. -->
-        <div class="carousel-item active" data-bs-interval="3000">
+        <div class="carousel-item active">
           <div class="esc-hero-slider-bg-wrap">
             <img src="assets/images/top-banner2.png" alt="Free European Internship Program" class="esc-hero-slider-bg-img esc-hero-bg-desktop">
             <img src="assets/images/bg-map.png" alt="Europe Map Background" class="esc-hero-slider-bg-img esc-hero-bg-mobile">
@@ -234,30 +231,6 @@
           </div>
         </div>
 
-        <!-- Slide 2: AI / Cybersecurity intake banner.
-             The artwork is a finished 2000x1125 (16:9) creative carrying its own
-             headline, deadline row and partner mark, so it is shown whole -
-             width 100%, height auto - instead of being cover-fitted into
-             slide 1's ~2.4:1 box, which would crop about a quarter of its
-             height and take the deadlines with it. Only the two CTAs are
-             overlaid, onto the empty lower left of the layout. -->
-        <div class="carousel-item esc-hero-slide-banner" data-bs-interval="6000">
-          <img src="assets/images/hero-banner-ai-hungary.jpg"
-               alt="Internship in AI, Cybersecurity and Data Analytics with The University of Buckingham, Hungary. Deadlines: 1st Oct 10th, 2nd Oct 20th (limited seats), 3rd Oct 31st (visa filing)."
-               class="esc-hero-banner-img">
-
-          <div class="esc-hero-banner-btn-row">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform" target="_blank" rel="noopener noreferrer" class="esc-btn-pathway text-decoration-none">
-              <span>Enroll Now</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </a>
-            <a href="https://chat.whatsapp.com/C9IguMKPyT6AAwT5u6CmqG" target="_blank" rel="noopener noreferrer" class="esc-btn-whatsapp-hero text-decoration-none">
-              <i class="bi bi-whatsapp"></i>
-              <span>Join our WhatsApp community</span>
-            </a>
-          </div>
-        </div>
-
         <!-- Slide 2 -->
         <!--<div class="carousel-item">-->
         <!--  <div class="esc-hero-slider-bg-wrap">-->
@@ -348,20 +321,6 @@
         <!--  </div>-->
         <!--</div>-->
 
-      </div>
-
-      <!-- Slide indicators. Two slides rotate now, so there has to be a way
-           back to one you missed. Arrows stay off: the dots are enough for two,
-           and arrows would sit over the banner's headline. -->
-      <div class="esc-hero-bottom-controls">
-        <div class="esc-carousel-target-indicators">
-          <button type="button" data-bs-target="#escHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Free internship in Europe">
-            <span class="esc-target-outer-ring"><span class="esc-target-inner-dot"></span></span>
-          </button>
-          <button type="button" data-bs-target="#escHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2: AI, Cybersecurity and Data Analytics intake">
-            <span class="esc-target-outer-ring"><span class="esc-target-inner-dot"></span></span>
-          </button>
-        </div>
       </div>
 
       <!-- Bottom Center Controls (Inner dot with outer white border & Left/Right icons) -->
