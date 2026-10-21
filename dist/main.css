@@ -5917,3 +5917,36 @@ img {
     font-size: 0.64rem;
   }
 }
+
+/* "Supercomputing" is one unbreakable word wider than the 258px title box at
+   xl, so with overflow-wrap:normal it spilled past the card and looked clipped.
+   Allowing a break inside a word fixes that card and leaves every shorter
+   title untouched, since the rule only applies when a word cannot otherwise
+   fit. */
+.esc-intern-card-title {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* At xl the title box is 258px and "Internship in Supercomputing" needed 263px
+   at 2rem, so the word was breaking mid-way and leaving a stray letter on its
+   own line. 1.9rem brings it inside the box on one line. Measured, not guessed:
+   hyphens:auto was tried first and did not break the word at all, leaving the
+   overflow in place. Below xl the title is already 1.4rem or less, where the
+   word fits comfortably. */
+@media (min-width: 1400px) {
+  .esc-intern-card-title {
+    font-size: 1.9rem;
+  }
+}
+
+/* 1200-1399px is the tight end of xl: four cards to a row leaves the title box
+   at 198-218px, where even 1.9rem breaks "Supercomputing" mid-word. The word
+   needs the font at or under 24px to sit on one line in a 198px box, measured
+   on the live page. It also stops the longer titles running to four and five
+   lines at these widths. */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .esc-intern-card-title {
+    font-size: 1.5rem;
+  }
+}
