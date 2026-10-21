@@ -5873,3 +5873,47 @@ img {
     font-size: 1.06rem;
   }
 }
+
+/* The caveat line, back for the cards that carry one. Quiet under the dates so
+   the date is still what reads first from across the grid. */
+.esc-intern-card-badge-note {
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-style: italic;
+  opacity: 0.85;
+  margin-top: 1px;
+}
+
+/* Streams listed under a card's heading: smaller than the title and bold. It
+   sits in the card body above the location, which does not disturb the row -
+   the card is height:100% in a flex column with margin-top:auto on the button,
+   so a taller body grows the whole row rather than shifting one button. */
+.esc-intern-card-streams {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1a56db;
+  line-height: 1.3;
+  margin: -4px 0 10px 0;
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .esc-intern-card-streams {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .esc-intern-card-streams {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .esc-intern-card-streams {
+    font-size: 0.85rem;
+    margin: -2px 0 8px 0;
+  }
+  .esc-intern-card-badge-note {
+    font-size: 0.64rem;
+  }
+}
