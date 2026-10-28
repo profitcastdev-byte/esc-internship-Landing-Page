@@ -277,10 +277,16 @@
   box-shadow: 0 18px 44px rgba(18, 30, 84, 0.14);
 }
 
+/* The row stretches, so the figure fills whatever height the copy sets. The
+   min-height is for the short-copy case, where there is nothing to stretch to. */
+.esc-det-figure {
+  height: 100%;
+  min-height: 320px;
+}
+
 .esc-det-figure-img {
   width: 100%;
   height: 100%;
-  max-height: 460px;
   object-fit: cover;
   display: block;
 }
@@ -288,6 +294,8 @@
 /* --------------------------------------------------------------------------
    4. Map
    -------------------------------------------------------------------------- */
+/* 16:9 while the two columns are stacked. On lg the row stretches instead and
+   the map fills the column, so the aspect ratio is dropped there - see below. */
 .esc-det-map {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -482,6 +490,44 @@
   border-color: #ffffff;
   color: #ffffff;
   transform: translateY(-2px);
+}
+
+/* Sub-headings inside a section. Smaller than the section h2 and tighter to
+   the paragraph they introduce, so a section reads as one block rather than as
+   several competing headings. */
+.esc-det-h3 {
+  font-size: 1.22rem;
+  font-weight: 850;
+  color: #0c1b48;
+  line-height: 1.32;
+  letter-spacing: -0.2px;
+  margin: 26px 0 9px 0;
+  max-width: 54ch;
+  text-wrap: balance;
+}
+
+.esc-det-h3:first-of-type {
+  margin-top: 0;
+}
+
+@media (min-width: 992px) {
+  /* Column height comes from the copy beside it, so a fixed ratio would either
+     clip the map or leave a gap under it. */
+  .esc-det-map {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 360px;
+  }
+
+  .esc-det-section .order-lg-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .esc-det-section .order-lg-1 .esc-det-map {
+    flex: 1 1 auto;
+  }
 }
 
 /* --------------------------------------------------------------------------
