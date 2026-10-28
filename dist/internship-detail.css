@@ -121,7 +121,10 @@
 .esc-det-title {
   font-size: 2.6rem;
   font-weight: 850;
-  color: #0c1b48;
+  /* #1f8a65 is the green already in main.css (.esc-icon-green), not a new one.
+     It reads 4.3:1 on white - clear of the 3:1 large-text minimum. The brighter
+     WhatsApp green sits at about 2:1 here and would not have been legible. */
+  color: #1f8a65;
   line-height: 1.12;
   letter-spacing: -0.6px;
   margin-bottom: 10px;
