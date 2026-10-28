@@ -5964,27 +5964,27 @@ img {
    clears AA comfortably, with the brand blue kept for the hover. */
 .esc-intern-card-more {
   margin-top: auto;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   align-self: center;
-  color: #0d1e4c;
+  color: #d81f27;
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   text-decoration: none;
   padding: 4px 2px;
-  border-bottom: 2px solid rgba(13, 30, 76, 0.18);
+  border-bottom: 2px solid rgba(216, 31, 39, 0.22);
   transition: color 0.2s ease, border-color 0.2s ease, gap 0.2s ease;
 }
 
 .esc-intern-card-more:hover,
 .esc-intern-card-more:focus-visible {
-  color: #1a56db;
-  border-bottom-color: #1a56db;
+  color: #a8141b;
+  border-bottom-color: #a8141b;
   gap: 12px;
 }
 
@@ -6009,6 +6009,6 @@ img {
   .esc-intern-card-more {
     font-size: 0.74rem;
     letter-spacing: 1px;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
 }

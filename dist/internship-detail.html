@@ -125,14 +125,19 @@
        ========================================================================= -->
   <section class="esc-det-titlebar">
     <div class="container-fluid px-3 px-lg-5">
-      <div class="esc-det-titlebar-inner">
-        <div>
+      <!-- 7/5 with the same gutters (g-4 g-lg-5) as the overview row below.
+           The split alone is not enough: Bootstrap pads row children by half
+           the gutter, so a different gutter would leave the facts and the
+           university image at different widths. -->
+      <div class="row align-items-end g-4 g-lg-5 esc-det-titlebar-inner">
+        <div class="col-lg-7">
           <h1 class="esc-det-title">Internship in Urban Design Workshop</h1>
           <p class="esc-det-university">
             <i class="bi bi-building"></i>
             Technical University of Ostrava, Czech Republic
           </p>
         </div>
+        <div class="col-lg-5">
         <ul class="esc-det-facts">
           <li>
             <span class="esc-det-fact-label">Starts on</span>
@@ -147,6 +152,7 @@
             <span class="esc-det-fact-value">Free</span>
           </li>
         </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -158,7 +164,6 @@
     <div class="container-fluid px-3 px-lg-5">
       <div class="row align-items-center g-4 g-lg-5">
         <div class="col-lg-7">
-          <span class="esc-det-eyebrow">University Overview</span>
           <h2 class="esc-det-h2">About the host university</h2>
           <div class="esc-det-yellow-rule"></div>
           <p class="esc-det-body">
@@ -194,24 +199,12 @@
        ========================================================================= -->
   <section class="esc-det-section esc-det-section-tint" id="location">
     <div class="container-fluid px-3 px-lg-5">
-      <span class="esc-det-eyebrow">Location</span>
-      <h2 class="esc-det-h2">Where you will be</h2>
-      <div class="esc-det-yellow-rule"></div>
-      <div class="row g-4 align-items-start">
-        <div class="col-lg-4">
-          <div class="esc-det-address">
-            <p class="esc-det-body mb-3">
-              PLACEHOLDER - campus address, nearest airport, and how students
-              get from the airport to the accommodation.
-            </p>
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=Technical+University+of+Ostrava"
-               target="_blank" rel="noopener noreferrer" class="esc-det-maplink">
-              <i class="bi bi-box-arrow-up-right"></i>
-              <span>Open in Google Maps</span>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-8">
+      <!-- Same shape as the overview above, sides swapped: map where the image
+           was, copy where the copy was. The order-* pair keeps the heading
+           first when the two stack on a phone, so the section still introduces
+           itself before showing the map. -->
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-5 order-2 order-lg-1">
           <!-- Keyless embed: swap the q= value per programme. loading="lazy"
                keeps Google off the critical path. -->
           <div class="esc-det-map">
@@ -222,6 +215,24 @@
               referrerpolicy="no-referrer-when-downgrade"
               allowfullscreen></iframe>
           </div>
+        </div>
+        <div class="col-lg-7 order-1 order-lg-2">
+          <span class="esc-det-eyebrow">Location</span>
+          <h2 class="esc-det-h2">Where you will be</h2>
+          <div class="esc-det-yellow-rule"></div>
+          <p class="esc-det-body">
+            PLACEHOLDER - campus address, nearest airport, and how students get
+            from the airport to the accommodation.
+          </p>
+          <p class="esc-det-body">
+            PLACEHOLDER - a second paragraph if the travel notes need it, or
+            delete this one.
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Technical+University+of+Ostrava"
+             target="_blank" rel="noopener noreferrer" class="esc-det-maplink">
+            <i class="bi bi-box-arrow-up-right"></i>
+            <span>Open in Google Maps</span>
+          </a>
         </div>
       </div>
     </div>

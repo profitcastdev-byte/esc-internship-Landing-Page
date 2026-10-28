@@ -112,12 +112,10 @@
   padding-block: 34px 30px;
 }
 
+/* A Bootstrap row now, so the facts take the same 5 columns the overview
+   image takes and the two line up down the page. */
 .esc-det-titlebar-inner {
-  display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-  gap: 28px;
-  flex-wrap: wrap;
 }
 
 .esc-det-title {
@@ -128,7 +126,6 @@
   letter-spacing: -0.6px;
   margin-bottom: 10px;
   text-wrap: balance;
-  max-width: 20ch;
 }
 
 .esc-det-university {
@@ -151,6 +148,7 @@
   display: flex;
   align-items: stretch;
   gap: 0;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -160,11 +158,13 @@
   background-color: #f7f9fd;
 }
 
+/* Equal thirds, so the bar fills its column rather than sizing to its text. */
 .esc-det-facts li {
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding: 12px 22px;
+  padding: 12px 18px;
   border-right: 1px solid #e2e8f0;
 }
 
@@ -306,14 +306,6 @@
   height: 100%;
   border: 0;
   display: block;
-}
-
-.esc-det-address {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  padding: 24px 22px;
-  height: 100%;
 }
 
 .esc-det-maplink {
@@ -516,7 +508,6 @@
   }
   .esc-det-title {
     font-size: 1.9rem;
-    max-width: 100%;
   }
   .esc-det-section {
     padding-block: 42px;
