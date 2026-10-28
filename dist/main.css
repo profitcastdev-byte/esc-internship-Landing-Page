@@ -6069,16 +6069,26 @@ img {
     padding-bottom: 9px;
   }
 
-  /* min-height rather than padding: these two sit inside flex parents that
-     were absorbing the padding, so they stayed at 37-38px. */
   .esc-footer-bottom-links a {
     display: inline-flex;
     align-items: center;
     min-height: 44px;
   }
 
+  /* This one carries a bottom border, so growing the box pulled the rule 14px
+     clear of the words it underlines. The hit area is extended with a
+     pseudo-element instead: 44px to the thumb, unchanged to the eye. */
   .esc-intern-card-more {
-    min-height: 44px;
+    position: relative;
+  }
+
+  .esc-intern-card-more::after {
+    content: "";
+    position: absolute;
+    /* Upwards only. The Enroll button below wins the hit test on its own
+       side, so the 15px all has to come from the 12px gap above plus a
+       sliver of the location line, which is text and not a target itself. */
+    inset: -15px 0 0 0;
   }
 
   .esc-about-gradient-btn {
@@ -6124,5 +6134,37 @@ img {
 
   .esc-footer-bottom-links a {
     font-size: 12.5px;
+  }
+}
+
+/* --- Short viewports -------------------------------------------------------
+   A phone held sideways is 375px tall, and the header - logo row plus contact
+   bar - took 138px of it, 37% of the screen, on every scroll. It stops being
+   sticky below 520px of height and scrolls away with the rest, which is the
+   usual trade: the taller the header, the less it can afford to stay. */
+@media (max-height: 520px) and (max-width: 991.98px) {
+  .esc-navbar-section {
+    position: static;
+  }
+
+  .esc-nav-logo-img {
+    height: 42px;
+  }
+
+  .esc-mobile-contact-bar {
+    padding-top: 6px;
+    padding-bottom: 0;
+  }
+}
+
+/* --- Narrow phones ---------------------------------------------------------
+   At 320px the logo needed 274px and the hamburger 64px in a 312px row, so
+   the toggler dropped to a line of its own and the header grew to three
+   stacked rows - 181px, a third of a 568px screen, held there by the sticky.
+   A shorter logo puts the two back on one line. */
+@media (max-width: 350px) {
+  .esc-nav-logo-img {
+    height: 46px;
+    width: auto;
   }
 }
