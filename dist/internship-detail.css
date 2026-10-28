@@ -1310,3 +1310,62 @@
     min-height: 0;
   }
 }
+
+/* --------------------------------------------------------------------------
+   FAQ
+   An inline link rather than a button: the underline runs with the text and
+   wraps with it, so a line that breaks over three lines on a phone still
+   reads as one clickable sentence. The icons sit outside the anchor, which
+   keeps them out of the underline and out of the accessible name.
+   -------------------------------------------------------------------------- */
+.esc-det-faq-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  max-width: 68ch;
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.esc-det-faq-line .bi-filetype-pdf {
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #d81f27;
+  flex-shrink: 0;
+}
+
+.esc-det-faq-link {
+  flex: 1 1 0;
+  min-width: 0;
+  font-weight: 700;
+  color: #1a56db;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(26, 86, 219, 0.32);
+  text-underline-offset: 5px;
+  transition: color 0.18s ease, text-decoration-color 0.18s ease;
+}
+
+.esc-det-faq-link:hover,
+.esc-det-faq-link:focus-visible {
+  color: #122a80;
+  text-decoration-color: #122a80;
+}
+
+/* Sits under the link, not beside it: the sentence wraps short of the line
+   box, which left the hint stranded out to the right of nothing. */
+.esc-det-faq-hint {
+  margin: 10px 0 0 34px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #7b88a8;
+}
+
+@media (max-width: 767px) {
+  .esc-det-faq-line {
+    font-size: 0.98rem;
+  }
+}
