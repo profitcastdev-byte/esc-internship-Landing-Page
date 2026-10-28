@@ -1303,16 +1303,6 @@
   letter-spacing: 0;
 }
 
-/* The conversion sits with the total, where the two currencies meet. */
-.esc-det-total-rate {
-  margin: 0;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  color: rgba(255, 255, 255, 0.72);
-  white-space: nowrap;
-}
-
 .esc-det-covers-title {
   margin-top: 0;
 }
