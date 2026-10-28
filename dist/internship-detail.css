@@ -785,20 +785,26 @@
 .esc-det-tag-review  { background-color: #ede6fb; color: #52338f; }
 .esc-det-tag-closing { background-color: #eef1f6; color: #3c4a6b; }
 
+/* The same 86px label column and 14px gutter the half-day rows use, so the
+   value starts on the same left edge as the morning and afternoon text instead
+   of hanging off its label. 10px top margin matches the gap between slots. */
 .esc-det-day-output {
-  margin: 12px 0 0 0;
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 14px;
+  align-items: baseline;
+  margin: 10px 0 0 0;
   font-size: 0.84rem;
   font-weight: 600;
   color: #0c1b48;
 }
 
-.esc-det-day-output span {
+.esc-det-output-label {
   font-size: 0.66rem;
   font-weight: 800;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #7b88a8;
-  margin-right: 8px;
 }
 
 .esc-det-flex-mark {
@@ -832,6 +838,10 @@
     justify-self: start;
     margin-top: 2px;
     min-width: 0;
+  }
+  .esc-det-day-output {
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
   .esc-det-day-head {
     margin-bottom: 10px;
