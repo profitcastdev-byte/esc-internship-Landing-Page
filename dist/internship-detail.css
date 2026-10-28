@@ -827,3 +827,138 @@
     margin-bottom: 10px;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Holding page for programmes whose detail content is not written yet
+   -------------------------------------------------------------------------- */
+.esc-det-soon {
+  background-color: #f7f9fd;
+  padding-block: 44px 72px;
+  min-height: 60vh;
+}
+
+.esc-det-soon-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #1a56db;
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration: none;
+  margin-bottom: 22px;
+  transition: gap 0.2s ease;
+}
+
+.esc-det-soon-back:hover,
+.esc-det-soon-back:focus-visible {
+  color: #0d3fa8;
+  gap: 13px;
+}
+
+.esc-det-soon-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 44px 46px;
+  max-width: 820px;
+  box-shadow: 0 10px 36px rgba(18, 30, 84, 0.05);
+}
+
+.esc-det-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background-color: #fcf0da;
+  color: #8a5a00;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  padding: 7px 16px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+}
+
+.esc-det-soon-title {
+  font-size: 2.2rem;
+  font-weight: 850;
+  color: #0c1b48;
+  line-height: 1.16;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+
+.esc-det-soon-text {
+  color: #4a5676;
+  font-size: 1rem;
+  line-height: 1.68;
+  font-weight: 500;
+  margin-bottom: 14px;
+  max-width: 62ch;
+}
+
+.esc-det-soon-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+/* The solid button is yellow-on-navy elsewhere; here it sits on white, so the
+   ghost variant would vanish. WhatsApp green carries the second action. */
+.esc-det-btn-wa {
+  background-color: #25d366;
+  color: #ffffff;
+  border: 2px solid #25d366;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.3);
+}
+
+.esc-det-btn-wa:hover,
+.esc-det-btn-wa:focus-visible {
+  background-color: #20ba5a;
+  border-color: #20ba5a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.esc-det-soon-note {
+  margin: 28px 0 0 0;
+  padding-top: 22px;
+  border-top: 1px solid #eaedf5;
+  font-size: 0.92rem;
+  color: #5c6989;
+  line-height: 1.6;
+}
+
+.esc-det-soon-note a {
+  color: #1a56db;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(26, 86, 219, 0.3);
+}
+
+.esc-det-soon-note a:hover {
+  color: #0d3fa8;
+  border-bottom-color: #0d3fa8;
+}
+
+@media (max-width: 767px) {
+  .esc-det-soon {
+    padding-block: 28px 44px;
+  }
+  .esc-det-soon-card {
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+  .esc-det-soon-title {
+    font-size: 1.55rem;
+  }
+  .esc-det-soon-actions {
+    width: 100%;
+  }
+  .esc-det-soon-actions .esc-det-btn {
+    width: 100%;
+  }
+}
