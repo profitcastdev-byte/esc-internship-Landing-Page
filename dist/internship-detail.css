@@ -552,6 +552,10 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+    /* The box holds the image's 4:3 rather than stretching, so the column is
+       usually taller than the map. Centring sits the map against the middle of
+       the copy instead of stranding it at the top over a gap. */
+    justify-content: center;
   }
 }
 
@@ -1000,5 +1004,35 @@
   }
   .esc-det-soon-actions .esc-det-btn {
     width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Touch sizing, below lg
+   Two links on this page sat well under a finger: the map link at 23px and the
+   back link at 33px. Both are padded to 44px here, which is the usual floor
+   for a touch target, without changing how they look on a mouse.
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .esc-det-maplink {
+    min-height: 44px;
+    padding: 10px 2px;
+  }
+
+  .esc-det-back {
+    min-height: 44px;
+    padding: 10px 18px;
+  }
+
+  /* The uppercase labels run to 10.6px here, below what is comfortable on a
+     phone. Nudged up; they stay smaller than the values they caption. */
+  .esc-det-tag,
+  .esc-det-output-label {
+    font-size: 0.72rem;
+  }
+
+  .esc-det-fact-label,
+  .esc-det-meta-label {
+    font-size: 0.7rem;
   }
 }
