@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Design Workshop - ESC</title>
+  <meta name="description" content="PLACEHOLDER - programme summary for the detail page. Replace with the real description once content is supplied.">
+  <link rel="icon" type="image/x-icon" href="./assets/images/esc-favicon.png">
+
+  <!-- PROTOTYPE. Layout only - every string, image and link below marked
+       PLACEHOLDER is standing in until real content arrives. The nav and footer
+       are copied verbatim from index.html so the two pages cannot drift. -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="internship-detail.css">
+</head>
+<body>
+
+<nav class="esc-navbar-section">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="row align-items-center justify-content-between flex-nowrap esc-nav-row">
+        <!-- Logo / Brand -->
+        <div class="col-auto d-flex align-items-center">
+          <a href="#" class="esc-nav-brand text-decoration-none">
+            <img src="assets/images/ESC-logo-europ.png" alt="Europe Study Centre" class="esc-nav-logo-img">
+          </a>
+        </div>
+
+        <!-- Navigation Links (Desktop) -->
+        <div class="col-auto col-lg-auto d-none d-lg-block ms-auto">
+          <ul class="esc-nav-links justify-content-center">
+            <li><a href="index.html#destinations">Internship Program</a></li>
+            <li><a href="index.html#inclusions">Program Details</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- CTA Action (Desktop) -->
+        <div class="col-auto d-none d-lg-flex align-items-center esc-nav-cta">
+          <span class="esc-nav-divider"></span>
+          <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722" title="Call Us">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+          <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="Chat on WhatsApp" title="WhatsApp Us">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <span class="esc-btn-phone-display">
+            +91-98844 57722
+          </span>
+        </div>
+
+        <!-- Mobile Right: Three-Bar Hamburger Button -->
+        <div class="col-auto d-lg-none text-end esc-nav-toggle-col">
+          <button class="esc-navbar-toggler" type="button" id="escMobileMenuToggle" aria-label="Toggle navigation menu" onclick="toggleEscMobileNav()">
+            <span class="esc-toggler-bar esc-bar-1"></span>
+            <span class="esc-toggler-bar esc-bar-2"></span>
+            <span class="esc-toggler-bar esc-bar-3"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Contact Bar. Inside the header row, so below lg it is one
+             line with the logo and toggler where there is room, and its own
+             line on phones where there is not. col-12 col-md-auto does that
+             width switch; the CSS only has to allow the wrap and set order.
+             Inside the sticky <nav>, so it sticks with the header and sits on
+             the navbar's own navy with no seam. -->
+        <div class="col-12 col-md-auto d-lg-none esc-mobile-contact-bar">
+          <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+          <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <span class="esc-btn-phone-display">+91-98844 57722</span>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Collapse Drawer -->
+      <div class="esc-mobile-nav-collapse d-lg-none" id="escMobileNavCollapse">
+        <ul class="esc-mobile-nav-links">
+          
+          <li><a href="index.html#destinations" onclick="closeEscMobileNav()">Internship Program</a></li>
+          <li><a href="index.html#inclusions" onclick="closeEscMobileNav()">Program Details</a></li>
+          <li><a href="index.html#about" onclick="closeEscMobileNav()">About</a></li>
+          <li><a href="index.html#contact" onclick="closeEscMobileNav()">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       1. Hero Banner - full-width banner image
+       ========================================================================= -->
+  <section class="esc-det-hero">
+    <img src="assets/images/internships/civil-architecture.jpg"
+         alt="PLACEHOLDER - banner image for this programme"
+         class="esc-det-hero-img">
+    <div class="esc-det-hero-scrim" aria-hidden="true"></div>
+    <div class="container-fluid px-3 px-lg-5 esc-det-hero-inner">
+      <a href="index.html#destinations" class="esc-det-back">
+        <i class="bi bi-arrow-left"></i>
+        <span>All internships</span>
+      </a>
+      <span class="esc-det-hero-flag">
+        <i class="bi bi-geo-alt-fill"></i> Czech Republic
+      </span>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       2. Program Title &amp; University Name
+       ========================================================================= -->
+  <section class="esc-det-titlebar">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-det-titlebar-inner">
+        <div>
+          <h1 class="esc-det-title">Internship in Urban Design Workshop</h1>
+          <p class="esc-det-university">
+            <i class="bi bi-building"></i>
+            Technical University of Ostrava, Czech Republic
+          </p>
+        </div>
+        <ul class="esc-det-facts">
+          <li>
+            <span class="esc-det-fact-label">Starts on</span>
+            <span class="esc-det-fact-value">Jan 25th - Feb 12th</span>
+          </li>
+          <li>
+            <span class="esc-det-fact-label">Duration</span>
+            <span class="esc-det-fact-value">2 Weeks</span>
+          </li>
+          <li>
+            <span class="esc-det-fact-label">Tuition</span>
+            <span class="esc-det-fact-value">Free</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. University Overview - content left, image right
+       ========================================================================= -->
+  <section class="esc-det-section" id="overview">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-7">
+          <span class="esc-det-eyebrow">University Overview</span>
+          <h2 class="esc-det-h2">About the host university</h2>
+          <div class="esc-det-yellow-rule"></div>
+          <p class="esc-det-body">
+            PLACEHOLDER - two or three paragraphs about the university: what it
+            is known for, the faculty hosting this internship, the labs or
+            studios students will work in, and anything that makes the campus
+            worth travelling to.
+          </p>
+          <p class="esc-det-body">
+            PLACEHOLDER - a second paragraph covering accreditation, the
+            language of instruction, and what students leave with. Keep it to
+            what a parent would want to read before saying yes.
+          </p>
+          <ul class="esc-det-ticks">
+            <li><i class="bi bi-check-circle-fill"></i> PLACEHOLDER - highlight one</li>
+            <li><i class="bi bi-check-circle-fill"></i> PLACEHOLDER - highlight two</li>
+            <li><i class="bi bi-check-circle-fill"></i> PLACEHOLDER - highlight three</li>
+          </ul>
+        </div>
+        <div class="col-lg-5">
+          <div class="esc-det-figure">
+            <img src="assets/images/internships/mechanical-ostrava.jpg"
+                 alt="PLACEHOLDER - photograph of the university"
+                 class="esc-det-figure-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Location Map - Google Maps
+       ========================================================================= -->
+  <section class="esc-det-section esc-det-section-tint" id="location">
+    <div class="container-fluid px-3 px-lg-5">
+      <span class="esc-det-eyebrow">Location</span>
+      <h2 class="esc-det-h2">Where you will be</h2>
+      <div class="esc-det-yellow-rule"></div>
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <div class="esc-det-address">
+            <p class="esc-det-body mb-3">
+              PLACEHOLDER - campus address, nearest airport, and how students
+              get from the airport to the accommodation.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Technical+University+of+Ostrava"
+               target="_blank" rel="noopener noreferrer" class="esc-det-maplink">
+              <i class="bi bi-box-arrow-up-right"></i>
+              <span>Open in Google Maps</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <!-- Keyless embed: swap the q= value per programme. loading="lazy"
+               keeps Google off the critical path. -->
+          <div class="esc-det-map">
+            <iframe
+              src="https://www.google.com/maps?q=Technical+University+of+Ostrava&amp;output=embed"
+              title="Map showing Technical University of Ostrava"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Day-wise Program
+       ========================================================================= -->
+  <section class="esc-det-section" id="schedule">
+    <div class="container-fluid px-3 px-lg-5">
+      <span class="esc-det-eyebrow">Day-wise Program</span>
+      <h2 class="esc-det-h2">What each day looks like</h2>
+      <div class="esc-det-yellow-rule"></div>
+      <p class="esc-det-body esc-det-lead">
+        PLACEHOLDER - one line framing the fortnight. Add or remove day rows
+        below to match the real schedule.
+      </p>
+
+      <ol class="esc-det-days">
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">01</span>
+          <div class="esc-det-day-body">
+            <h3 class="esc-det-day-title">PLACEHOLDER - Arrival and orientation</h3>
+            <p class="esc-det-day-text">
+              PLACEHOLDER - what happens on this day, who students meet, and
+              where they go.
+            </p>
+          </div>
+        </li>
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">02</span>
+          <div class="esc-det-day-body">
+            <h3 class="esc-det-day-title">PLACEHOLDER - Studio day</h3>
+            <p class="esc-det-day-text">PLACEHOLDER - activity description.</p>
+          </div>
+        </li>
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">03</span>
+          <div class="esc-det-day-body">
+            <h3 class="esc-det-day-title">PLACEHOLDER - Site visit</h3>
+            <p class="esc-det-day-text">PLACEHOLDER - activity description.</p>
+          </div>
+        </li>
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">04</span>
+          <div class="esc-det-day-body">
+            <h3 class="esc-det-day-title">PLACEHOLDER - Workshop</h3>
+            <p class="esc-det-day-text">PLACEHOLDER - activity description.</p>
+          </div>
+        </li>
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">05</span>
+          <div class="esc-det-day-body">
+            <h3 class="esc-det-day-title">PLACEHOLDER - Presentations and certificates</h3>
+            <p class="esc-det-day-text">PLACEHOLDER - activity description.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Download Brochure  +  7. Enroll Now
+       ========================================================================= -->
+  <section class="esc-det-cta" id="apply">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-det-cta-card">
+        <div class="esc-det-cta-text">
+          <h2 class="esc-det-cta-heading">Ready to join this internship?</h2>
+          <p class="esc-det-cta-sub">
+            PLACEHOLDER - one line on deadlines or seat limits.
+          </p>
+        </div>
+        <div class="esc-det-cta-actions">
+          <!-- PLACEHOLDER target: the PDF does not exist yet. Drop it at this
+               path, or repoint the href, before this page goes live. -->
+          <a href="assets/brochures/urban-design-workshop.pdf"
+             class="esc-det-btn esc-det-btn-ghost" download>
+            <i class="bi bi-file-earmark-arrow-down"></i>
+            <span>Download Brochure</span>
+          </a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform"
+             target="_blank" rel="noopener noreferrer"
+             class="esc-det-btn esc-det-btn-solid">
+            <span>Enroll Now</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="esc-main-footer-section" id="footer">
+    <div class="container-fluid px-3 px-md-4 px-lg-5 position-relative esc-footer-container">
+      
+      <!-- Top Navigation Row: Left Line + Nav Links with Yellow Border Bottom on Active Link -->
+      <div class="esc-footer-top-nav">
+        <span class="esc-footer-top-line" aria-hidden="true"></span>
+        <ul class="esc-footer-nav-list">
+          <li><a href="index.html#destinations">Internship Program</a></li>
+          <li><a href="index.html#inclusions">Program Details</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact" class="esc-footer-nav-active">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Main Content Row -->
+      <div class="row align-items-center esc-footer-main-row">
+        <!-- Skyline Line Art Background Illustration -->
+        <div class="esc-footer-skyline-wrap" aria-hidden="true">
+          <img src="assets/images/footer-europe-lineart.svg" alt="" class="esc-footer-skyline-lineart">
+        </div>
+
+        <!-- Left Side: Line with Text, Big Title, Paragraph -->
+        <div class="col-lg-6 col-md-12 mb-5 mb-lg-0 pe-lg-4" style="position: relative; z-index: 2;">
+          <!-- 1. Left line with text -->
+          <div class="esc-footer-pretitle">
+            <span class="esc-footer-preline"></span>
+            <span class="esc-footer-pretext">CONTACT US</span>
+          </div>
+
+          <!-- 2. Big title -->
+          <h2 class="esc-footer-heading">Your European dreams,<br>our guidance</h2>
+
+          <!-- 3. Paragraph -->
+          <p class="esc-footer-desc">
+            Send us a message and an advisor will walk you through eligibility, documentation and the next intake dates.
+          </p>
+        </div>
+
+        <!-- Right Side: Three Clickable Contact Cards -->
+        <div class="col-lg-6 col-md-12 ps-lg-5" style="position: relative; z-index: 2;">
+          <div class="esc-footer-cards-stack">
+            <!-- Card 1: Phone / Call or WhatsApp -->
+            <a href="tel:+919884457722" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">+91-98844 57722</span>
+                  <span class="esc-footer-card-sub">Call Us</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+
+            <!-- Card 2: Email -->
+            <a href="mailto:info@euinternship.com" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">info@euinternship.com</span>
+                  <span class="esc-footer-card-sub">Email us anytime</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+
+            <!-- Card 3: WhatsApp -->
+            <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">Message on WhatsApp</span>
+                  <span class="esc-footer-card-sub">Fastest way to reach us</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="esc-footer-bottom-bar">
+        <div>
+          © 2026 Europe Study Centre Private Limited. All Rights Reserved.
+        </div>
+        <div class="esc-footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Fixed Floating WhatsApp Button (Desktop & Mobile)
+       ========================================================================= -->
+  <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-floating-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="esc-floating-whatsapp-pulse"></span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function toggleEscMobileNav() {
+      const collapse = document.getElementById('escMobileNavCollapse');
+      const toggler = document.getElementById('escMobileMenuToggle');
+      if (collapse && toggler) {
+        collapse.classList.toggle('esc-mobile-open');
+        toggler.classList.toggle('esc-open');
+      }
+    }
+
+    function closeEscMobileNav() {
+      const collapse = document.getElementById('escMobileNavCollapse');
+      const toggler = document.getElementById('escMobileMenuToggle');
+      if (collapse) collapse.classList.remove('esc-mobile-open');
+      if (toggler) toggler.classList.remove('esc-open');
+    }
+  </script>
+</body>
+</html>

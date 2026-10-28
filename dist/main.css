@@ -5950,3 +5950,65 @@ img {
     font-size: 1.5rem;
   }
 }
+
+/* "For More Details", above Enroll Now on every internship card.
+
+   It takes the margin-top:auto the button used to carry, so the pair sits
+   together at the bottom of the card and the free space falls above them both
+   instead of between them. The button's own auto margin is zeroed when this
+   link precedes it.
+
+   The reference for this is amber on navy; here it sits on a white card body,
+   where amber reads at about 1.9:1 and fails WCAG outright. Same treatment -
+   uppercase, letter-spaced, trailing arrow - in the card's own navy, which
+   clears AA comfortably, with the brand blue kept for the hover. */
+.esc-intern-card-more {
+  margin-top: auto;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  align-self: center;
+  color: #0d1e4c;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 4px 2px;
+  border-bottom: 2px solid rgba(13, 30, 76, 0.18);
+  transition: color 0.2s ease, border-color 0.2s ease, gap 0.2s ease;
+}
+
+.esc-intern-card-more:hover,
+.esc-intern-card-more:focus-visible {
+  color: #1a56db;
+  border-bottom-color: #1a56db;
+  gap: 12px;
+}
+
+.esc-intern-card-more i {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+/* The button no longer needs to claim the free space itself. */
+.esc-intern-card-more + .esc-intern-card-btn {
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  .esc-intern-card-more {
+    font-size: 0.76rem;
+    letter-spacing: 1.1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .esc-intern-card-more {
+    font-size: 0.74rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+}
