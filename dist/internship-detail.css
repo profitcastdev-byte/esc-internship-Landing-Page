@@ -1247,7 +1247,7 @@
 
 .esc-det-cost-lines em {
   font-size: 0.78rem;
-  font-style: italic;
+  font-style: normal;
   font-weight: 500;
   color: #5c6989;
 }
@@ -1303,13 +1303,14 @@
   letter-spacing: 0;
 }
 
-.esc-det-total-note {
-  flex: 1 1 320px;
-  max-width: 46ch;
+/* The conversion sits with the total, where the two currencies meet. */
+.esc-det-total-rate {
   margin: 0;
   font-size: 0.85rem;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.76);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.72);
+  white-space: nowrap;
 }
 
 .esc-det-covers-title {
