@@ -290,17 +290,19 @@
 /* --------------------------------------------------------------------------
    4. Map
    -------------------------------------------------------------------------- */
-/* 16:9 while the two columns are stacked. On lg the row stretches instead and
-   the map fills the column, so the aspect ratio is dropped there - see below. */
+/* 4:3 while the two columns are stacked, matching the map image, so it uses the
+   full width of a phone instead of being letterboxed into a wider box. On lg
+   the row stretches instead and the map fills the column, so the aspect ratio
+   is dropped there - see below. */
 .esc-det-map {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   max-width: 100%;
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid #dce4ef;
   box-shadow: 0 10px 30px rgba(18, 30, 84, 0.08);
-  background-color: #e8eef8;
+  background-color: #f1f6fd;
 }
 
 .esc-det-map {
@@ -308,12 +310,17 @@
   text-decoration: none;
 }
 
+/* contain, not cover: this map carries a key in one corner and country labels
+   at its edges, and the box stretches to the copy beside it - at 1920 it runs
+   to 1.86:1 against the image's 1.33:1, which under cover would crop about a
+   quarter of the height and take the key with it. Contained, the whole map
+   always shows; the box's pale ground reads as a mount around it. */
 .esc-det-map-img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: transform 0.35s ease;
 }
