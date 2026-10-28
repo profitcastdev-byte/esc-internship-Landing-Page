@@ -506,6 +506,12 @@
        ========================================================================= -->
   <!-- =========================================================================
        Cost details
+
+       Grouped by who receives the money, not by the numbering in the source
+       document. A reader's question is "what do I pay, and to whom" - three
+       payees answer it, where "1 / 2 / 2(a) / 2(b)" only answered it after
+       being decoded. One money treatment throughout, and the total is stated
+       once, in full, rather than left for the reader to add up.
        ========================================================================= -->
   <section class="esc-det-section esc-det-section-tint" id="costs">
     <div class="container-fluid px-3 px-lg-5">
@@ -513,90 +519,80 @@
       <h2 class="esc-det-h2">What the programme costs</h2>
       <div class="esc-det-yellow-rule"></div>
 
-      <div class="esc-det-cost-headline">
-        <span class="esc-det-cost-label">1. Internship Programme Fee</span>
-        <span class="esc-det-cost-figure">EUR 100</span>
-        <span class="esc-det-cost-note">Paid directly to VSB – Technical University of Ostrava</span>
-      </div>
-
-      <p class="esc-det-cost-lead">2. Expenses to be borne by the student</p>
-
-      <div class="row g-4 g-lg-5">
-        <div class="col-lg-7">
-          <h3 class="esc-det-h3">2 (a). Application Process and Service Charges</h3>
-          <ol class="esc-det-stages">
-            <li>
-              <span class="esc-det-stage-name">Stage 1 – Registration and onboarding</span>
-              <span class="esc-det-stage-fee">Rs. 10,000 + 18% GST</span>
-            </li>
-            <li>
-              <span class="esc-det-stage-name">Stage 2 – Visa processing and documentation support
-                <span class="esc-det-stage-note">Payable after the offer letter is secured</span>
-              </span>
-              <span class="esc-det-stage-fee">Rs. 40,000 + 18% GST</span>
-            </li>
-            <li class="esc-det-stage-total">
-              <span class="esc-det-stage-name">Total service charges</span>
-              <span class="esc-det-stage-fee">Rs. 50,000</span>
-            </li>
-          </ol>
-
-          <h3 class="esc-det-h3">Services included in the charges</h3>
-          <ul class="esc-det-included">
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>University admission letter processing</span></li>
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>Visa processing guidance and support</span></li>
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>Documentation preparation and verification guidance</span></li>
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>Local permit documentation support, wherever applicable</span></li>
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>Travel and health insurance with coverage of EUR 30,000</span></li>
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>Flight itinerary required for visa submission</span></li>
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>Accommodation guidance and assistance</span></li>
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>Pre-departure guidance and university coordination</span></li>
-            <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> <span>Complimentary Forex Card</span></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-5">
-          <h3 class="esc-det-h3">2 (b). Food, Accommodation &amp; Airfare</h3>
-          <div class="esc-det-table-wrap">
-            <table class="esc-det-table">
-              <thead>
-                <tr><th scope="col">Expense</th><th scope="col">Estimated cost</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Round-Trip Airfare</th>
-                  <td>Rs. 60,000 (approx.)</td>
-                </tr>
-                <tr>
-                  <th scope="row">Accommodation (14 days in youth hostels)</th>
-                  <td>Rs. 25,000 (approx. EUR 250)</td>
-                </tr>
-                <tr>
-                  <th scope="row">Food (for 14 days)</th>
-                  <td>Rs. 20,000 (approx. EUR 200)</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th scope="row">Subtotal</th>
-                  <td>Rs. 1,05,000</td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-
-          <p class="esc-det-grand-total">
-            <span>Total estimated outlay</span>
-            Rs. 1,55,000
-            <em>plus the visa fee, paid to VFS directly</em>
+      <ul class="esc-det-costs">
+        <li class="esc-det-cost">
+          <span class="esc-det-cost-to">Paid to the university</span>
+          <span class="esc-det-cost-amount">EUR 100</span>
+          <p class="esc-det-cost-what">
+            The internship programme fee, paid directly to VSB – Technical University
+            of Ostrava.
           </p>
+        </li>
+
+        <li class="esc-det-cost">
+          <span class="esc-det-cost-to">Paid to ESC</span>
+          <span class="esc-det-cost-amount">Rs. 50,000 <small>+ 18% GST</small></span>
+          <ul class="esc-det-cost-lines">
+            <li>
+              <span>Stage 1 — Registration and onboarding</span>
+              <b>Rs. 10,000</b>
+            </li>
+            <li>
+              <span>Stage 2 — Visa processing and documentation
+                <em>Payable once the offer letter is secured</em>
+              </span>
+              <b>Rs. 40,000</b>
+            </li>
+          </ul>
+        </li>
+
+        <li class="esc-det-cost">
+          <span class="esc-det-cost-to">Your own costs</span>
+          <span class="esc-det-cost-amount">Rs. 1,05,000 <small>approx.</small></span>
+          <ul class="esc-det-cost-lines">
+            <li>
+              <span>Round-trip airfare</span>
+              <b>Rs. 60,000</b>
+            </li>
+            <li>
+              <span>Accommodation, 14 days in youth hostels
+                <em>approx. EUR 250</em>
+              </span>
+              <b>Rs. 25,000</b>
+            </li>
+            <li>
+              <span>Food, 14 days
+                <em>approx. EUR 200</em>
+              </span>
+              <b>Rs. 20,000</b>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="esc-det-total">
+        <div class="esc-det-total-main">
+          <span class="esc-det-total-label">Total, excluding the visa fee</span>
+          <span class="esc-det-total-figure">Rs. 1,55,000 <small>+ EUR 100</small></span>
         </div>
+        <p class="esc-det-total-note">
+          The visa fee is paid to VFS directly. Rupee figures are indicative and based on
+          current rates; they may change at the time of booking.
+        </p>
       </div>
 
-      <p class="esc-det-footnote">
-        The prices shown are indicative and based on current rates. They are subject to
-        change at the time of booking.
-      </p>
+      <h3 class="esc-det-h3 esc-det-covers-title">What the ESC service charge covers</h3>
+      <ul class="esc-det-included">
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>University admission letter processing</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Visa processing guidance and support</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Documentation preparation and verification guidance</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Local permit documentation support, wherever applicable</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Travel and health insurance, EUR 30,000 cover</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Flight itinerary required for visa submission</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Accommodation guidance and assistance</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Pre-departure guidance and university coordination</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Complimentary forex card</span></li>
+      </ul>
     </div>
   </section>
 

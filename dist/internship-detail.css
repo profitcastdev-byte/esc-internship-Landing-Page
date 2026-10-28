@@ -1124,96 +1124,168 @@
 
 /* --------------------------------------------------------------------------
    Cost details
+   Three payees across a row, each with its figure and its line items, then one
+   total. Equal columns so the three read as one set rather than a hierarchy -
+   the money is what differs between them, not their importance.
    -------------------------------------------------------------------------- */
-.esc-det-cost-headline {
+.esc-det-costs {
+  list-style: none;
+  margin: 0 0 22px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.esc-det-cost {
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 6px 16px;
+  flex-direction: column;
   background-color: #ffffff;
   border: 1px solid #dce4ef;
-  border-radius: 16px;
-  padding: 18px 24px;
-  margin-bottom: 26px;
+  border-radius: 18px;
+  padding: 22px 24px 20px 24px;
+  box-shadow: 0 6px 20px rgba(18, 30, 84, 0.04);
 }
 
-.esc-det-cost-label {
-  font-size: 1rem;
+.esc-det-cost-to {
+  font-size: 0.68rem;
   font-weight: 800;
-  color: #0c1b48;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #7b88a8;
+  margin-bottom: 8px;
 }
 
-.esc-det-cost-figure {
-  font-size: 1.7rem;
+.esc-det-cost-amount {
+  font-size: 1.85rem;
   font-weight: 850;
-  color: #1f8a65;
-  letter-spacing: -0.4px;
-}
-
-.esc-det-cost-note {
-  font-size: 0.86rem;
-  color: #5c6989;
-  flex-basis: 100%;
-}
-
-.esc-det-cost-lead {
-  font-size: 1.05rem;
-  font-weight: 800;
   color: #0c1b48;
-  margin-bottom: 4px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 14px;
 }
 
-/* Each stage is name on the left, money on the right, so the figures form a
-   column the eye can add up. */
-.esc-det-stages {
+.esc-det-cost-amount small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #5c6989;
+}
+
+.esc-det-cost-what {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #4a5676;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Line items: label left, figure right, so the figures form a column that can
+   be read down and added up. */
+.esc-det-cost-lines {
   list-style: none;
-  margin: 0 0 6px 0;
+  margin: auto 0 0 0;
   padding: 0;
+  border-top: 1px solid #eaedf5;
 }
 
-.esc-det-stages li {
+.esc-det-cost-lines li {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 18px;
-  padding: 12px 0;
-  border-bottom: 1px solid #e2e8f0;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaedf5;
 }
 
-.esc-det-stage-name {
+.esc-det-cost-lines li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.esc-det-cost-lines span {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  font-size: 0.96rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #0c1b48;
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
-.esc-det-stage-note {
-  font-size: 0.82rem;
+.esc-det-cost-lines em {
+  font-size: 0.78rem;
   font-style: italic;
   font-weight: 500;
   color: #5c6989;
 }
 
-.esc-det-stage-fee {
-  font-size: 1rem;
+.esc-det-cost-lines b {
+  font-size: 0.92rem;
   font-weight: 850;
   color: #0c1b48;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
 
-.esc-det-stage-total {
-  border-bottom: none;
-  border-top: 2px solid #0c1b48;
-  margin-top: 2px;
+/* The one figure a reader is looking for, stated once and in full. */
+.esc-det-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  background-color: #0c1b48;
+  border-radius: 18px;
+  padding: 22px 28px;
+  margin-bottom: 34px;
 }
 
-.esc-det-stage-total .esc-det-stage-name,
-.esc-det-stage-total .esc-det-stage-fee {
+.esc-det-total-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.esc-det-total-label {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.esc-det-total-figure {
+  font-size: 2rem;
   font-weight: 850;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -0.6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.esc-det-total-figure small {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffc72c;
+  letter-spacing: 0;
+}
+
+.esc-det-total-note {
+  flex: 1 1 320px;
+  max-width: 46ch;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.esc-det-covers-title {
+  margin-top: 0;
 }
 
 .esc-det-included {
@@ -1221,8 +1293,8 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 9px 22px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 10px 24px;
 }
 
 .esc-det-included li {
@@ -1242,88 +1314,6 @@
   flex-shrink: 0;
 }
 
-/* Wide tables get their own scroller so the page never moves sideways. */
-.esc-det-table-wrap {
-  overflow-x: auto;
-  border: 1px solid #dce4ef;
-  border-radius: 14px;
-  background-color: #ffffff;
-}
-
-.esc-det-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.92rem;
-}
-
-.esc-det-table th,
-.esc-det-table td {
-  padding: 12px 16px;
-  text-align: left;
-  border-bottom: 1px solid #eaedf5;
-  line-height: 1.4;
-}
-
-.esc-det-table thead th {
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: #7b88a8;
-  background-color: #f7f9fd;
-}
-
-.esc-det-table tbody th {
-  font-weight: 600;
-  color: #4a5676;
-}
-
-.esc-det-table td {
-  font-weight: 700;
-  color: #0c1b48;
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
-}
-
-.esc-det-table tfoot th,
-.esc-det-table tfoot td {
-  border-bottom: none;
-  border-top: 2px solid #0c1b48;
-  font-weight: 850;
-  color: #0c1b48;
-}
-
-.esc-det-grand-total {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  background-color: #0c1b48;
-  color: #ffffff;
-  border-radius: 14px;
-  padding: 18px 22px;
-  margin: 18px 0 0 0;
-  font-size: 1.45rem;
-  font-weight: 850;
-  letter-spacing: -0.3px;
-  font-variant-numeric: tabular-nums;
-}
-
-.esc-det-grand-total span {
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.esc-det-grand-total em {
-  font-size: 0.82rem;
-  font-weight: 500;
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.78);
-  letter-spacing: 0;
-}
-
 @media (max-width: 767px) {
   .esc-det-deadlines-card {
     padding: 18px 16px 16px 16px;
@@ -1332,18 +1322,19 @@
   .esc-det-deadlines-title {
     font-size: 1rem;
   }
-  .esc-det-cost-headline {
-    padding: 16px 18px;
+  .esc-det-cost {
+    padding: 18px 18px 16px 18px;
   }
-  .esc-det-cost-figure {
-    font-size: 1.45rem;
+  .esc-det-cost-amount {
+    font-size: 1.6rem;
   }
-  .esc-det-stages li {
-    flex-direction: column;
-    gap: 4px;
+  .esc-det-total {
+    padding: 18px 20px;
   }
-  .esc-det-grand-total {
-    font-size: 1.2rem;
-    padding: 16px 18px;
+  .esc-det-total-figure {
+    font-size: 1.6rem;
+  }
+  .esc-det-total-figure small {
+    font-size: 0.95rem;
   }
 }
