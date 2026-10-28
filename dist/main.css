@@ -6012,3 +6012,117 @@ img {
     margin-bottom: 14px;
   }
 }
+
+/* ==========================================================================
+   Responsive corrections
+   Written against measurements taken at 320, 375, 768, 1024 and 1180px, so
+   every rule below answers something that was wrong at one of those widths
+   rather than a guess. Appended rather than merged into the breakpoint
+   blocks above: these need to win over rules that already set the same
+   properties, and keeping them in one place makes them easy to read back.
+   ========================================================================== */
+
+/* --- Header, 992-1199px ----------------------------------------------------
+   The nav row is flex-nowrap and held 286 + 483 + 317 = 1086px of content in
+   937px of space, so every page scrolled 97px sideways on a tablet in
+   landscape. The two circular buttons already dial the same number the pill
+   prints, so the pill is the part that can go. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .esc-nav-cta .esc-btn-phone-display,
+  .esc-nav-divider {
+    display: none;
+  }
+}
+
+/* --- Hero headline ---------------------------------------------------------
+   575px and below asked for 3.5rem while 576-767px asked for 2.5rem, so the
+   type grew as the screen got smaller and "INTERNSHIP" ran 38px off the side
+   of a 320px phone. One ladder for both bands now, capped against the
+   viewport so the longest word cannot clip again at any width. */
+@media (max-width: 767.98px) {
+  .esc-hero-title-free,
+  .esc-hero-title-navy {
+    font-size: min(3.5rem, 14.5vw);
+    letter-spacing: -0.4px;
+  }
+
+  .esc-hero-title-badge {
+    font-size: min(2.05rem, 8.4vw);
+    padding: 3px 10px 4px;
+  }
+}
+
+/* --- Touch targets ---------------------------------------------------------
+   44px is the smallest target a thumb hits reliably. These were 22-39px, and
+   the footer links in particular sat close enough together to catch the
+   wrong one. Padding rather than height, so nothing reflows. */
+@media (max-width: 1199.98px) {
+  .esc-btn-circle {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .esc-footer-nav-list a {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  /* min-height rather than padding: these two sit inside flex parents that
+     were absorbing the padding, so they stayed at 37-38px. */
+  .esc-footer-bottom-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .esc-intern-card-more {
+    min-height: 44px;
+  }
+
+  .esc-about-gradient-btn {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+
+/* --- Small type ------------------------------------------------------------
+   Everything here measured under 11px on a phone, where it stops being text
+   and starts being texture. The Schengen counter was the worst at 8px with
+   3.5px of tracking, which reads as separate letters rather than a word, so
+   it gets the tracking cut as well as the size raised. */
+@media (max-width: 1199.98px) {
+  .esc-visa-stat-lbl {
+    font-size: 11.5px;
+    letter-spacing: 1.5px;
+  }
+
+  .esc-visa-flag-name {
+    font-size: 12.5px;
+  }
+
+  .esc-about-feature-sub {
+    font-size: 12.5px;
+  }
+
+  .esc-about-gradient-btn span {
+    font-size: 13.5px;
+  }
+
+  .esc-footer-pretext {
+    font-size: 12px;
+  }
+
+  .esc-footer-card-sub {
+    font-size: 12.5px;
+  }
+
+  .esc-footer-bottom-bar {
+    font-size: 12.5px;
+  }
+
+  .esc-footer-bottom-links a {
+    font-size: 12.5px;
+  }
+}
