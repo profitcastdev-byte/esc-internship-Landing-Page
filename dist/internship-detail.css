@@ -294,9 +294,10 @@
    4. Map
    -------------------------------------------------------------------------- */
 /* 4:3 while the two columns are stacked, matching the map image, so it uses the
-   full width of a phone instead of being letterboxed into a wider box. On lg
-   the row stretches instead and the map fills the column, so the aspect ratio
-   is dropped there - see below. */
+   full width of a phone instead of being letterboxed into a wider box. The
+   ratio is held at every width, not just here: the box matching the image is
+   what lets the map fill it exactly, with neither bands around it nor a crop
+   through its key. */
 .esc-det-map {
   position: relative;
   aspect-ratio: 4 / 3;
@@ -306,24 +307,19 @@
   border: 1px solid #dce4ef;
   box-shadow: 0 10px 30px rgba(18, 30, 84, 0.08);
   background-color: #f1f6fd;
-}
-
-.esc-det-map {
   display: block;
   text-decoration: none;
 }
 
-/* contain, not cover: this map carries a key in one corner and country labels
-   at its edges, and the box stretches to the copy beside it - at 1920 it runs
-   to 1.86:1 against the image's 1.33:1, which under cover would crop about a
-   quarter of the height and take the key with it. Contained, the whole map
-   always shows; the box's pale ground reads as a mount around it. */
+/* cover, now that the box holds the image's own 4:3. The two agree, so nothing
+   is cropped and nothing is letterboxed - and a future map a little off 4:3
+   fills the box rather than sitting in a band of background. */
 .esc-det-map-img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   transition: transform 0.35s ease;
 }
@@ -548,22 +544,14 @@
 }
 
 @media (min-width: 992px) {
-  /* Column height comes from the copy beside it, so a fixed ratio would either
-     clip the map or leave a gap under it. */
-  .esc-det-map {
-    aspect-ratio: auto;
-    height: 100%;
-    min-height: 360px;
-  }
-
+  /* The box keeps its 4:3 rather than stretching to the copy beside it. A
+     stretched box cannot match the image's shape, so it either banded the map
+     or cropped it; sized to the image, it fits exactly. Any height left in the
+     column simply sits under the map link. */
   .esc-det-section .order-lg-1 {
     display: flex;
     flex-direction: column;
     gap: 14px;
-  }
-
-  .esc-det-section .order-lg-1 .esc-det-map {
-    flex: 1 1 auto;
   }
 }
 
