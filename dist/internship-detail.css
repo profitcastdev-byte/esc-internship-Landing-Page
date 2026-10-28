@@ -355,6 +355,15 @@
   position: relative;
 }
 
+/* Without flex:1 the body is only as wide as its own longest line, so every
+   day ended at a different x and the session tags staggered down the page.
+   min-width:0 lets it shrink below its content width instead of forcing the
+   row wider. */
+.esc-det-day-body {
+  flex: 1;
+  min-width: 0;
+}
+
 .esc-det-day:last-child {
   border-bottom: none;
 }
@@ -757,7 +766,11 @@
   font-weight: 500;
 }
 
+/* A common min-width turns the tags into one aligned column rather than a
+   ragged edge - "Lecture - 2 h" is the widest at 106px, so 112px covers it. */
 .esc-det-tag {
+  min-width: 112px;
+  text-align: center;
   font-size: 0.66rem;
   font-weight: 800;
   letter-spacing: 1px;
@@ -822,6 +835,7 @@
   .esc-det-tag {
     justify-self: start;
     margin-top: 2px;
+    min-width: 0;
   }
   .esc-det-day-head {
     margin-bottom: 10px;
