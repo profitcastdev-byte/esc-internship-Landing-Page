@@ -240,15 +240,14 @@
            beside it. -->
       <div class="row align-items-stretch g-4 g-lg-5">
         <div class="col-lg-5 order-2 order-lg-1">
-          <!-- A still image rather than an embed. The whole thing is a link, so a
-               static map still gets you to the real one; the text link below is
-               kept for anyone who does not try clicking the picture. -->
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=VSB+Technical+University+of+Ostrava" target="_blank" rel="noopener noreferrer"
-             class="esc-det-map" aria-label="Open the location in Google Maps">
+          <!-- A plain figure, not a link. It shows the Schengen Area as a whole,
+               so sending a click to a single university pin would not follow
+               from the picture. -->
+          <div class="esc-det-map">
             <img src="assets/images/schengen-map-czech-republic.jpg"
-                 alt="Map of the Schengen Area with the Czech Republic arrowed, showing Schengen EU and non-EU members, states set to implement later, and EU states outside Schengen"
+                 alt="Map of the Schengen Area with the Czech Republic arrowed, keyed as Schengen Area (EU), Schengen Area (non-EU), and EU states outside Schengen"
                  class="esc-det-map-img" loading="lazy">
-          </a>
+          </div>
         </div>
         <div class="col-lg-7 order-1 order-lg-2">
           <span class="esc-det-eyebrow">Location</span>
