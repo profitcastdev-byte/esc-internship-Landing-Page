@@ -1337,8 +1337,12 @@
 }
 
 .esc-det-faq-link {
-  flex: 1 1 0;
+  flex: 0 1 auto;
   min-width: 0;
+  /* One short line is only 28px of text; the padding brings the hit area up
+     to a thumb-sized target without moving the underline, which is measured
+     from the baseline. */
+  padding-block: 8px;
   font-weight: 700;
   color: #1a56db;
   text-decoration: underline;
@@ -1354,10 +1358,10 @@
   text-decoration-color: #122a80;
 }
 
-/* Sits under the link, not beside it: the sentence wraps short of the line
-   box, which left the hint stranded out to the right of nothing. */
+/* Back beside the link now the label is three words: at that length the two
+   sit on one line without the hint stranding out to the right of nothing. */
 .esc-det-faq-hint {
-  margin: 10px 0 0 34px;
+  margin: 0;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.3px;
