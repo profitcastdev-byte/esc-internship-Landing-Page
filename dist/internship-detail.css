@@ -1055,42 +1055,36 @@
   border-radius: 16px;
   padding: 22px 26px 20px 26px;
   margin-top: 30px;
-  animation: escDeadlineBlink 1s ease-in-out infinite;
 }
 
-/* The border carries the blink, not the card. These are the dates a reader
-   has to take down, and text that flickers underneath them is text they
-   have to wait to read - the frame can ask for attention without taking
-   the content away. Dark red, the shade already on the visa deadline
-   below, evenly around all four sides. One cycle a second, the same beat as the start-date badges on the
-   home page and well inside the three-a-second limit. The ring is a
-   box-shadow, so nothing around the card moves. */
-@keyframes escDeadlineBlink {
+/* The heading flashes, and nothing else does. It is a label - "Important" -
+   so a reader loses nothing while it is dim, where the dates below it are
+   what they have come to write down and have to stay solid. One cycle a
+   second, the same beat as the start-date badges on the home page and well
+   inside the three-flashes-a-second limit. */
+@keyframes escDeadlineTitleFlash {
   0%, 20% {
-    border-color: #e0a8ab;
-    box-shadow: 0 0 0 0 rgba(168, 20, 27, 0);
+    opacity: 1;
   }
   50% {
-    border-color: #a8141b;
-    box-shadow: 0 0 0 5px rgba(168, 20, 27, 0.34);
+    opacity: 0.32;
   }
   80%, 100% {
-    border-color: #e0a8ab;
-    box-shadow: 0 0 0 0 rgba(168, 20, 27, 0);
+    opacity: 1;
   }
 }
 
-/* Anyone who has asked their system for less movement gets the loud end of
-   the cycle held still, so the card still stands out. */
+/* Anyone who has asked their system for less movement keeps the heading at
+   full strength rather than losing the emphasis altogether. */
 @media (prefers-reduced-motion: reduce) {
-  .esc-det-deadlines-card {
+  .esc-det-deadlines-title {
     animation: none;
-    border-color: #a8141b;
-    box-shadow: 0 0 0 4px rgba(168, 20, 27, 0.26);
+    opacity: 1;
   }
 }
 
 .esc-det-deadlines-title {
+  animation: escDeadlineTitleFlash 1s ease-in-out infinite;
   display: flex;
   align-items: center;
   gap: 11px;
