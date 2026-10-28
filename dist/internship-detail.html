@@ -208,16 +208,15 @@
            beside it. -->
       <div class="row align-items-stretch g-4 g-lg-5">
         <div class="col-lg-5 order-2 order-lg-1">
-          <!-- Keyless embed: swap the q= value per programme. loading="lazy"
-               keeps Google off the critical path. -->
-          <div class="esc-det-map">
-            <iframe
-              src="https://www.google.com/maps?q=VSB+Technical+University+of+Ostrava&amp;output=embed"
-              title="Map showing VSB - Technical University of Ostrava"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen></iframe>
-          </div>
+          <!-- A still image rather than an embed. The whole thing is a link, so a
+               static map still gets you to the real one; the text link below is
+               kept for anyone who does not try clicking the picture. -->
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=VSB+Technical+University+of+Ostrava" target="_blank" rel="noopener noreferrer"
+             class="esc-det-map" aria-label="Open the location in Google Maps">
+            <img src="assets/images/europe-map.svg"
+                 alt="PLACEHOLDER - map image showing the programme location"
+                 class="esc-det-map-img" loading="lazy">
+          </a>
           <a href="https://www.google.com/maps/search/?api=1&amp;query=VSB+Technical+University+of+Ostrava"
              target="_blank" rel="noopener noreferrer" class="esc-det-maplink">
             <i class="bi bi-box-arrow-up-right"></i>

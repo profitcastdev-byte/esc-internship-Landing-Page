@@ -303,13 +303,35 @@
   background-color: #e8eef8;
 }
 
-.esc-det-map iframe {
+.esc-det-map {
+  display: block;
+  text-decoration: none;
+}
+
+.esc-det-map-img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  border: 0;
+  object-fit: cover;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+/* The box stretches to the copy beside it, so the crop is not fixed - a slight
+   lift on hover is the only cue that the picture is a link. */
+.esc-det-map:hover .esc-det-map-img,
+.esc-det-map:focus-visible .esc-det-map-img {
+  transform: scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .esc-det-map-img {
+    transition: none;
+  }
+  .esc-det-map:hover .esc-det-map-img {
+    transform: none;
+  }
 }
 
 .esc-det-maplink {
