@@ -1216,9 +1216,14 @@
 
 /* Line items: label left, figure right, so the figures form a column that can
    be read down and added up. */
+/* Top-aligned, not bottom-aligned. The auto top margin pushed each list to
+   the foot of its card, which only showed when a card had fewer rows than
+   its neighbours: card 2 opened with 53px of white under its heading where
+   the others had 10px. Any slack now falls to the bottom of the card, where
+   it reads as the card being roomy rather than the heading being adrift. */
 .esc-det-cost-lines {
   list-style: none;
-  margin: auto 0 0 0;
+  margin: 0;
   padding: 0;
   border-top: 1px solid #eaedf5;
 }
