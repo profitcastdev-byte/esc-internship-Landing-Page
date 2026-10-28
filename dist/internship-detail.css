@@ -487,6 +487,19 @@
 /* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */
+/* "Internship in Urban Design Workshop" needs 725px at 2.6rem, but its column
+   gives it 661px at 1280 wide, so it broke to two lines right through the
+   common laptop range. 2.2rem brings it to about 613px and it holds one line.
+   Deliberately not white-space:nowrap - the longest title in the set,
+   "EuroTech 2027-Internship in Mechatronics, Robotics & Automation", needs
+   1323px in that column and would run straight off the page. Long names still
+   wrap; this one no longer has to. */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .esc-det-title {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 1199px) {
   .esc-det-title {
     font-size: 2.2rem;
