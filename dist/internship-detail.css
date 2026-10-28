@@ -1120,17 +1120,19 @@
 
 .esc-det-deadline-visa .esc-det-deadline-label {
   color: #a8141b;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 /* --------------------------------------------------------------------------
    Cost details
-   Three payees across a row, each with its figure and its line items, then one
-   total. Equal columns so the three read as one set rather than a hierarchy -
-   the money is what differs between them, not their importance.
+   Three payees across a row, each with its line items. Equal columns so the
+   three read as one set rather than a hierarchy - the money is what differs
+   between them, not their importance.
    -------------------------------------------------------------------------- */
 .esc-det-costs {
   list-style: none;
-  margin: 0 0 22px 0;
+  margin: 0 0 34px 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -1260,49 +1262,6 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* The one figure a reader is looking for, stated once and in full. */
-.esc-det-total {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-  background-color: #0c1b48;
-  border-radius: 18px;
-  padding: 22px 28px;
-  margin-bottom: 34px;
-}
-
-.esc-det-total-main {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.esc-det-total-label {
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.68);
-}
-
-.esc-det-total-figure {
-  font-size: 2rem;
-  font-weight: 850;
-  color: #ffffff;
-  line-height: 1.1;
-  letter-spacing: -0.6px;
-  font-variant-numeric: tabular-nums;
-}
-
-.esc-det-total-figure small {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: #ffc72c;
-  letter-spacing: 0;
-}
-
 .esc-det-covers-title {
   margin-top: 0;
 }
@@ -1349,14 +1308,5 @@
   }
   .esc-det-cost-title {
     min-height: 0;
-  }
-  .esc-det-total {
-    padding: 18px 20px;
-  }
-  .esc-det-total-figure {
-    font-size: 1.6rem;
-  }
-  .esc-det-total-figure small {
-    font-size: 0.95rem;
   }
 }
