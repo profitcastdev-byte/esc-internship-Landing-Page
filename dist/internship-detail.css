@@ -1139,6 +1139,7 @@
 }
 
 .esc-det-cost {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -1148,13 +1149,31 @@
   box-shadow: 0 6px 20px rgba(18, 30, 84, 0.04);
 }
 
-.esc-det-cost-to {
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  color: #7b88a8;
-  margin-bottom: 8px;
+/* Numbered because they are paid in this order, and a reader asked to follow
+   three costs does better with somewhere to start. */
+.esc-det-cost-num {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #eef2fb;
+  color: #1a3399;
+  font-size: 0.86rem;
+  font-weight: 850;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esc-det-cost-title {
+  font-size: 1rem;
+  font-weight: 850;
+  color: #0c1b48;
+  line-height: 1.35;
+  margin: 0 40px 10px 0;
+  min-height: 2.7em;
 }
 
 .esc-det-cost-amount {
@@ -1164,7 +1183,7 @@
   line-height: 1.1;
   letter-spacing: -0.5px;
   font-variant-numeric: tabular-nums;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .esc-det-cost-amount small {
@@ -1174,6 +1193,15 @@
   font-weight: 700;
   letter-spacing: 0;
   color: #5c6989;
+}
+
+/* The working behind the headline figure - what it is made of, or what it is
+   an estimate of - so the big number is never unexplained. */
+.esc-det-cost-sub {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #5c6989;
+  margin: -8px 0 14px 0;
 }
 
 .esc-det-cost-what {
@@ -1327,6 +1355,9 @@
   }
   .esc-det-cost-amount {
     font-size: 1.6rem;
+  }
+  .esc-det-cost-title {
+    min-height: 0;
   }
   .esc-det-total {
     padding: 18px 20px;

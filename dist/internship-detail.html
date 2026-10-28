@@ -507,11 +507,10 @@
   <!-- =========================================================================
        Cost details
 
-       Grouped by who receives the money, not by the numbering in the source
-       document. A reader's question is "what do I pay, and to whom" - three
-       payees answer it, where "1 / 2 / 2(a) / 2(b)" only answered it after
-       being decoded. One money treatment throughout, and the total is stated
-       once, in full, rather than left for the reader to add up.
+       Three numbered costs in the order they are paid, each with the figure a
+       reader actually hands over. GST is shown as rupees, not just a rate: the
+       source document quotes "Rs 50,000 + 18% GST" and then totals it as
+       50,000, which understates the cash by 9,000.
        ========================================================================= -->
   <section class="esc-det-section esc-det-section-tint" id="costs">
     <div class="container-fluid px-3 px-lg-5">
@@ -519,36 +518,42 @@
       <h2 class="esc-det-h2">What the programme costs</h2>
       <div class="esc-det-yellow-rule"></div>
 
-      <ul class="esc-det-costs">
+      <ol class="esc-det-costs">
         <li class="esc-det-cost">
-          <span class="esc-det-cost-to">Paid to the university</span>
+          <span class="esc-det-cost-num">1</span>
+          <h3 class="esc-det-cost-title">University Fee</h3>
           <span class="esc-det-cost-amount">EUR 100</span>
           <p class="esc-det-cost-what">
-            The internship programme fee, paid directly to VSB – Technical University
-            of Ostrava.
+            Paid directly to VSB – Technical University of Ostrava. No GST applies.
           </p>
         </li>
 
         <li class="esc-det-cost">
-          <span class="esc-det-cost-to">Paid to ESC</span>
-          <span class="esc-det-cost-amount">Rs. 50,000 <small>+ 18% GST</small></span>
+          <span class="esc-det-cost-num">2</span>
+          <h3 class="esc-det-cost-title">ESC – Registration &amp; Visa Documentation Fee</h3>
+          <span class="esc-det-cost-amount">Rs. 59,000</span>
+          <span class="esc-det-cost-sub">Rs. 50,000 + 18% GST (Rs. 9,000)</span>
           <ul class="esc-det-cost-lines">
             <li>
-              <span>Stage 1 — Registration and onboarding</span>
-              <b>Rs. 10,000</b>
+              <span>Stage 1 — Registration and onboarding
+                <em>Rs. 10,000 + GST</em>
+              </span>
+              <b>Rs. 11,800</b>
             </li>
             <li>
               <span>Stage 2 — Visa processing and documentation
-                <em>Payable once the offer letter is secured</em>
+                <em>Rs. 40,000 + GST · payable once the offer letter is secured</em>
               </span>
-              <b>Rs. 40,000</b>
+              <b>Rs. 47,200</b>
             </li>
           </ul>
         </li>
 
         <li class="esc-det-cost">
-          <span class="esc-det-cost-to">Your own costs</span>
-          <span class="esc-det-cost-amount">Rs. 1,05,000 <small>approx.</small></span>
+          <span class="esc-det-cost-num">3</span>
+          <h3 class="esc-det-cost-title">Other Expenses</h3>
+          <span class="esc-det-cost-amount">Rs. 1,05,000</span>
+          <span class="esc-det-cost-sub">Estimated, paid by you as you travel</span>
           <ul class="esc-det-cost-lines">
             <li>
               <span>Round-trip airfare</span>
@@ -568,20 +573,22 @@
             </li>
           </ul>
         </li>
-      </ul>
+      </ol>
 
       <div class="esc-det-total">
         <div class="esc-det-total-main">
-          <span class="esc-det-total-label">Total, excluding the visa fee</span>
-          <span class="esc-det-total-figure">Rs. 1,55,000 <small>+ EUR 100</small></span>
+          <span class="esc-det-total-label">Total payable, including GST</span>
+          <span class="esc-det-total-figure">Rs. 1,64,000 <small>+ EUR 100</small></span>
         </div>
         <p class="esc-det-total-note">
-          The visa fee is paid to VFS directly. Rupee figures are indicative and based on
-          current rates; they may change at the time of booking.
+          That is Rs. 1,55,000 before GST, plus Rs. 9,000 GST on the ESC fee. The EUR 100
+          university fee and the visa fee are separate — the visa fee is paid to VFS
+          directly. Rupee figures for travel, accommodation and food are indicative and may
+          change at the time of booking.
         </p>
       </div>
 
-      <h3 class="esc-det-h3 esc-det-covers-title">What the ESC service charge covers</h3>
+      <h3 class="esc-det-h3 esc-det-covers-title">What the ESC fee covers</h3>
       <ul class="esc-det-included">
           <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>University admission letter processing</span></li>
           <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Visa processing guidance and support</span></li>
