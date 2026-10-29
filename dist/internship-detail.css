@@ -1160,7 +1160,7 @@
    -------------------------------------------------------------------------- */
 .esc-det-costs {
   list-style: none;
-  margin: 0 0 34px 0;
+  margin: 0 0 18px 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -1293,6 +1293,25 @@
   color: #0c1b48;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
+}
+
+/* The only line in the section that says what the fees do NOT cover, so it
+   sits directly under the two that say what they do, before the list of
+   inclusions can suggest the figures above are the whole bill. Not italic:
+   the section dropped italics earlier and this would be the only one left. */
+.esc-det-cost-note {
+  margin: 0 0 26px 0;
+  max-width: 78ch;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #4a5676;
+}
+
+.esc-det-cost-note-mark {
+  color: #d81f27;
+  font-weight: 850;
+  margin-right: 2px;
 }
 
 .esc-det-covers-title {
