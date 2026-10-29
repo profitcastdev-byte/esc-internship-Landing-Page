@@ -693,8 +693,15 @@
    Day-wise programme: meta strip, slots, format tags
    -------------------------------------------------------------------------- */
 
-/* The fixed facts about the fortnight, before the day list itself. Auto-fit so
-   the five items use the row rather than wrapping raggedly. */
+/* The fixed facts about the programme, before the day list itself. Auto-fit so
+   the items use the row rather than wrapping raggedly.
+
+   The hairlines between cells used to be the container's own colour showing
+   through 1px gaps. That works only while the items fill the grid: five items
+   across three columns leave a sixth cell with nothing in it, and that cell
+   showed as a block of grey. The lines are drawn by the cells themselves now,
+   so a cell that does not exist draws nothing, and the container matches the
+   cells rather than contrasting with them. */
 .esc-det-meta {
   list-style: none;
   margin: 24px 0 8px 0;
@@ -702,7 +709,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 1px;
-  background-color: #e2e8f0;
+  background-color: #f7f9fd;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
   overflow: hidden;
@@ -710,6 +717,9 @@
 
 .esc-det-meta li {
   background-color: #f7f9fd;
+  /* right and bottom hairlines, each landing in the 1px gap; the ones past
+     the last column and row are clipped by the container's overflow */
+  box-shadow: 1px 0 0 #e2e8f0, 0 1px 0 #e2e8f0;
   padding: 13px 18px;
   display: flex;
   flex-direction: column;
