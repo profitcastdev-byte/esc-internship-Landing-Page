@@ -1001,12 +1001,13 @@ img {
     justify-content: center;
   }
   
+  /* The -50px here pulled a two-button stack back up under the headline.
+     With the Enroll button gone there is one button and nothing to pull. */
   .esc-btn-whatsapp-hero {
     font-size: 1rem;
     padding: 9px 18px;
     width: 100%;
     justify-content: center;
-    margin-bottom: -50px;
   }
   .esc-hero-btn-desc {
     font-size: 0.78rem;

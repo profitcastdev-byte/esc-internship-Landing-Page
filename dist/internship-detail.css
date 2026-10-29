@@ -1302,14 +1302,15 @@
 .esc-det-cost-note {
   margin: 0 0 26px 0;
   max-width: 78ch;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   line-height: 1.6;
-  font-weight: 600;
-  color: #4a5676;
+  font-weight: 700;
+  color: #d81f27;
 }
 
+/* The asterisk is the same red as the sentence now, so weight alone is what
+   keeps it distinct. */
 .esc-det-cost-note-mark {
-  color: #d81f27;
   font-weight: 850;
   margin-right: 2px;
 }
