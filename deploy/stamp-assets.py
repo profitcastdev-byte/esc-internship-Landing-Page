@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Stamp each stylesheet link in dist/*.html with a hash of that stylesheet.
 
-A plain `main.css` is free to sit in a phone's cache for as long as the
+Stylesheets and images alike. A plain `main.css` is free to sit in a cache for as long as the
 server's headers allow, which is how a deployed change can keep not showing
 up on the one device that matters. A hand-written `?v=2` only fixes that
 once: the next edit reuses the same URL and the stale copy is valid again.
@@ -18,6 +18,7 @@ import sys
 
 DIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dist')
 LINK = re.compile(r'href="([A-Za-z0-9_.-]+\.css)(\?v=[^"]*)?"')
+IMG = re.compile(r'src="((?:\./)?assets/images/[A-Za-z0-9_./-]+\.(?:jpg|png|svg))(\?v=[^"]*)?"')
 
 
 def digest(path):
@@ -46,14 +47,25 @@ def main():
                 hashes[css] = digest(css_path)
             return 'href="%s?v=%s"' % (css, hashes[css])
 
-        out = LINK.sub(stamp, text)
+        def stamp_img(m):
+            rel = m.group(1)
+            img_path = os.path.join(DIST, rel.lstrip('./'))
+            if not os.path.exists(img_path):
+                return m.group(0)
+            if rel not in hashes:
+                hashes[rel] = digest(img_path)
+            return 'src="%s?v=%s"' % (rel, hashes[rel])
+
+        out = IMG.sub(stamp_img, LINK.sub(stamp, text))
         if out != text:
             io.open(path, 'w', encoding='utf-8', newline='').write(
                 out.replace('\n', '\r\n') if crlf else out)
             changed.append(name)
 
-    for css, h in sorted(hashes.items()):
-        print('  %-24s v=%s' % (css, h))
+    css = {k: v for k, v in hashes.items() if k.endswith('.css')}
+    for name, h in sorted(css.items()):
+        print('  %-24s v=%s' % (name, h))
+    print('  %d images stamped' % (len(hashes) - len(css)))
     if changed:
         print('  restamped: %s' % ', '.join(changed))
     else:
