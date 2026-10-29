@@ -1304,7 +1304,9 @@
   font-size: 1.15rem;
   line-height: 1.55;
   font-weight: 700;
-  color: #d81f27;
+  /* Orange, but a deep one: the brighter oranges land near 3.4:1 on this
+     section's tint, under the 4.5 this size and weight still needs. */
+  color: #c2410c;
 }
 
 /* The asterisk is the same red as the sentence now, so weight alone is what
