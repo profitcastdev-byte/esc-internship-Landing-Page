@@ -1512,3 +1512,19 @@
   padding-left: 14px;
   font-style: normal;
 }
+
+/* --------------------------------------------------------------------------
+   Day detail
+   The Hungary brochures give each day one line of detail under its title,
+   where the Urban Design programme splits its days into morning, afternoon
+   and an output. That line is not an output, so it does not borrow the
+   labelled Output row - which is a two-column grid and would squeeze this
+   text into the narrow column the label usually fills.
+   -------------------------------------------------------------------------- */
+.esc-det-day-detail {
+  margin: 6px 0 0 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #4a5676;
+}
