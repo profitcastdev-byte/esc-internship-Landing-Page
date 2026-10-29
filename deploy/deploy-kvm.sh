@@ -15,6 +15,11 @@ SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")/../dist" && pwd)"
 
 [ -f "$SRC/index.html" ] || { echo "no index.html in $SRC" >&2; exit 1; }
 
+# Stamp the stylesheet links with a hash of each stylesheet, so a changed
+# file is always a changed URL and no browser can serve an old copy of it.
+echo "Stamping stylesheet links"
+python -I "$(dirname "${BASH_SOURCE[0]}")/stamp-assets.py"
+
 echo "Uploading $(find "$SRC" -type f | wc -l) files to $HOST:$DOCROOT"
 
 # --delete semantics without rsync (not installed on the Windows side):
