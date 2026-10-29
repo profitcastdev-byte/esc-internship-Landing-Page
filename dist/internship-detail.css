@@ -1529,18 +1529,3 @@
   color: #4a5676;
 }
 
-/* --------------------------------------------------------------------------
-   A second block in the same section
-   The AI programme has two host universities, so its overview carries two
-   copy-and-photograph rows. This is the gap between them: wider than the
-   grid gutter, so the pair reads as two blocks rather than four columns.
-   -------------------------------------------------------------------------- */
-.esc-det-row-next {
-  margin-top: 44px;
-}
-
-@media (max-width: 991.98px) {
-  .esc-det-row-next {
-    margin-top: 28px;
-  }
-}
