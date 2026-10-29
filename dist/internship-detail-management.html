@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management Internship - ESC</title>
+  <meta name="description" content="A 9-day Management Internship at International Business School, Budapest, Hungary, 1-9 February 2027. No university fee. Registration closes 15th November 2026.">
+  <link rel="icon" type="image/x-icon" href="./assets/images/esc-favicon.png">
+
+  <!-- Kept out of search while the copy below is still PLACEHOLDER. This page
+       is linked from twelve cards on an indexed page, so Google would reach it
+       within hours and index the placeholder text against the brand. DELETE
+       THIS LINE once the real content is in. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Built from internship-detail.html by substitution, so the two pages
+       share one set of markup and one stylesheet. The facts, deadlines and
+       day-by-day below are read off the brochure; the three images and the
+       two prose blocks are PLACEHOLDERS awaiting copy. -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="main.css?v=fea04463">
+  <link rel="stylesheet" href="internship-detail.css?v=c99c88fe">
+</head>
+<body>
+
+<nav class="esc-navbar-section">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="row align-items-center justify-content-between flex-nowrap esc-nav-row">
+        <!-- Logo / Brand -->
+        <div class="col-auto d-flex align-items-center">
+          <a href="#" class="esc-nav-brand text-decoration-none">
+            <img src="assets/images/ESC-logo-europ.png" alt="Europe Study Centre" class="esc-nav-logo-img">
+          </a>
+        </div>
+
+        <!-- Navigation Links (Desktop) -->
+        <div class="col-auto col-lg-auto d-none d-lg-block ms-auto">
+          <ul class="esc-nav-links justify-content-center">
+            <li><a href="index.html#destinations">Internship Program</a></li>
+            <li><a href="index.html#inclusions">Program Details</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- CTA Action (Desktop) -->
+        <div class="col-auto d-none d-lg-flex align-items-center esc-nav-cta">
+          <span class="esc-nav-divider"></span>
+          <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722" title="Call Us">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+          <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="Chat on WhatsApp" title="WhatsApp Us">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <span class="esc-btn-phone-display">
+            +91-98844 57722
+          </span>
+        </div>
+
+        <!-- Mobile Right: Three-Bar Hamburger Button -->
+        <div class="col-auto d-lg-none text-end esc-nav-toggle-col">
+          <button class="esc-navbar-toggler" type="button" id="escMobileMenuToggle" aria-label="Toggle navigation menu" onclick="toggleEscMobileNav()">
+            <span class="esc-toggler-bar esc-bar-1"></span>
+            <span class="esc-toggler-bar esc-bar-2"></span>
+            <span class="esc-toggler-bar esc-bar-3"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Contact Bar. Inside the header row, so below lg it is one
+             line with the logo and toggler where there is room, and its own
+             line on phones where there is not. col-12 col-md-auto does that
+             width switch; the CSS only has to allow the wrap and set order.
+             Inside the sticky <nav>, so it sticks with the header and sits on
+             the navbar's own navy with no seam. -->
+        <div class="col-12 col-md-auto d-lg-none esc-mobile-contact-bar">
+          <a href="tel:+919884457722" class="esc-btn-circle esc-btn-circle-call" aria-label="Call +91-98844 57722">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+          <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-btn-circle esc-btn-circle-wa" aria-label="WhatsApp Us">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <span class="esc-btn-phone-display">+91-98844 57722</span>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Collapse Drawer -->
+      <div class="esc-mobile-nav-collapse d-lg-none" id="escMobileNavCollapse">
+        <ul class="esc-mobile-nav-links">
+          
+          <li><a href="index.html#destinations" onclick="closeEscMobileNav()">Internship Program</a></li>
+          <li><a href="index.html#inclusions" onclick="closeEscMobileNav()">Program Details</a></li>
+          <li><a href="index.html#about" onclick="closeEscMobileNav()">About</a></li>
+          <li><a href="index.html#contact" onclick="closeEscMobileNav()">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       1. Hero Banner - full-width banner image
+       ========================================================================= -->
+  <section class="esc-det-hero">
+    <img src="assets/images/placeholder-hero.svg"
+         alt="PLACEHOLDER - banner image for this programme"
+         class="esc-det-hero-img">
+    <div class="esc-det-hero-scrim" aria-hidden="true"></div>
+    <div class="container-fluid px-3 px-lg-5 esc-det-hero-inner">
+      <a href="index.html#destinations" class="esc-det-back">
+        <i class="bi bi-arrow-left"></i>
+        <span>All internships</span>
+      </a>
+      <span class="esc-det-hero-flag">
+        <i class="bi bi-geo-alt-fill"></i> Hungary
+      </span>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       2. Program Title &amp; University Name
+       ========================================================================= -->
+  <section class="esc-det-titlebar">
+    <div class="container-fluid px-3 px-lg-5">
+      <!-- 7/5 with the same gutters (g-4 g-lg-5) as the overview row below.
+           The split alone is not enough: Bootstrap pads row children by half
+           the gutter, so a different gutter would leave the facts and the
+           university image at different widths. -->
+      <div class="row align-items-end g-4 g-lg-5 esc-det-titlebar-inner">
+        <div class="col-lg-7">
+          <h1 class="esc-det-title">Internship in Management</h1>
+          <p class="esc-det-university">
+            <i class="bi bi-building"></i>
+            International Business School, Budapest, Hungary
+          </p>
+        </div>
+        <div class="col-lg-5">
+        <ul class="esc-det-facts">
+          <li>
+            <span class="esc-det-fact-label">Starts on</span>
+            <span class="esc-det-fact-value">Feb 1st - 9th</span>
+          </li>
+          <li>
+            <span class="esc-det-fact-label">Duration</span>
+            <span class="esc-det-fact-value">9 Days</span>
+          </li>
+          <li>
+            <span class="esc-det-fact-label">Tuition</span>
+            <span class="esc-det-fact-value">Free</span>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. University Overview - content left, image right
+       ========================================================================= -->
+  <!-- =========================================================================
+       Registration and visa deadlines
+       ========================================================================= -->
+  <section class="esc-det-deadlines">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-det-deadlines-card">
+        <h2 class="esc-det-deadlines-title">
+          <i class="bi bi-megaphone-fill" aria-hidden="true"></i>
+          Important: Registration &amp; VISA Deadlines
+        </h2>
+        <ul class="esc-det-deadline-list">
+          <li>
+            <span class="esc-det-deadline-label">First Registration Deadline</span>
+            <span class="esc-det-deadline-date">15th November, 2026</span>
+          </li>
+          <li>
+            <span class="esc-det-deadline-label">Second Registration Deadline</span>
+            <span class="esc-det-deadline-date">15th December, 2026</span>
+            <span class="esc-det-deadline-note">Subject to seat availability</span>
+          </li>
+          <li class="esc-det-deadline-visa">
+            <span class="esc-det-deadline-label">Last Date for VISA Submission</span>
+            <span class="esc-det-deadline-date">28th December, 2026</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="esc-det-section" id="overview">
+    <div class="container-fluid px-3 px-lg-5">
+      <!-- align-items-stretch, not centre: the copy runs long enough that a
+           centred image would leave the column short at one end and the text
+           hanging at the other. Stretched, the photograph matches the height of
+           what sits beside it. -->
+      <div class="row align-items-stretch g-4 g-lg-5">
+        <div class="col-lg-7">
+          <h2 class="esc-det-h2">About the Host University</h2>
+          <div class="esc-det-yellow-rule"></div>
+
+          <h3 class="esc-det-h3">International Business School, Budapest</h3>
+          <p class="esc-det-body esc-det-placeholder">
+            PLACEHOLDER - copy about the host university to follow. Two paragraphs of
+            roughly this length will sit here, matching the Urban Design page: what the
+            school is, when it was founded and what it is known for, then the department
+            running this programme and what students do there.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="esc-det-figure">
+            <img src="assets/images/placeholder-university.svg"
+                 alt="PLACEHOLDER - photograph of the host university"
+                 class="esc-det-figure-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Location Map - Google Maps
+       ========================================================================= -->
+  <section class="esc-det-section esc-det-section-tint" id="location">
+    <div class="container-fluid px-3 px-lg-5">
+      <!-- Same shape as the overview above, sides swapped: map where the image
+           was, copy where the copy was. The order-* pair keeps the heading
+           first when the two stack on a phone. Stretched for the same reason -
+           the map grows to meet the copy rather than floating as a small box
+           beside it. -->
+      <div class="row align-items-stretch g-4 g-lg-5">
+        <div class="col-lg-5 order-2 order-lg-1">
+          <!-- A plain figure, not a link. It shows the Schengen Area as a whole,
+               so sending a click to a single university pin would not follow
+               from the picture. -->
+          <div class="esc-det-map">
+            <img src="assets/images/placeholder-map.svg"
+                 alt="PLACEHOLDER - map for this programme's location"
+                 class="esc-det-map-img" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-7 order-1 order-lg-2">
+          <span class="esc-det-eyebrow">Location</span>
+          <h2 class="esc-det-h2">About Hungary</h2>
+          <div class="esc-det-yellow-rule"></div>
+
+          <h3 class="esc-det-h3 esc-det-placeholder">PLACEHOLDER - subheading to follow</h3>
+          <p class="esc-det-body esc-det-placeholder">
+            PLACEHOLDER - copy about Hungary to follow. Two paragraphs of roughly this
+            length will sit here, matching the Urban Design page: the country and its
+            place in the EU and the Schengen Area, then what Budapest and the region
+            are known for.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Day-wise Program
+       ========================================================================= -->
+  <section class="esc-det-section" id="schedule">
+    <div class="container-fluid px-3 px-lg-5">
+      <span class="esc-det-eyebrow">Day-wise Program</span>
+      <h2 class="esc-det-h2">What each day looks like</h2>
+      <div class="esc-det-yellow-rule"></div>
+      <ul class="esc-det-meta">
+          <li>
+            <span class="esc-det-meta-label">Format</span>
+            <span class="esc-det-meta-value">9 days, Monday to Tuesday, including a weekend in Budapest</span>
+          </li>
+          <li>
+            <span class="esc-det-meta-label">Dates</span>
+            <span class="esc-det-meta-value">Feb 1 - Feb 9 2027</span>
+          </li>
+          <li>
+            <span class="esc-det-meta-label">Streams</span>
+            <span class="esc-det-meta-value">Management &amp; Business · Strategic Management · Marketing &amp; Consumer Behaviour</span>
+          </li>
+          <li>
+            <span class="esc-det-meta-label">Venue</span>
+            <span class="esc-det-meta-value">International Business School, Budapest</span>
+          </li>
+      </ul>
+
+      <ol class="esc-det-days">
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">01</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">Business Orientation, Campus Tour &amp; Faculty Interaction</h3>
+              <span class="esc-det-day-when">Day 1 · Mon, Feb 1</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">02</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">Strategic Management Workshop &amp; Case Study</h3>
+              <span class="esc-det-day-when">Day 2 · Tue, Feb 2</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">03</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">Marketing Workshop, Consumer Behaviour Case Study</h3>
+              <span class="esc-det-day-when">Day 3 · Wed, Feb 3</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">04</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">Corporate Visit &amp; Industry Exposure</h3>
+              <span class="esc-det-day-when">Day 4 · Thu, Feb 4</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">05</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">HR, Organisational Behaviour &amp; Case Study</h3>
+              <span class="esc-det-day-when">Day 5 · Fri, Feb 5</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">06</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">Budapest Sightseeing &amp; Leisure</h3>
+              <span class="esc-det-day-when">Day 6 · Sat, Feb 6</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">07</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">Budapest Sightseeing &amp; Leisure</h3>
+              <span class="esc-det-day-when">Day 7 · Sun, Feb 7</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">08</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">Entrepreneurship Workshop &amp; Business Idea Presentation</h3>
+              <span class="esc-det-day-when">Day 8 · Mon, Feb 8</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="esc-det-day">
+          <span class="esc-det-day-num">09</span>
+          <div class="esc-det-day-body">
+            <div class="esc-det-day-head">
+              <h3 class="esc-det-day-title">Leadership, Negotiation &amp; Closing Ceremony</h3>
+              <span class="esc-det-day-when">Day 9 · Tue, Feb 9</span>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Download Brochure  +  7. Enroll Now
+       ========================================================================= -->
+  <!-- =========================================================================
+       Cost details
+
+       Three numbered costs in the order they are paid. Each figure is quoted
+       the way the source document quotes it, so no total is implied across the
+       two currencies.
+       ========================================================================= -->
+  <section class="esc-det-section esc-det-section-tint" id="costs">
+    <div class="container-fluid px-3 px-lg-5">
+      <span class="esc-det-eyebrow">Cost Details</span>
+      <h2 class="esc-det-h2">Programme Costs &amp; Expenses</h2>
+      <div class="esc-det-yellow-rule"></div>
+
+      <ol class="esc-det-costs">
+        <li class="esc-det-cost">
+          <span class="esc-det-cost-num">1</span>
+          <h3 class="esc-det-cost-title">University Fee</h3>
+          <span class="esc-det-cost-amount">Free</span>
+          <p class="esc-det-cost-what">
+            No cost paid to the university.
+          </p>
+        </li>
+
+        <li class="esc-det-cost">
+          <span class="esc-det-cost-num">2</span>
+          <h3 class="esc-det-cost-title">ESC – Registration &amp; VISA Documentation Fee</h3>
+          <ul class="esc-det-cost-lines">
+            <li>
+              <span>Stage 2 — VISA processing and documentation</span>
+              <b>Rs. 20,000 + GST</b>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <p class="esc-det-cost-note">
+        <span class="esc-det-cost-note-mark" aria-hidden="true">*</span>Airfare,
+        accommodation, and food expenses are not included in the programme and
+        must be covered by the students
+      </p>
+
+      <h3 class="esc-det-h3 esc-det-covers-title">ESC Fee Covers Following</h3>
+      <ul class="esc-det-included">
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>University admission letter processing</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>VISA processing guidance and support</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Documentation preparation and verification guidance</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Local permit documentation support, wherever applicable</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Travel and health insurance, EUR 30,000 cover</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Flight itinerary required for VISA submission</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Accommodation guidance and assistance</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Pre-departure guidance and university coordination</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Complimentary forex card</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="esc-det-cta" id="apply">
+    <div class="container-fluid px-3 px-lg-5">
+      <div class="esc-det-cta-card">
+        <div class="esc-det-cta-text">
+          <h2 class="esc-det-cta-heading">Ready to join this internship?</h2>
+          <p class="esc-det-cta-sub">
+            Registration closes 15th November 2026, with a second round to 15th December
+            subject to seats. VISA submissions must be in by 28th December.
+          </p>
+        </div>
+        <div class="esc-det-cta-actions">
+          <!-- No download attribute: the PDF is served inline, so the browser
+               opens it in the new tab rather than saving it. Readers who want
+               the file can still save it from there. -->
+          <a href="assets/brochures/management-internship.pdf"
+             target="_blank" rel="noopener noreferrer"
+             class="esc-det-btn esc-det-btn-ghost">
+            <i class="bi bi-file-earmark-arrow-down"></i>
+            <span>Download Brochure</span>
+          </a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqtSoi7x9pDrrXn-KbA9gSMnvTNiOMrOCMJDarlDKqJvg1Lw/viewform"
+             target="_blank" rel="noopener noreferrer"
+             class="esc-det-btn esc-det-btn-solid">
+            <span>Enroll Now</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="esc-main-footer-section" id="footer">
+    <div class="container-fluid px-3 px-md-4 px-lg-5 position-relative esc-footer-container">
+      
+      <!-- Top Navigation Row: Left Line + Nav Links with Yellow Border Bottom on Active Link -->
+      <div class="esc-footer-top-nav">
+        <span class="esc-footer-top-line" aria-hidden="true"></span>
+        <ul class="esc-footer-nav-list">
+          <li><a href="index.html#destinations">Internship Program</a></li>
+          <li><a href="index.html#inclusions">Program Details</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact" class="esc-footer-nav-active">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Main Content Row -->
+      <div class="row align-items-center esc-footer-main-row">
+        <!-- Skyline Line Art Background Illustration -->
+        <div class="esc-footer-skyline-wrap" aria-hidden="true">
+          <img src="assets/images/footer-europe-lineart.svg" alt="" class="esc-footer-skyline-lineart">
+        </div>
+
+        <!-- Left Side: Line with Text, Big Title, Paragraph -->
+        <div class="col-lg-6 col-md-12 mb-5 mb-lg-0 pe-lg-4" style="position: relative; z-index: 2;">
+          <!-- 1. Left line with text -->
+          <div class="esc-footer-pretitle">
+            <span class="esc-footer-preline"></span>
+            <span class="esc-footer-pretext">CONTACT US</span>
+          </div>
+
+          <!-- 2. Big title -->
+          <h2 class="esc-footer-heading">Your European dreams,<br>our guidance</h2>
+
+          <!-- 3. Paragraph -->
+          <p class="esc-footer-desc">
+            Send us a message and an advisor will walk you through eligibility, documentation and the next intake dates.
+          </p>
+        </div>
+
+        <!-- Right Side: Three Clickable Contact Cards -->
+        <div class="col-lg-6 col-md-12 ps-lg-5" style="position: relative; z-index: 2;">
+          <div class="esc-footer-cards-stack">
+            <!-- Card 1: Phone / Call or WhatsApp -->
+            <a href="tel:+919884457722" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">+91-98844 57722</span>
+                  <span class="esc-footer-card-sub">Call Us</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+
+            <!-- Card 2: Email -->
+            <a href="mailto:info@euinternship.com" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">info@euinternship.com</span>
+                  <span class="esc-footer-card-sub">Email us anytime</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+
+            <!-- Card 3: WhatsApp -->
+            <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-footer-card text-decoration-none">
+              <div class="esc-footer-card-inner-left">
+                <div class="esc-footer-card-icon-circle">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div class="esc-footer-card-info">
+                  <span class="esc-footer-card-main">Message on WhatsApp</span>
+                  <span class="esc-footer-card-sub">Fastest way to reach us</span>
+                </div>
+              </div>
+              <div class="esc-footer-card-chevron">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="esc-footer-bottom-bar">
+        <div>
+          © 2026 Europe Study Centre Private Limited. All Rights Reserved.
+        </div>
+        <div class="esc-footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Fixed Floating WhatsApp Button (Desktop & Mobile)
+       ========================================================================= -->
+  <a href="https://wa.me/919884457722" target="_blank" rel="noopener noreferrer" class="esc-floating-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="esc-floating-whatsapp-pulse"></span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function toggleEscMobileNav() {
+      const collapse = document.getElementById('escMobileNavCollapse');
+      const toggler = document.getElementById('escMobileMenuToggle');
+      if (collapse && toggler) {
+        collapse.classList.toggle('esc-mobile-open');
+        toggler.classList.toggle('esc-open');
+      }
+    }
+
+    function closeEscMobileNav() {
+      const collapse = document.getElementById('escMobileNavCollapse');
+      const toggler = document.getElementById('escMobileMenuToggle');
+      if (collapse) collapse.classList.remove('esc-mobile-open');
+      if (toggler) toggler.classList.remove('esc-open');
+    }
+  </script>
+</body>
+</html>

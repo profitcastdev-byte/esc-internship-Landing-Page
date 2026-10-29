@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200"
+     width="1600" height="1200" role="img" aria-label="Placeholder">
+  <rect width="1600" height="1200" fill="#eef2fb"/>
+  <rect x="36" y="36" width="1528" height="1128" fill="none"
+        stroke="#9fb0d4" stroke-width="7" stroke-dasharray="30 30"/>
+  <text x="50%" y="47%" text-anchor="middle" fill="#5c6989"
+        font-family="'Plus Jakarta Sans', Arial, sans-serif"
+        font-size="90" font-weight="700">Location map</text>
+  <text x="50%" y="57%" text-anchor="middle" fill="#7b88a8"
+        font-family="'Plus Jakarta Sans', Arial, sans-serif"
+        font-size="60" font-weight="600">1600 &#215; 1200</text>
+</svg>

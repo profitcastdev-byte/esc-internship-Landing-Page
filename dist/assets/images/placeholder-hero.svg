@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 840"
+     width="2560" height="840" role="img" aria-label="Placeholder">
+  <rect width="2560" height="840" fill="#eef2fb"/>
+  <rect x="25" y="25" width="2510" height="790" fill="none"
+        stroke="#9fb0d4" stroke-width="5" stroke-dasharray="21 21"/>
+  <text x="50%" y="47%" text-anchor="middle" fill="#5c6989"
+        font-family="'Plus Jakarta Sans', Arial, sans-serif"
+        font-size="63" font-weight="700">Hero banner</text>
+  <text x="50%" y="57%" text-anchor="middle" fill="#7b88a8"
+        font-family="'Plus Jakarta Sans', Arial, sans-serif"
+        font-size="42" font-weight="600">2560 &#215; 840</text>
+</svg>
