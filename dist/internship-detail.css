@@ -1525,7 +1525,10 @@
   margin: 6px 0 0 0;
   font-size: 0.92rem;
   line-height: 1.6;
-  font-weight: 500;
-  color: #4a5676;
+  /* Bold, like the rest of a day row. This line was the only part of the
+     entry set at a reading weight, which left each day looking like a
+     heading with a caption rather than one bold entry. */
+  font-weight: 700;
+  color: #3c4a6b;
 }
 
