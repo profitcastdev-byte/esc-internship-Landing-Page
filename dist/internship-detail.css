@@ -1523,12 +1523,20 @@
    -------------------------------------------------------------------------- */
 .esc-det-day-detail {
   margin: 6px 0 0 0;
-  font-size: 0.92rem;
-  line-height: 1.6;
-  /* Bold, like the rest of a day row. This line was the only part of the
-     entry set at a reading weight, which left each day looking like a
-     heading with a caption rather than one bold entry. */
-  font-weight: 700;
-  color: #3c4a6b;
+  /* The same size, weight and colour as the title above it, so a day reads
+     as one block of text rather than a heading with a caption. */
+  font-size: 1.15rem;
+  line-height: 1.3;
+  font-weight: 800;
+  color: #0c1b48;
+}
+
+/* The phone step-down has to live here rather than in the breakpoint block
+   above: this rule comes later in the file, so anything set up there for the
+   same selector loses to it whatever the media query says. */
+@media (max-width: 767px) {
+  .esc-det-day-detail {
+    font-size: 1.02rem;
+  }
 }
 
