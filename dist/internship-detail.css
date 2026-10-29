@@ -1301,7 +1301,6 @@
    the section dropped italics earlier and this would be the only one left. */
 .esc-det-cost-note {
   margin: 0 0 26px 0;
-  max-width: 78ch;
   font-size: 1.15rem;
   line-height: 1.55;
   font-weight: 700;
