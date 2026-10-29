@@ -706,8 +706,12 @@
   list-style: none;
   margin: 24px 0 8px 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  /* Flex, not grid. A grid keeps its columns whatever is in them, so five
+     items across four columns left the last row one cell wide against 685px
+     of nothing - no longer grey, but still a row three-quarters empty. Flex
+     lets whatever lands on the last row stretch across it. */
+  display: flex;
+  flex-wrap: wrap;
   gap: 1px;
   background-color: #f7f9fd;
   border: 1px solid #e2e8f0;
@@ -716,6 +720,9 @@
 }
 
 .esc-det-meta li {
+  /* 190px is the width at which these labels and values stop reading well,
+     so it is the basis; past that they share the row equally. */
+  flex: 1 1 190px;
   background-color: #f7f9fd;
   /* right and bottom hairlines, each landing in the 1px gap; the ones past
      the last column and row are clipped by the container's overflow */
