@@ -6079,19 +6079,6 @@ img {
   /* This one carries a bottom border, so growing the box pulled the rule 14px
      clear of the words it underlines. The hit area is extended with a
      pseudo-element instead: 44px to the thumb, unchanged to the eye. */
-  .esc-intern-card-more {
-    position: relative;
-  }
-
-  .esc-intern-card-more::after {
-    content: "";
-    position: absolute;
-    /* Upwards only. The Enroll button below wins the hit test on its own
-       side, so the 15px all has to come from the 12px gap above plus a
-       sliver of the location line, which is text and not a target itself. */
-    inset: -15px 0 0 0;
-  }
-
   .esc-about-gradient-btn {
     padding-top: 13px;
     padding-bottom: 13px;
@@ -6168,4 +6155,30 @@ img {
     height: 46px;
     width: auto;
   }
+}
+
+/* --------------------------------------------------------------------------
+   The card is the link
+   One transparent layer, owned by the For More Details anchor, covering the
+   whole card: image, title, location, the lot. The card is already
+   position: relative, so it is what the layer measures itself against.
+
+   The Enroll button is lifted above it, because it goes somewhere else - a
+   click there should open the form, not the details page. The eight cards
+   with no For More Details link have no layer either, so nothing about them
+   changes.
+
+   This also replaces the phone-only overlay that existed to give the link a
+   44px target: a card-sized target clears that at every width.
+   -------------------------------------------------------------------------- */
+.esc-intern-card-more::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.esc-intern-card-btn {
+  position: relative;
+  z-index: 2;
 }
