@@ -113,9 +113,15 @@
 }
 
 /* A Bootstrap row now, so the facts take the same 5 columns the overview
-   image takes and the two line up down the page. */
+   image takes and the two line up down the page.
+
+   Top-aligned, not bottom-aligned: the Enroll button is the first thing in
+   the right column, so starting both columns at the same line puts it
+   level with the heading. Bottom-aligning pinned the facts strip to the
+   university line instead, which pushed the button up above the heading
+   with nothing beside it. */
 .esc-det-titlebar-inner {
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .esc-det-title {
@@ -590,9 +596,6 @@
 @media (max-width: 991px) {
   .esc-det-hero-img {
     height: 300px;
-  }
-  .esc-det-titlebar-inner {
-    align-items: flex-start;
   }
   .esc-det-title {
     font-size: 1.9rem;
