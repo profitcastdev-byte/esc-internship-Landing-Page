@@ -113,15 +113,9 @@
 }
 
 /* A Bootstrap row now, so the facts take the same 5 columns the overview
-   image takes and the two line up down the page.
-
-   Top-aligned, not bottom-aligned: the Enroll button is the first thing in
-   the right column, so starting both columns at the same line puts it
-   level with the heading. Bottom-aligning pinned the facts strip to the
-   university line instead, which pushed the button up above the heading
-   with nothing beside it. */
+   image takes and the two line up down the page. */
 .esc-det-titlebar-inner {
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .esc-det-title {
@@ -596,6 +590,9 @@
 @media (max-width: 991px) {
   .esc-det-hero-img {
     height: 300px;
+  }
+  .esc-det-titlebar-inner {
+    align-items: flex-start;
   }
   .esc-det-title {
     font-size: 1.9rem;
@@ -1544,33 +1541,27 @@
 }
 
 /* --------------------------------------------------------------------------
-   Enroll, at the top of the facts column
+   Enroll, under the heading
    The same button as the one at the foot of the page, for readers who have
    decided by the time they have read the title. A little smaller, because
    this is the second-loudest thing in the titlebar and the heading should
    stay the first.
-
-   The row is align-items-end, so the facts strip stays pinned to the bottom
-   of the heading block and the button rides above it - level with the
-   heading, left edge flush with "Starts on". It is the strip's own column
-   that grows, not the heading's, so the heading does not move.
    -------------------------------------------------------------------------- */
 .esc-det-titlebar-enrol {
-  /* Block-level, not the inline-flex every other button here uses: inline
-     would centre it on a line of its own rather than start it at the edge
-     the facts strip starts at. fit-content keeps it off the full width. */
+  /* Block-level, not the inline-flex every other button here uses: the
+     university line above it is itself inline-flex, so an inline button
+     lands beside it rather than under the heading. fit-content keeps it
+     from stretching the full column. */
   display: flex;
   width: fit-content;
-  margin: 0 0 16px 0;
+  margin-top: 18px;
   padding: 11px 24px;
   font-size: 0.96rem;
 }
 
-/* Stacked, the column order is heading, university, button, facts, and the
-   row gutter already opens the gap above. Full width, as on the other
-   buttons here. */
-@media (max-width: 991.98px) {
+@media (max-width: 767px) {
   .esc-det-titlebar-enrol {
     width: 100%;
+    margin-top: 16px;
   }
 }
