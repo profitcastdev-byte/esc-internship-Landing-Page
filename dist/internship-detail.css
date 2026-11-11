@@ -1540,3 +1540,28 @@
   }
 }
 
+/* --------------------------------------------------------------------------
+   Enroll, under the heading
+   The same button as the one at the foot of the page, for readers who have
+   decided by the time they have read the title. A little smaller, because
+   this is the second-loudest thing in the titlebar and the heading should
+   stay the first.
+   -------------------------------------------------------------------------- */
+.esc-det-titlebar-enrol {
+  /* Block-level, not the inline-flex every other button here uses: the
+     university line above it is itself inline-flex, so an inline button
+     lands beside it rather than under the heading. fit-content keeps it
+     from stretching the full column. */
+  display: flex;
+  width: fit-content;
+  margin-top: 18px;
+  padding: 11px 24px;
+  font-size: 0.96rem;
+}
+
+@media (max-width: 767px) {
+  .esc-det-titlebar-enrol {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
